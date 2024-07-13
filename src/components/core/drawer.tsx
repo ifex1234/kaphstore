@@ -13,7 +13,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Separator } from "../ui/separator";
 import { LuHeart, LuUser, LuBook } from "react-icons/lu";
-import { SignedOut, SignInButton, SignedIn, UserButton } from "@clerk/nextjs";
 
 export function Drawer() {
   const myAccount = [
@@ -84,14 +83,7 @@ export function Drawer() {
 
         <SheetFooter>
           <SheetClose asChild>
-            <div className=" cursor-pointer flex flex-row h-10 w-full items-center gap-x-3 px-3 rounded-md">
-              <SignedOut>
-                <SignInButton />
-              </SignedOut>
-              <SignedIn>
-                <UserButton />
-              </SignedIn>
-            </div>
+            <div className=" cursor-pointer flex flex-row h-10 w-full items-center gap-x-3 px-3 rounded-md"></div>
           </SheetClose>
         </SheetFooter>
       </SheetContent>

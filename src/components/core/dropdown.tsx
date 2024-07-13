@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { FaAngleDown, FaUser } from "react-icons/fa6";
 import Link from "next/link";
-import { SignedOut, SignInButton, SignedIn, UserButton } from "@clerk/nextjs";
 
 export function Dropdown() {
   return (
@@ -62,22 +61,8 @@ export function Dropdown() {
         </DropdownMenuGroup>
 
         <DropdownMenuSeparator />
-        {/* <div className="bg-purple-600 text-white hover:bg-purple-800 cursor-pointer flex flex-row h-10 w-full items-center gap-x-3 px-3 rounded-md">
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-        </div> */}
-        <div className=" cursor-pointer flex flex-row h-10 w-full items-center gap-x-3 px-3 rounded-md">
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-        </div>
+
+        <div className=" cursor-pointer flex flex-row h-10 w-full items-center gap-x-3 px-3 rounded-md"></div>
       </DropdownMenuContent>
     </DropdownMenu>
   );

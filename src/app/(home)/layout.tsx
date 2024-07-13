@@ -23,17 +23,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className}flex flex-col md:container`}>
-        <ClerkProvider>
-          <ContextProvider>
-            <TopAds />
-            <Separator />
-            <Separator />
-            <Navbar />
-            <Separator />
-            <div className=" w-full">{children}</div>
-            <Footer />
-          </ContextProvider>
-        </ClerkProvider>
+        <ContextProvider>
+          <TopAds />
+          <Separator />
+          <Separator />
+          <Navbar />
+          <Separator />
+          <div className=" w-full">{children}</div>
+          <Footer />
+        </ContextProvider>
       </body>
     </html>
   );
