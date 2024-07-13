@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  min-height: 25rem;
+}
+.isEmpty {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(216, 207, 207);
+  margin: 10px 0;
+  border-radius: 0.625rem;
+}
+
+.cart {
+  width: 30%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.125rem;
+  border: 0.3125rem;
+
+  p {
+    font-size: 1.075rem;
+  }
+  h4 {
+    font-size: 1.275rem;
+  }
+}
