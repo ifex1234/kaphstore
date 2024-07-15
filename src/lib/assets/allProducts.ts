@@ -1,4 +1,3 @@
-import www from "../../../public/images/categories/mobile/hero/1.jpg";
 import ima01 from "../../../public/images/categories/mobile/hero/1.jpg";
 import img1 from "../../../public/images/categories/mobile/hero/1 (1).jpg";
 import img2 from "../../../public/images/categories/mobile/hero/1 (2).jpg";
@@ -71,6 +70,39 @@ import image64 from "../../../public/images/categories/appliances/1 - 2024-07-14
 import image66 from "../../../public/images/categories/appliances/1 - 2024-07-14T013637.007.jpg";
 import image68 from "../../../public/images/categories/appliances/1 - 2024-07-14T013645.361.jpg";
 import image69 from "../../../public/images/categories/appliances/1 - 2024-07-14T013650.801.jpg";
+
+//fashion images
+import image70 from "../../../public/images/categories/fashion/1 (1).jpg";
+import image71 from "../../../public/images/categories/fashion/1 (2).jpg";
+import image72 from "../../../public/images/categories/fashion/1 (3).jpg";
+import image73 from "../../../public/images/categories/fashion/1 (4).jpg";
+import image74 from "../../../public/images/categories/fashion/1 (5).jpg";
+import image75 from "../../../public/images/categories/fashion/1 (6).jpg";
+import image76 from "../../../public/images/categories/fashion/1 (7).jpg";
+import image77 from "../../../public/images/categories/fashion/1 (8).jpg";
+import image78 from "../../../public/images/categories/fashion/1 (9).jpg";
+import image79 from "../../../public/images/categories/fashion/1 (10).jpg";
+import image80 from "../../../public/images/categories/fashion/1 (11).jpg";
+import image81 from "../../../public/images/categories/fashion/1 (12).jpg";
+import image82 from "../../../public/images/categories/fashion/1 (13).jpg";
+import image83 from "../../../public/images/categories/fashion/1 (14).jpg";
+import image84 from "../../../public/images/categories/fashion/1 (15).jpg";
+import image85 from "../../../public/images/categories/fashion/1 (16).jpg";
+import image86 from "../../../public/images/categories/fashion/1 (17).jpg";
+import image87 from "../../../public/images/categories/fashion/1 (18).jpg";
+import image88 from "../../../public/images/categories/fashion/1 (19).jpg";
+import image89 from "../../../public/images/categories/fashion/1 (20).jpg";
+import image90 from "../../../public/images/categories/fashion/1 (21).jpg";
+import image91 from "../../../public/images/categories/fashion/1 (22).jpg";
+import image92 from "../../../public/images/categories/fashion/1 (23).jpg";
+import image93 from "../../../public/images/categories/fashion/1 (24).jpg";
+import image94 from "../../../public/images/categories/fashion/1 (25).jpg";
+import image95 from "../../../public/images/categories/fashion/1 (26).jpg";
+import image96 from "../../../public/images/categories/fashion/1 (27).jpg";
+import image97 from "../../../public/images/categories/fashion/1 (28).jpg";
+import image98 from "../../../public/images/categories/fashion/1 (29).jpg";
+import image99 from "../../../public/images/categories/fashion/1 (30).jpg";
+import image100 from "../../../public/images/categories/fashion/1 (31).jpg";
 import { StaticImageData } from "next/image";
 
 type Props1 = {
@@ -80,6 +112,8 @@ type Props1 = {
   title: string;
   icon?: string;
   category: string;
+  old?: number;
+  percent?: number;
 }[];
 export const Products: Props1 = [
   {
@@ -588,5 +622,287 @@ export const Products: Props1 = [
     price: 41000,
     title: "Silver crest 6.5L air fryer",
     category: "appliances",
+  },
+  {
+    id: "355",
+    image: image70,
+    price: 6000,
+    title: "Cloudon men's 3D U-pouch, underwear boxers, breathable..",
+    category: "fashion",
+    old: 11000,
+    percent: 45,
+  },
+  {
+    id: "356",
+    image: image71,
+    price: 54999,
+    title: "High quality damarsk febrics 5 yards",
+    category: "fashion",
+    old: 89000,
+    percent: 38,
+  },
+  {
+    id: "356",
+    image: image72,
+    price: 11499,
+    title: "High quality Ankara fabrics 6yards",
+    category: "fashion",
+  },
+  {
+    id: "357",
+    image: image73,
+    price: 12999,
+    title: "Esgoal portable raincoat portable with hat",
+    category: "fashion",
+    old: 19999,
+    percent: 35,
+  },
+  {
+    id: "358",
+    image: image77,
+    price: 38321,
+    title: "ADDIDAS core sneakers advantage base",
+    category: "fashion",
+    old: 76642,
+    percent: 50,
+  },
+  {
+    id: "359",
+    image: image76,
+    price: 29238,
+    title: "ADDIDAS wildwalk sneakers",
+    category: "fashion",
+    old: 73096,
+    percent: 60,
+  },
+  {
+    id: "360",
+    image: image75,
+    price: 5990,
+    title: "Men shoes sneaker sport",
+    category: "fashion",
+    old: 9999,
+    percent: 40,
+  },
+  {
+    id: "361",
+    image: image74,
+    price: 12334,
+    title: "Binbon men's watch fashion",
+    category: "fashion",
+    old: 15195,
+    percent: 19,
+  },
+  {
+    id: "362",
+    image: image81,
+    price: 5945,
+    title: "High waisted abdomen thigh control shaping...",
+    category: "fashion",
+    old: 11890,
+    percent: 50,
+  },
+  {
+    id: "363",
+    image: image80,
+    price: 2500,
+    title: "PU fabric casual shoulder bag",
+    category: "fashion",
+    old: 8999,
+    percent: 72,
+  },
+  {
+    id: "364",
+    image: image79,
+    price: 11900,
+    title: "Men's sneakers lace up shoes",
+    category: "fashion",
+    old: 20000,
+    percent: 41,
+  },
+  {
+    id: "365",
+    image: image78,
+    price: 15000,
+    title: "Men's leather dress shoe-brown",
+    category: "fashion",
+    old: 21406,
+    percent: 26,
+  },
+  {
+    id: "366",
+    image: image85,
+    price: 6300,
+    title: "Cloudon men summer breathable boxers brief",
+    category: "fashion",
+    old: 9500,
+    percent: 34,
+  },
+  {
+    id: "367",
+    image: image84,
+    price: 61050,
+    title: "ADDIDAS court sleek shoe women",
+    category: "fashion",
+    old: 122100,
+    percent: 50,
+  },
+  {
+    id: "368",
+    image: image83,
+    price: 6500,
+    title: "Smart fashion breathable unisex",
+    category: "fashion",
+    old: 10000,
+    percent: 35,
+  },
+  {
+    id: "369",
+    image: image82,
+    price: 7500,
+    title: "Gatwiga 3 in 1 bag set",
+    category: "fashion",
+    old: 15900,
+    percent: 53,
+  },
+  {
+    id: "370",
+    image: image89,
+    price: 14900,
+    title: "Danami Los Angeles California printed hoodie",
+    category: "fashion",
+  },
+  {
+    id: "371",
+    image: image88,
+    price: 6500,
+    title: "El-vin red short",
+    category: "fashion",
+    old: 14900,
+    percent: 54,
+  },
+  {
+    id: "372",
+    image: image87,
+    price: 3990,
+    title: "Women bag, ladies bag, hand bag, tote bag",
+    category: "fashion",
+    old: 5990,
+    percent: 30,
+  },
+  {
+    id: "373",
+    image: image86,
+    price: 4939,
+    title: "Men wrist watch Quartz black",
+    category: "fashion",
+    old: 6069,
+    percent: 20,
+  },
+  {
+    id: "374",
+    image: image93,
+    price: 6991,
+    title: "4 pcs women bag, ladies bag, purse shoulder bag",
+    category: "fashion",
+    old: 11890,
+    percent: 31,
+  },
+  {
+    id: "375",
+    image: image92,
+    price: 8990,
+    title: "Women bags, ladies bag, hand bag",
+    category: "fashion",
+    old: 19990,
+    percent: 55,
+  },
+  {
+    id: "376",
+    image: image91,
+    price: 11500,
+    title: "Men non tarnish gold watch",
+    category: "fashion",
+  },
+  {
+    id: "377",
+    image: image90,
+    price: 11241,
+    title: "Men's casual plain trousers cotton-black",
+    category: "fashion",
+    old: 19770,
+    percent: 43,
+  },
+  {
+    id: "378",
+    image: image97,
+    price: 9900,
+    title: "Men's turtle neck formal long",
+    category: "fashion",
+    old: 12300,
+    percent: 20,
+  },
+  {
+    id: "379",
+    image: image96,
+    price: 888,
+    title: "Vintage geometry sequin",
+    category: "fashion",
+    old: 2500,
+    percent: 64,
+  },
+  {
+    id: "380",
+    image: image95,
+    price: 17200,
+    title: "Men oxford office loafers",
+    category: "fashion",
+    old: 18000,
+    percent: 4,
+  },
+  {
+    id: "381",
+    image: image94,
+    price: 19567,
+    title: "Men lightweight coat double",
+    category: "fashion",
+    old: 23832,
+    percent: 18,
+  },
+  {
+    id: "382",
+    image: image84,
+    price: 45985,
+    title: "ADDIDAS core sneakers advantage base",
+    category: "fashion",
+    old: 76644,
+    percent: 40,
+  },
+  {
+    id: "383",
+    image: image100,
+    price: 4950,
+    title: "2 in 1 female fashion watch",
+    category: "fashion",
+    old: 9400,
+    percent: 48,
+  },
+  {
+    id: "384",
+    image: image99,
+    price: 6750,
+    title: "Ladies corporate vavy blue gown",
+    category: "fashion",
+    old: 9500,
+    percent: 50,
+  },
+  {
+    id: "385",
+    image: image98,
+    price: 2580,
+    title: "Nejero female sleek lace lingerin suit",
+    category: "fashion",
+    old: 4800,
+    percent: 46,
   },
 ];

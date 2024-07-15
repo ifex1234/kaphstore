@@ -6,12 +6,15 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
+import { Button } from "../ui/button";
 type Props = {
   id: string;
   image: StaticImageData;
   title: string;
   price: number;
   icon?: string;
+  old?: number;
+  percent?: number;
 }[];
 type Prop = {
   arrayItem: Props;
@@ -20,9 +23,11 @@ type Prop = {
 const Categories: React.FC<Prop> = (ObjArr) => {
   const { arrayItem } = ObjArr;
   const pathName = usePathname();
-  const randomNumber = Math.floor(Math.random() * 10);
+  const handleClick = () => {
+    console.log("add to cart button clicked");
+  };
   return (
-    <div className=" container">
+    <div className=" lg:container">
       <div className={`${style.container}`}>
         {arrayItem.map((item) => (
           <Link href={`${pathName}/${item.id}`} key={item.id}>
@@ -31,16 +36,27 @@ const Categories: React.FC<Prop> = (ObjArr) => {
                 <Image src={item.image} alt={item.title} priority />
               </div>
               <p>{item.title}</p>
+              <p>{FormatCurrency(item.price)}</p>
               <p>
-                {FormatCurrency(item.price)} -{randomNumber}%
+                {" "}
+                <span className=" line-through mr-4">
+                  {FormatCurrency(item.old!)}
+                </span>
+                -{item.percent}%
               </p>
               <span className="flex flex-row justify-start w-20 items-center">
                 <BsStarFill color="purple" /> <BsStarFill color="purple" />
                 <BsStarFill color="purple" />
                 <BsStarFill color="purple" /> <BsStarHalf color="purple" /> (
-                {randomNumber})
+                {item.percent! * 25})
               </span>
               <p>{item.icon}</p>
+              <Button
+                className={` bg-purple-600 hover:bg-purple-700 ${style.btn}`}
+                onClick={handleClick}
+              >
+                Add to Cart
+              </Button>
             </div>
           </Link>
         ))}
