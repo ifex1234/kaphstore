@@ -1,0 +1,20 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  cart Cart[]
+}
+
+model Cart {
+  id        Int     @id @default(autoincrement())
+  product_name     String
+  product_price   Int?
+  product_quantity Int
+  author    User    @relation(fields: [authorId], references: [id])
+  authorId  Int
+}
