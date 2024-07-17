@@ -14,8 +14,10 @@ type Props = {
   price: number;
   icon?: string;
   old?: number;
+  category: string;
   percent?: number;
 }[];
+
 type Prop = {
   arrayItem: Props;
 };
@@ -40,9 +42,9 @@ const Categories: React.FC<Prop> = (ObjArr) => {
               <p>
                 {" "}
                 <span className=" line-through mr-4">
-                  {FormatCurrency(item.old!)}
+                  {FormatCurrency(item.old! ? item.old! : 0)}
                 </span>
-                -{item.percent}%
+                -{item.old ? ((item.price / item.old!) * 100).toFixed(0) : "-"}
               </p>
               <span className="flex flex-row justify-start w-20 items-center">
                 <BsStarFill color="purple" /> <BsStarFill color="purple" />

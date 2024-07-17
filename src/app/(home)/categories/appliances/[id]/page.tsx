@@ -1,7 +1,7 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities */
 import { FaTruck, FaUndo } from "react-icons/fa";
-import { Groceries } from "@/lib/assets/categories/supermaket";
+import { Products } from "@/lib/assets/allProducts";
 import {
   BsCartPlus,
   BsStarFill,
@@ -36,7 +36,7 @@ function Page({ params }: { params: { id: string } }) {
   const makeFavourite = () => {
     setfavourite((previous) => (previous = true));
   };
-  const selectedID = Groceries.find((label) => label.id === params.id);
+  const selectedID = Products.find((label) => label.id === params.id);
   return (
     <div className={`${style.container}`}>
       <div className={`${style.main}`}>

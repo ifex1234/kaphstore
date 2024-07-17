@@ -22,28 +22,6 @@ import img21 from "../../../public/images/categories/mobile/hero/1 (21).jpg";
 import img22 from "../../../public/images/categories/mobile/hero/1 (22).jpg";
 import ima23 from "../../../public/images/categories/mobile/hero/1 (23).jpg";
 import ima24 from "../../../public/images/categories/mobile/hero/1 (24).jpg";
-import image1 from "../../../public/images/categories/supermarket/2/1 (1).jpg";
-import image2 from "../../../public/images/categories/supermarket/2/1 (2).jpg";
-import image3 from "../../../public/images/categories/supermarket/2/1 (3).jpg";
-import image5 from "../../../public/images/categories/supermarket/2/1 (5).jpg";
-import image6 from "../../../public/images/categories/supermarket/2/1 (6).jpg";
-import image7 from "../../../public/images/categories/supermarket/2/1 (7).jpg";
-import image8 from "../../../public/images/categories/supermarket/2/1 (8).jpg";
-import image9 from "../../../public/images/categories/supermarket/2/1 (9).jpg";
-import image11 from "../../../public/images/categories/supermarket/2/1 (11).jpg";
-import image12 from "../../../public/images/categories/supermarket/2/1 (12).jpg";
-import image13 from "../../../public/images/categories/supermarket/2/1 (13).jpg";
-import image15 from "../../../public/images/categories/supermarket/2/1 (15).jpg";
-import image16 from "../../../public/images/categories/supermarket/2/1 (16).jpg";
-import image17 from "../../../public/images/categories/supermarket/2/1 (17).jpg";
-import image18 from "../../../public/images/categories/supermarket/2/1 (18).jpg";
-import image19 from "../../../public/images/categories/supermarket/2/1 (19).jpg";
-import image21 from "../../../public/images/categories/supermarket/2/1 (21).jpg";
-import image22 from "../../../public/images/categories/supermarket/2/1 (22).jpg";
-import image23 from "../../../public/images/categories/supermarket/2/1 (23).jpg";
-import image24 from "../../../public/images/categories/supermarket/2/1 (24).jpg";
-import image25 from "../../../public/images/categories/supermarket/2/1 (25).jpg";
-import image26 from "../../../public/images/categories/supermarket/2/1 (26).jpg";
 import image27 from "../../../public/images/categories/appliances/1 - 2024-07-14T013251.271.jpg";
 import image28 from "../../../public/images/categories/appliances/1 - 2024-07-14T013256.048.jpg";
 import image29 from "../../../public/images/categories/appliances/1 - 2024-07-14T013301.019.jpg";
@@ -103,6 +81,70 @@ import image97 from "../../../public/images/categories/fashion/1 (28).jpg";
 import image98 from "../../../public/images/categories/fashion/1 (29).jpg";
 import image99 from "../../../public/images/categories/fashion/1 (30).jpg";
 import image100 from "../../../public/images/categories/fashion/1 (31).jpg";
+
+// health & beauty
+import image101 from "../../../public/images/categories/health-beauty/1 (1).jpg";
+import image102 from "../../../public/images/categories/health-beauty/1 (2).jpg";
+import image103 from "../../../public/images/categories/health-beauty/1 (3).jpg";
+import image104 from "../../../public/images/categories/health-beauty/1 (4).jpg";
+import image105 from "../../../public/images/categories/health-beauty/1 (5).jpg";
+import image106 from "../../../public/images/categories/health-beauty/1 (6).jpg";
+import image107 from "../../../public/images/categories/health-beauty/1 (7).jpg";
+import image108 from "../../../public/images/categories/health-beauty/1 (8).jpg";
+import image109 from "../../../public/images/categories/health-beauty/1 (9).jpg";
+import image110 from "../../../public/images/categories/health-beauty/1 (10).jpg";
+import image111 from "../../../public/images/categories/health-beauty/1 (11).jpg";
+import image112 from "../../../public/images/categories/health-beauty/1 (12).jpg";
+import image113 from "../../../public/images/categories/health-beauty/1 (13).jpg";
+import image114 from "../../../public/images/categories/health-beauty/1 (14).jpg";
+import image115 from "../../../public/images/categories/health-beauty/1 (15).jpg";
+import image116 from "../../../public/images/categories/health-beauty/1 (16).jpg";
+import image117 from "../../../public/images/categories/health-beauty/1 (17).jpg";
+import image118 from "../../../public/images/categories/health-beauty/1 (18).jpg";
+import image119 from "../../../public/images/categories/health-beauty/1 (19).jpg";
+import image120 from "../../../public/images/categories/health-beauty/1 (20).jpg";
+import image121 from "../../../public/images/categories/health-beauty/1 (21).jpg";
+import image122 from "../../../public/images/categories/health-beauty/1 (22).jpg";
+import image123 from "../../../public/images/categories/health-beauty/1 (23).jpg";
+import image124 from "../../../public/images/categories/health-beauty/1 (24).jpg";
+import image126 from "../../../public/images/categories/health-beauty/1 (26).jpg";
+import image127 from "../../../public/images/categories/health-beauty/1 (27).jpg";
+import image128 from "../../../public/images/categories/health-beauty/1 (28).jpg";
+import image131 from "../../../public/images/categories/health-beauty/1 (31).jpg";
+
+// groceries
+import image200 from "../../../public/images/categories/supermarket/1 (33).jpg";
+import image201 from "../../../public/images/categories/supermarket/1 (34).jpg";
+import image202 from "../../../public/images/categories/supermarket/1 (35).jpg";
+import image203 from "../../../public/images/categories/supermarket/1 (36).jpg";
+import image204 from "../../../public/images/categories/supermarket/1 (37).jpg";
+import image205 from "../../../public/images/categories/supermarket/1 (38).jpg";
+import image206 from "../../../public/images/categories/supermarket/1 (39).jpg";
+import image207 from "../../../public/images/categories/supermarket/1 (40).jpg";
+import image208 from "../../../public/images/categories/supermarket/1 (41).jpg";
+import image209 from "../../../public/images/categories/supermarket/1 (42).jpg";
+import image210 from "../../../public/images/categories/supermarket/1 (43).jpg";
+import image211 from "../../../public/images/categories/supermarket/1 (44).jpg";
+import image212 from "../../../public/images/categories/supermarket/1 (45).jpg";
+import image213 from "../../../public/images/categories/supermarket/1 (46).jpg";
+import image214 from "../../../public/images/categories/supermarket/1 (47).jpg";
+import image215 from "../../../public/images/categories/supermarket/1 (48).jpg";
+import image216 from "../../../public/images/categories/supermarket/1 (49).jpg";
+import image217 from "../../../public/images/categories/supermarket/1 (50).jpg";
+import image218 from "../../../public/images/categories/supermarket/1 (51).jpg";
+import image219 from "../../../public/images/categories/supermarket/1 (52).jpg";
+import image220 from "../../../public/images/categories/supermarket/1 (53).jpg";
+import image221 from "../../../public/images/categories/supermarket/1 (54).jpg";
+import image222 from "../../../public/images/categories/supermarket/1 (55).jpg";
+import image223 from "../../../public/images/categories/supermarket/1 (56).jpg";
+import image224 from "../../../public/images/categories/supermarket/1 (57).jpg";
+import image225 from "../../../public/images/categories/supermarket/1 (58).jpg";
+import image226 from "../../../public/images/categories/supermarket/1 (59).jpg";
+import image227 from "../../../public/images/categories/supermarket/1 (60).jpg";
+import image228 from "../../../public/images/categories/supermarket/1 (61).jpg";
+import image229 from "../../../public/images/categories/supermarket/1 (62).jpg";
+import image230 from "../../../public/images/categories/supermarket/1 (63).jpg";
+import image231 from "../../../public/images/categories/supermarket/2.jpg";
 import { StaticImageData } from "next/image";
 
 type Props1 = {
@@ -116,163 +158,6 @@ type Props1 = {
   percent?: number;
 }[];
 export const Products: Props1 = [
-  {
-    title: " Nestle Maggie cube chicken",
-    price: 910,
-    id: "1",
-    image: image1,
-    category: "groceries",
-  },
-  {
-    title: " Hollandia Youghourt plain sweetened",
-    price: 8825,
-    id: "2",
-    image: image2,
-    category: "groceries",
-  },
-  {
-    title: "Good Mama diamond ",
-    price: 1020,
-    id: "3",
-    image: image3,
-    category: "groceries",
-  },
-  {
-    title: "Christmas Light String  ",
-    price: 5528,
-    id: "5",
-    image: image5,
-    category: "groceries",
-  },
-  {
-    title: " Nestle Maggie Maggies Chicken",
-    category: "groceries",
-    price: 900,
-    id: "6",
-    image: image6,
-  },
-
-  {
-    title: "Indomie Bellefull Pack 280g * 16 ",
-    price: 8750,
-    id: "7",
-    image: image7,
-    category: "groceries",
-  },
-  {
-    title: "Golden Penny Choco Spread ",
-    price: 4750,
-    id: "8",
-    image: image8,
-    category: "groceries",
-  },
-  {
-    title: "Harpic Toilet Cleaner ",
-    price: 1780,
-    id: "9",
-    image: image9,
-    category: "groceries",
-  },
-
-  {
-    title: "Airwick Aerosone Lavender ",
-    price: 2215,
-    id: "11",
-    image: image11,
-    category: "groceries",
-  },
-  {
-    title: "Milo Hot Chocolate Refill ",
-    price: 4020,
-    id: "12",
-    image: image12,
-    category: "groceries",
-  },
-  {
-    title: "Sprite Can 33cl * 24  ",
-    price: 5475,
-    id: "13",
-    image: image13,
-    category: "groceries",
-  },
-
-  {
-    title: "Fanta Drink 50cl Pet * 12",
-    price: 2585,
-    id: "15",
-    image: image15,
-    category: "groceries",
-  },
-  {
-    title: "Martell Cognag Blue Swift ",
-    price: 51535,
-    id: "16",
-    image: image16,
-    category: "groceries",
-  },
-  {
-    title: " Hollandia Evap Fullcream Milk",
-    price: 5070,
-    id: "17",
-    image: image17,
-    category: "groceries",
-  },
-  {
-    title: " Jik Bleach (Stain Remover)",
-    price: 3555,
-    id: "18",
-    image: image18,
-    category: "groceries",
-  },
-  {
-    title: "Dettol Antiseptic Liquid ",
-    price: 9040,
-    id: "19",
-    image: image19,
-    category: "groceries",
-  },
-  {
-    title: " Airwick Freshmatic Comp..",
-    price: 8455,
-    id: "21",
-    image: image21,
-    category: "groceries",
-  },
-  {
-    title: " Airwick Flubber Can",
-    price: 1010,
-    id: "22",
-    image: image22,
-    category: "groceries",
-  },
-  {
-    title: " Airwick Aerosol Lavender",
-    price: 2215,
-    id: "25",
-    image: image25,
-    category: "groceries",
-  },
-  {
-    title: " Airwick Drummer Gel Airfreshner",
-    price: 4350,
-    id: "23",
-    image: image23,
-    category: "groceries",
-  },
-  {
-    title: " Harpic Toilet Cleaner",
-    price: 5285,
-    id: "24",
-    image: image24,
-    category: "groceries",
-  },
-  {
-    title: " Sun Plast Laundry Basket",
-    price: 5000,
-    id: "4",
-    image: image26,
-    category: "groceries",
-  },
   {
     id: "501",
     image: ima01,
@@ -904,5 +789,463 @@ export const Products: Props1 = [
     category: "fashion",
     old: 4800,
     percent: 46,
+  },
+  {
+    id: "400",
+    image: image101,
+    price: 4800,
+    title: "10 pcs bamboo soft fibre toothbrush",
+    category: "health-beauty",
+    old: 9990,
+  },
+  {
+    id: "401",
+    image: image102,
+    price: 4440,
+    title: "Nail art crystal extension",
+    category: "health-beauty",
+    old: 8800,
+  },
+  {
+    id: "402",
+    image: image103,
+    price: 28500,
+    title: "Neolife chewable all-c",
+    category: "health-beauty",
+    old: 35000,
+  },
+  {
+    id: "403",
+    image: image104,
+    price: 5573,
+    title: "USB finishing touch epilator painless..",
+    category: "health-beauty",
+    old: 11417,
+  },
+  {
+    id: "405",
+    image: image108,
+    price: 4590,
+    title: "Nivea deep anti-pespirant roll on -for men (pack of 3)",
+    category: "health-beauty",
+    old: 5400,
+  },
+  {
+    id: "406",
+    image: image107,
+    price: 2699,
+    title: "Roushun vit c serum",
+    category: "health-beauty",
+    old: 5000,
+  },
+  {
+    id: "407",
+    image: image106,
+    price: 8670,
+    title: "Nivea radiant and even beauty glow",
+    category: "health-beauty",
+    old: 10200,
+  },
+  {
+    id: "408",
+    image: image105,
+    price: 4320,
+    title: "Nivea pearl and beauty anti-perspirant roll-on for women",
+    category: "health-beauty",
+    old: 5400,
+  },
+  {
+    id: "409",
+    image: image109,
+    price: 3129,
+    title: "White-hot jewelry glass diamond nail sticker",
+    category: "health-beauty",
+    old: 6250,
+  },
+  {
+    id: "410",
+    image: image110,
+    price: 7050,
+    title: "Nivea pearl and beauty anti-perspirant roll-on for women",
+    category: "health-beauty",
+    old: 9400,
+  },
+  {
+    id: "411",
+    image: image111,
+    price: 9815,
+    title: "Nivea doShakara pack(Nourishing cocoa body lotion)",
+    category: "health-beauty",
+    old: 11500,
+  },
+  {
+    id: "412",
+    image: image112,
+    price: 5050,
+    title: "Dragon monster rechargeable iron clipper",
+    category: "health-beauty",
+    old: 7900,
+  },
+  {
+    id: "413",
+    image: image113,
+    price: 6615,
+    title: "Nivea perfert & radiant micelar water for women",
+    category: "health-beauty",
+    old: 7000,
+  },
+  {
+    id: "414",
+    image: image114,
+    price: 1050,
+    title: "Close-up anti bacteria zinc triple action",
+    category: "health-beauty",
+  },
+  {
+    id: "415",
+    image: image115,
+    price: 7520,
+    title: "Nivea dry comfort anti perspirant spray for women",
+    category: "health-beauty",
+    old: 9400,
+  },
+  {
+    id: "416",
+    image: image116,
+    price: 4230,
+    title: "Nivea dry impact anti pesrpirant spray for men",
+    category: "health-beauty",
+    old: 4700,
+  },
+  {
+    id: "417",
+    image: image117,
+    price: 4474,
+    title: "Biore UV aqua rich water essence sunscreen for women",
+    category: "health-beauty",
+    old: 8600,
+  },
+  {
+    id: "418",
+    image: image118,
+    price: 640,
+    title: "Dettol skincare blossom bathing soap",
+    category: "health-beauty",
+    old: 915,
+  },
+  {
+    id: "419",
+    image: image119,
+    price: 19200,
+    title: "Keddy cody active for longevity and vitality(60 capsule)",
+    category: "health-beauty",
+    old: 22100,
+  },
+  {
+    id: "420",
+    image: image120,
+    price: 35180,
+    title: "Oraimo smart clipper2 super powerful professional ...",
+    category: "health-beauty",
+    old: 36215,
+  },
+  {
+    id: "421",
+    image: image121,
+    price: 9760,
+    title: "Rexona men v8 72h",
+    category: "health-beauty",
+  },
+  {
+    id: "422",
+    image: image122,
+    price: 5355,
+    title: "Axe excit crisp coconut and pepper scent",
+    category: "health-beauty",
+  },
+  {
+    id: "423",
+    image: image123,
+    price: 999,
+    title: "Micolo fit me primer brightner",
+    category: "health-beauty",
+    old: 5400,
+  },
+  {
+    id: "424",
+    image: image124,
+    price: 4590,
+    title: "Mini neck massager for neck, back shoulder",
+    category: "health-beauty",
+    old: 5400,
+  },
+  {
+    id: "425",
+    image: image126,
+    price: 9760,
+    title: "Rexona women invisivle 72h",
+    category: "health-beauty",
+  },
+  {
+    id: "426",
+    image: image127,
+    price: 6725,
+    title: "Dove men body spray extra fresh",
+    category: "health-beauty",
+  },
+  {
+    id: "427",
+    image: image128,
+    price: 36429,
+    title: "Oraimo smartclipper2 self sharpening blade ",
+    category: "health-beauty",
+    old: 37580,
+  },
+  {
+    id: "428",
+    image: image131,
+    price: 19990,
+    title: "Oraimo multifunctional smart trimmer with 4 guided combs",
+    category: "health-beauty",
+    old: 41500,
+  },
+  {
+    id: "500",
+    image: image200,
+    price: 22500,
+    title: "Neolife light duty cleaner",
+    category: "groceries",
+    old: 25500,
+  },
+  {
+    id: "501",
+    image: image201,
+    price: 7729,
+    title: "Sweet lips natural sweet wine 75cl",
+    category: "groceries",
+  },
+  {
+    id: "502",
+    image: image202,
+    price: 10000,
+    title: "Martini brut 75cl",
+    category: "groceries",
+    old: 15300,
+  },
+  {
+    id: "503",
+    image: image203,
+    price: 11700,
+    title: "Martini extra dry vermouth 100cl",
+    category: "groceries",
+  },
+  {
+    id: "504",
+    image: image204,
+    price: 1580,
+    title: "Nescafe 3 in 1 breakfast coffee 25g x 10",
+    category: "groceries",
+    old: 1760,
+  },
+  {
+    id: "505",
+    image: image205,
+    price: 8720,
+    title: "Smirnoof intense chocolate flavoured vodka 750ml",
+    category: "groceries",
+  },
+  {
+    id: "506",
+    image: image206,
+    price: 8500,
+    title: "Pepsi pet 50cl  x 12",
+    category: "groceries",
+  },
+  {
+    id: "507",
+    image: image207,
+    price: 9760,
+    title: "Gordon pink berry 750ml",
+    category: "groceries",
+  },
+  {
+    id: "508",
+    image: image208,
+    price: 10000,
+    title: "Martini rose 75cl",
+    category: "groceries",
+    old: 15330,
+  },
+  {
+    id: "509",
+    image: image209,
+    price: 4100,
+    title: "Good mama floral detergent 1700g",
+    category: "groceries",
+  },
+  {
+    id: "510",
+    image: image210,
+    price: 1105,
+    title: "Nestle maggie star seasoning cube",
+    category: "groceries",
+    old: 1230,
+  },
+  {
+    id: "511",
+    image: image211,
+    price: 16580,
+    title: "Johnie walker red label 75cl",
+    category: "groceries",
+  },
+  {
+    id: "512",
+    image: image212,
+    price: 14000,
+    title: "Smirnoff ice can 330ml x 24",
+    category: "groceries",
+    old: 16000,
+  },
+  {
+    id: "513",
+    image: image213,
+    price: 21000,
+    title: "Bacardi 8 year rum 75cl",
+    category: "groceries",
+    old: 28500,
+  },
+  {
+    id: "514",
+    image: image214,
+    price: 9760,
+    title: "Gordon sunset orange 750ml",
+    category: "groceries",
+  },
+  {
+    id: "515",
+    image: image215,
+    price: 8500,
+    title: "7up pet 50cl x 12",
+    category: "groceries",
+  },
+
+  {
+    id: "516",
+    image: image216,
+    price: 19990,
+    title: "Origin bitters 20cl x 24",
+    category: "groceries",
+    old: 41500,
+  },
+  {
+    id: "517",
+    image: image217,
+    price: 10000,
+    title: "Bacardi carta blanca white rum 75cl",
+    category: "groceries",
+    old: 16130,
+  },
+  {
+    id: "518",
+    image: image218,
+    price: 9840,
+    title: "Captain morgan spiced gold rum 75cl",
+    category: "groceries",
+  },
+  {
+    id: "519",
+    image: image219,
+    price: 2975,
+    title: "Jik bleach stain removal and germ killer(pack of 3)",
+    category: "groceries",
+    old: 4570,
+  },
+  {
+    id: "520",
+    image: image220,
+    price: 9860,
+    title: "Gordon's moringa citrus blend 75cl",
+    category: "groceries",
+  },
+  {
+    id: "521",
+    image: image221,
+    price: 52390,
+    title: "Singleton of dufftown 20 year old 75cl",
+    category: "groceries",
+  },
+  {
+    id: "522",
+    image: image222,
+    price: 10000,
+    title: "Bacardi spiced rum",
+    category: "groceries",
+    old: 14140,
+  },
+  {
+    id: "523",
+    image: image223,
+    price: 7090,
+    title: "Don royal dry gin 70cl",
+    category: "groceries",
+  },
+  {
+    id: "524",
+    image: image224,
+    price: 4580,
+    title: "Fanta drink 50cl pet x12",
+    category: "groceries",
+  },
+  {
+    id: "525",
+    image: image225,
+    price: 1550,
+    title: "Cway drinking water 75cl x12",
+    category: "groceries",
+    old: 2550,
+  },
+  {
+    id: "526",
+    image: image226,
+    price: 2880,
+    title: "Nestle golden morn grainsmart",
+    category: "groceries",
+    old: 3200,
+  },
+  {
+    id: "527",
+    image: image227,
+    price: 8300,
+    title: "Indomie regular chicken flavour 70g x40",
+    category: "groceries",
+  },
+  {
+    id: "528",
+    image: image228,
+    price: 20000,
+    title: "Guiness foreign extra stout can",
+    category: "groceries",
+  },
+  {
+    id: "529",
+    image: image229,
+    price: 9100,
+    title: "Indomie onion chicken 70g x40",
+    category: "groceries",
+  },
+  {
+    id: "530",
+    image: image230,
+    price: 1550,
+    title: "Cway 150cl x6",
+    category: "groceries",
+    old: 2550,
+  },
+  {
+    id: "531",
+    image: image231,
+    price: 329,
+    title: "Good mama floral 170g",
+    category: "groceries",
   },
 ];
