@@ -33,7 +33,7 @@ import FormatCurrency from "@/lib/services/FormatCurrency";
 
 function Page({ params }: { params: { id: string } }) {
   const [favourite, setfavourite] = useState(false);
-  const groceries = Products.slice(110);
+  const groceries = Products.slice(110, 142);
   const dispatch = useDispatch();
   const makeFavourite = () => {
     setfavourite((previous) => (previous = true));

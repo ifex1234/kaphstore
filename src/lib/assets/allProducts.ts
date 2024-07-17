@@ -22,32 +22,33 @@ import img21 from "../../../public/images/categories/mobile/hero/1 (21).jpg";
 import img22 from "../../../public/images/categories/mobile/hero/1 (22).jpg";
 import ima23 from "../../../public/images/categories/mobile/hero/1 (23).jpg";
 import ima24 from "../../../public/images/categories/mobile/hero/1 (24).jpg";
-import image27 from "../../../public/images/categories/appliances/1 - 2024-07-14T013251.271.jpg";
-import image28 from "../../../public/images/categories/appliances/1 - 2024-07-14T013256.048.jpg";
-import image29 from "../../../public/images/categories/appliances/1 - 2024-07-14T013301.019.jpg";
-import image30 from "../../../public/images/categories/appliances/1 - 2024-07-14T013305.645.jpg";
-import image34 from "../../../public/images/categories/appliances/1 - 2024-07-14T013334.351.jpg";
-import image35 from "../../../public/images/categories/appliances/1 - 2024-07-14T013338.974.jpg";
-import image36 from "../../../public/images/categories/appliances/1 - 2024-07-14T013343.241.jpg";
-import image37 from "../../../public/images/categories/appliances/1 - 2024-07-14T013353.780.jpg";
-import image40 from "../../../public/images/categories/appliances/1 - 2024-07-14T013402.695.jpg";
-import image41 from "../../../public/images/categories/appliances/1 - 2024-07-14T013407.085.jpg";
-import image42 from "../../../public/images/categories/appliances/1 - 2024-07-14T013415.187.jpg";
-import image43 from "../../../public/images/categories/appliances/1 - 2024-07-14T013419.508.jpg";
-import image44 from "../../../public/images/categories/appliances/1 - 2024-07-14T013423.592.jpg";
-import image47 from "../../../public/images/categories/appliances/1 - 2024-07-14T013436.747.jpg";
-import image48 from "../../../public/images/categories/appliances/1 - 2024-07-14T013441.765.jpg";
-import image52 from "../../../public/images/categories/appliances/1 - 2024-07-14T013520.805.jpg";
-import image54 from "../../../public/images/categories/appliances/1 - 2024-07-14T013534.220.jpg";
-import image56 from "../../../public/images/categories/appliances/1 - 2024-07-14T013542.920.jpg";
-import image58 from "../../../public/images/categories/appliances/1 - 2024-07-14T013555.363.jpg";
-import image60 from "../../../public/images/categories/appliances/1 - 2024-07-14T013605.659.jpg";
-import image61 from "../../../public/images/categories/appliances/1 - 2024-07-14T013612.393.jpg";
-import image62 from "../../../public/images/categories/appliances/1 - 2024-07-14T013616.706.jpg";
-import image64 from "../../../public/images/categories/appliances/1 - 2024-07-14T013624.816.jpg";
-import image66 from "../../../public/images/categories/appliances/1 - 2024-07-14T013637.007.jpg";
-import image68 from "../../../public/images/categories/appliances/1 - 2024-07-14T013645.361.jpg";
-import image69 from "../../../public/images/categories/appliances/1 - 2024-07-14T013650.801.jpg";
+
+// Appliance
+import image27 from "../../../public/images/categories/appliances/1 (1).jpg";
+import image28 from "../../../public/images/categories/appliances/1 (2).jpg";
+import image30 from "../../../public/images/categories/appliances/1 (4).jpg";
+import image34 from "../../../public/images/categories/appliances/1 (5).jpg";
+import image35 from "../../../public/images/categories/appliances/1 (6).jpg";
+import image36 from "../../../public/images/categories/appliances/1 (7).jpg";
+import image37 from "../../../public/images/categories/appliances/1 (8).jpg";
+import image40 from "../../../public/images/categories/appliances/1 (9).jpg";
+import image41 from "../../../public/images/categories/appliances/1 (10).jpg";
+import image42 from "../../../public/images/categories/appliances/1 (11).jpg";
+import image43 from "../../../public/images/categories/appliances/1 (12).jpg";
+import image44 from "../../../public/images/categories/appliances/1 (13).jpg";
+import image47 from "../../../public/images/categories/appliances/1 (14).jpg";
+import image48 from "../../../public/images/categories/appliances/1 (15).jpg";
+import image52 from "../../../public/images/categories/appliances/1 (16).jpg";
+import image54 from "../../../public/images/categories/appliances/1 (17).jpg";
+import image56 from "../../../public/images/categories/appliances/1 (18).jpg";
+import image58 from "../../../public/images/categories/appliances/1 (19).jpg";
+import image60 from "../../../public/images/categories/appliances/1 (20).jpg";
+import image61 from "../../../public/images/categories/appliances/1 (21).jpg";
+import image62 from "../../../public/images/categories/appliances/1 (22).jpg";
+import image64 from "../../../public/images/categories/appliances/1 (23).jpg";
+import image66 from "../../../public/images/categories/appliances/1 (24).jpg";
+import image68 from "../../../public/images/categories/appliances/1 (25).jpg";
+import image69 from "../../../public/images/categories/appliances/1 (26).jpg";
 
 //fashion images
 import image70 from "../../../public/images/categories/fashion/1 (1).jpg";
@@ -359,34 +360,29 @@ export const Products: Props1 = [
   {
     id: "231",
     image: image27,
-    price: 29900,
-    title: "Nexus 18' standing fan ",
+    price: 6500,
+    title: "Boscon 2L electric kettle ",
     category: "appliances",
+    old: 16500,
   },
   {
     id: "232",
     image: image28,
-    price: 25000,
-    title: "Binatone high quality pressing iron ",
+    price: 64470,
+    title: "Hisense 20L microwave ",
     category: "appliances",
-  },
-  {
-    id: "233",
-    image: image29,
-    price: 30900,
-    title: "Binatone high quality industrial blender ",
-    category: "appliances",
+    old: 69470,
   },
   {
     id: "234",
-    image: image30,
-    price: 130900,
+    image: image34,
+    price: 109900,
     title: "Nexus chest freezer",
     category: "appliances",
   },
   {
     id: "236",
-    image: image34,
+    image: image30,
     price: 115200,
     title: "Pinnacle washing machine",
     category: "appliances",
@@ -394,150 +390,172 @@ export const Products: Props1 = [
   {
     id: "237",
     image: image35,
-    price: 55500,
-    title: "Nexus modern electric and gas cooker",
+    price: 335500,
+    title: "Nexus 1HP split air conditional",
     category: "appliances",
   },
   {
     id: "238",
     image: image36,
-    price: 51500,
-    title: "Hisense microwave",
+    price: 39891,
+    title: "Lontor 12 inches rechargeable fan + solar",
     category: "appliances",
+    old: 42500,
   },
   {
     id: "239",
     image: image37,
-    price: 71500,
-    title: "Nexus washing machine",
+    price: 335500,
+    title: "Nexus 1HP split air conditional",
     category: "appliances",
   },
   {
     id: "240",
     image: image40,
     price: 25500,
-    title: "Binatone 22' standing fan",
+    title: "Lontor 12 inches rechargeable table fan",
     category: "appliances",
   },
   {
     id: "241",
     image: image41,
-    price: 65500,
-    title: "Hisense 21lit washing machine",
+    price: 370000,
+    title: "Haier thermocool 185L double door refrigerator",
     category: "appliances",
+    old: 375000,
   },
   {
     id: "242",
     image: image42,
-    price: 25500,
-    title: "Synix quick rice cooker",
+    price: 191000,
+    title: "Haier thermocool 93L single door refrigerator",
     category: "appliances",
+    old: 201000,
   },
   {
     id: "243",
-    image: image43,
-    price: 24000,
-    title: "Dirafil solar/electric powered standing fan",
+    image: image313,
+    price: 370000,
+    title: "Haier thermocool 18l double door refrigerator",
     category: "appliances",
+    old: 375000,
   },
   {
     id: "244",
-    image: image44,
-    price: 124000,
-    title: "Nexus super cool power efficient air conditional",
+    image: image314,
+    price: 39891,
+    title: "Lontor 12 inch rechargeable table fan",
     category: "appliances",
+    old: 42500,
   },
   {
     id: "245",
-    image: image47,
-    price: 134000,
-    title: "haeir thermocool energy efficient air conditional",
+    image: image315,
+    price: 2914,
+    title: "Water filter purifyer- 6 layer filtering adjustable universal",
     category: "appliances",
+    old: 3417,
   },
   {
     id: "246",
-    image: image48,
-    price: 234800,
-    title: "haeir thermocool high quality double deck refrigerator",
+    image: image316,
+    price: 191053,
+    title: "Haier thermocool 93liter single door refrigerator",
     category: "appliances",
+    old: 201053,
   },
   {
     id: "247",
-    image: image52,
-    price: 204800,
-    title: "haeir thermocool high quality single deck refrigerator",
+    image: image317,
+    price: 240000,
+    title: "Aeon 200L chest freezer",
     category: "appliances",
+    old: 250000,
   },
   {
     id: "248",
-    image: image54,
-    price: 184000,
-    title: "Skyrun high quality single deck refrigerator",
+    image: image318,
+    price: 355158,
+    title: "4Haier thermocool 200L chest freezer",
     category: "appliances",
   },
   {
     id: "249",
-    image: image56,
-    price: 24000,
-    title: "Lontor rechargeable table fan",
+    image: image319,
+    price: 249990,
+    title: "Skyrun 138L double door mount refrigerator",
     category: "appliances",
+    old: 290535,
   },
   {
     id: "250",
-    image: image58,
-    price: 34000,
-    title: "Synix 22' standing fan",
+    image: image310,
+    price: 74998,
+    title: "Duravolt 16 inches 3 in 1 rechargeable fan + solar",
     category: "appliances",
+    old: 99900,
   },
   {
     id: "251",
-    image: image60,
-    price: 134000,
-    title: "Haier Thermocool 200l deep freezer",
+    image: image311,
+    price: 335500,
+    title: "Nexus 1.5HP split air conditional",
     category: "appliances",
   },
   {
     id: "252",
-    image: image61,
-    price: 34000,
-    title: "Itel high quality blender",
-    category: "appliances",
-  },
-  {
-    id: "252",
-    image: image62,
-    price: 35500,
-    title: "Itel high quality 10l electric jug",
+    image: image320,
+    price: 135000,
+    title: "Aeon 50 x 50 4 burner gas cooker",
     category: "appliances",
   },
   {
     id: "253",
-    image: image64,
-    price: 35500,
-    title: "Nexus 22' standing fan",
+    image: image321,
+    price: 270632,
+    title: "Haier thermocool 10.2kg top loader semi automatic washing..",
     category: "appliances",
   },
   {
     id: "254",
-    image: image66,
-    price: 65500,
-    title: "Binatone indusrial blender",
+    image: image322,
+    price: 339474,
+    title: "Haier thermocool 192L single door refrigerator",
     category: "appliances",
   },
   {
     id: "255",
-    image: image68,
-    price: 35500,
-    title: "Itel rechargeable standing fan",
+    image: image323,
+    price: 1575,
+    title: "Wind gel summer breeze 150g x2",
     category: "appliances",
+    old: 2057,
   },
   {
-    id: "255",
-    image: image69,
-    price: 41000,
-    title: "Silver crest 6.5L air fryer",
+    id: "256",
+    image: image324,
+    price: 79545,
+    title: "Glamstar 18 inches rechargeable standing fan",
     category: "appliances",
+    old: 65000,
   },
+  {
+    id: "257",
+    image: image325,
+    price: 20875,
+    title: "OX spacetek 18 inches standing fan",
+    category: "appliances",
+    old: 25000,
+  },
+  {
+    id: "259",
+    image: image327,
+    price: 25500,
+    title: "Silvercrest 2L German industrial food crusher blender",
+    category: "appliances",
+    old: 35500,
+  },
+
   {
     id: "355",
     image: image70,

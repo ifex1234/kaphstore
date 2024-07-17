@@ -29,14 +29,16 @@ import Link from "next/link";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart, removeFromCart } from "@/lib/services/Slice";
+import FormatCurrency from "@/lib/services/FormatCurrency";
 
 function Page({ params }: { params: { id: string } }) {
   const [favourite, setfavourite] = useState(false);
+  const appliances = Products.slice(24, 50);
   const dispatch = useDispatch();
   const makeFavourite = () => {
     setfavourite((previous) => (previous = true));
   };
-  const selectedID = Products.find((label) => label.id === params.id);
+  const selectedID = appliances.find((label) => label.id === params.id);
   return (
     <div className={`${style.container}`}>
       <div className={`${style.main}`}>
@@ -63,7 +65,7 @@ function Page({ params }: { params: { id: string } }) {
           </span>
           <Separator className="bg-slate-400 my-2" />
           <div className={`${style.price}`}>
-            <p>N{selectedID?.price}</p>
+            <p>{FormatCurrency(selectedID?.price!)}</p>
             <p>Few units left</p>
             <p>shipping from 500 to Agege</p>
             <p>Product rating</p>
