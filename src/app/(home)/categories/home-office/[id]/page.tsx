@@ -1,7 +1,6 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities */
 import { FaTruck, FaUndo } from "react-icons/fa";
-import { Groceries } from "@/lib/assets/categories/supermaket";
 import {
   BsCartPlus,
   BsStarFill,
@@ -29,14 +28,16 @@ import Link from "next/link";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart, removeFromCart } from "@/lib/services/Slice";
+import { Products } from "@/lib/assets/allProducts";
 
 function Page({ params }: { params: { id: string } }) {
   const [favourite, setfavourite] = useState(false);
   const dispatch = useDispatch();
+  const home = Products.slice(142, 170);
   const makeFavourite = () => {
     setfavourite((previous) => (previous = true));
   };
-  const selectedID = Groceries.find((label) => label.id === params.id);
+  const selectedID = home.find((label) => label.id === params.id);
   return (
     <div className={`${style.container}`}>
       <div className={`${style.main}`}>

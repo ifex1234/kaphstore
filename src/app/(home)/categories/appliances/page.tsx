@@ -3,10 +3,10 @@ import { Products } from "@/lib/assets/allProducts";
 import React from "react";
 
 export default function Page() {
-  const fashion = Products.slice(0, 13);
+  const appliances = Products.slice(169);
   return (
     <div className=" md:container">
-      <Categories arrayItem={fashion} />
+      <Categories arrayItem={appliances} />
     </div>
   );
 }

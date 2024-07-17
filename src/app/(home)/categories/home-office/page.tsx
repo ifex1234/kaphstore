@@ -1,11 +1,12 @@
 import Categories from "@/components/core/Categories";
-import { Groceries } from "@/lib/assets/categories/supermaket";
+import { Products } from "@/lib/assets/allProducts";
 import React from "react";
 
 export default function Page() {
+  const home = Products.slice(142, 170);
   return (
     <div className=" md:container">
-      <Categories arrayItem={Groceries} />
+      <Categories arrayItem={home} />
     </div>
   );
 }

@@ -145,6 +145,36 @@ import image228 from "../../../public/images/categories/supermarket/1 (61).jpg";
 import image229 from "../../../public/images/categories/supermarket/1 (62).jpg";
 import image230 from "../../../public/images/categories/supermarket/1 (63).jpg";
 import image231 from "../../../public/images/categories/supermarket/2.jpg";
+
+//home & office
+import image300 from "../../../public/images/categories/home-office/1 (30).jpg";
+import image301 from "../../../public/images/categories/home-office/1 (31).jpg";
+import image302 from "../../../public/images/categories/home-office/1 (32).jpg";
+import image303 from "../../../public/images/categories/home-office/1 (33).jpg";
+import image304 from "../../../public/images/categories/home-office/1 (34).jpg";
+import image305 from "../../../public/images/categories/home-office/1 (35).jpg";
+import image306 from "../../../public/images/categories/home-office/1 (36).jpg";
+import image307 from "../../../public/images/categories/home-office/1 (37).jpg";
+import image308 from "../../../public/images/categories/home-office/1 (38).jpg";
+import image309 from "../../../public/images/categories/home-office/1 (39).jpg";
+import image310 from "../../../public/images/categories/home-office/1 (40).jpg";
+import image311 from "../../../public/images/categories/home-office/1 (41).jpg";
+import image312 from "../../../public/images/categories/home-office/1 (42).jpg";
+import image313 from "../../../public/images/categories/home-office/1 (43).jpg";
+import image314 from "../../../public/images/categories/home-office/1 (44).jpg";
+import image315 from "../../../public/images/categories/home-office/1 (45).jpg";
+import image316 from "../../../public/images/categories/home-office/1 (46).jpg";
+import image317 from "../../../public/images/categories/home-office/1 (47).jpg";
+import image318 from "../../../public/images/categories/home-office/1 (48).jpg";
+import image319 from "../../../public/images/categories/home-office/1 (49).jpg";
+import image320 from "../../../public/images/categories/home-office/1 (50).jpg";
+import image321 from "../../../public/images/categories/home-office/1 (51).jpg";
+import image322 from "../../../public/images/categories/home-office/1 (52).jpg";
+import image323 from "../../../public/images/categories/home-office/1 (53).jpg";
+import image324 from "../../../public/images/categories/home-office/1 (54).jpg";
+import image325 from "../../../public/images/categories/home-office/1 (55).jpg";
+import image326 from "../../../public/images/categories/home-office/1 (56).jpg";
+import image327 from "../../../public/images/categories/home-office/1 (57).jpg";
 import { StaticImageData } from "next/image";
 
 type Props1 = {
@@ -1247,5 +1277,221 @@ export const Products: Props1 = [
     price: 329,
     title: "Good mama floral 170g",
     category: "groceries",
+  },
+  {
+    id: "600",
+    image: image300,
+    price: 103509,
+    title: "Sunking home 200x plus solar light system-yellow",
+    category: "home-office",
+    old: 111300,
+  },
+  {
+    id: "601",
+    image: image301,
+    price: 7300,
+    title: "4pcs of sofa throw pillow case-18 inches",
+    category: "home-office",
+    old: 14602,
+  },
+  {
+    id: "602",
+    image: image302,
+    price: 6080,
+    title: "LED human body induction night lamp wall lamp",
+    category: "home-office",
+    old: 12160,
+  },
+  {
+    id: "603",
+    image: image303,
+    price: 6500,
+    title: "Bocson 2litre electric kettle",
+    category: "home-office",
+    old: 16500,
+  },
+  {
+    id: "604",
+    image: image304,
+    price: 64470,
+    title: "Hisense 20litre microwave",
+    category: "home-office",
+    old: 69470,
+  },
+  {
+    id: "605",
+    image: image305,
+    price: 3590,
+    title: "DIY wall clock 3d mirror",
+    category: "home-office",
+    old: 7100,
+  },
+  {
+    id: "606",
+    image: image306,
+    price: 106842,
+    title: "Pinnacle 5.5 kg twin tub washing machine",
+    category: "home-office",
+  },
+  {
+    id: "607",
+    image: image307,
+    price: 109900,
+    title: "Nexus 45liter bedside fridge- silver",
+    category: "home-office",
+  },
+  {
+    id: "608",
+    image: image308,
+    price: 6999,
+    title: "Large cotton bath towel- green",
+    category: "home-office",
+    old: 15000,
+  },
+  {
+    id: "609",
+    image: image309,
+    price: 315500,
+    title: "Nexus 1hp split air conditional",
+    category: "home-office",
+  },
+  {
+    id: "610",
+    image: image312,
+    price: 44999,
+    title: "Industrial wastbin black 240liter",
+    category: "home-office",
+    old: 76700,
+  },
+  {
+    id: "611",
+    image: image313,
+    price: 370000,
+    title: "Haier thermocool 18l double door refrigerator",
+    category: "home-office",
+    old: 375000,
+  },
+  {
+    id: "612",
+    image: image314,
+    price: 39891,
+    title: "Lontor 12 inch rechargeable table fan",
+    category: "home-office",
+    old: 42500,
+  },
+  {
+    id: "613",
+    image: image315,
+    price: 2914,
+    title: "Water filter purifyer- 6 layer filtering adjustable universal",
+    category: "home-office",
+    old: 3417,
+  },
+  {
+    id: "614",
+    image: image316,
+    price: 191053,
+    title: "Haier thermocool 93liter single door refrigerator",
+    category: "home-office",
+    old: 201053,
+  },
+  {
+    id: "615",
+    image: image317,
+    price: 240000,
+    title: "Aeon 200L chest freezer",
+    category: "home-office",
+    old: 250000,
+  },
+  {
+    id: "616",
+    image: image318,
+    price: 355158,
+    title: "4Haier thermocool 200L chest freezer",
+    category: "home-office",
+  },
+  {
+    id: "617",
+    image: image319,
+    price: 249990,
+    title: "Skyrun 138L double door mount refrigerator",
+    category: "home-office",
+    old: 290535,
+  },
+  {
+    id: "618",
+    image: image310,
+    price: 74998,
+    title: "Duravolt 16 inches 3 in 1 rechargeable fan + solar",
+    category: "home-office",
+    old: 99900,
+  },
+  {
+    id: "619",
+    image: image311,
+    price: 335500,
+    title: "Nexus 1.5HP split air conditional",
+    category: "home-office",
+  },
+  {
+    id: "620",
+    image: image320,
+    price: 135000,
+    title: "Aeon 50 x 50 4 burner gas cooker",
+    category: "home-office",
+  },
+  {
+    id: "621",
+    image: image321,
+    price: 270632,
+    title: "Haier thermocool 10.2kg top loader semi automatic washing..",
+    category: "home-office",
+  },
+  {
+    id: "622",
+    image: image322,
+    price: 339474,
+    title: "Haier thermocool 192L single door refrigerator",
+    category: "home-office",
+  },
+  {
+    id: "623",
+    image: image323,
+    price: 1575,
+    title: "Wind gel summer breeze 150g x2",
+    category: "home-office",
+    old: 2057,
+  },
+  {
+    id: "624",
+    image: image324,
+    price: 79545,
+    title: "Glamstar 18 inches rechargeable standing fan",
+    category: "home-office",
+    old: 65000,
+  },
+  {
+    id: "625",
+    image: image325,
+    price: 20875,
+    title: "OX spacetek 18 inches standing fan",
+    category: "home-office",
+    old: 25000,
+  },
+  {
+    id: "626",
+    image: image326,
+    price: 44900,
+    title: "Industrial wastebin 240L -green",
+    category: "home-office",
+    old: 62199,
+  },
+  {
+    id: "627",
+    image: image327,
+    price: 25500,
+    title: "Silvercrest 2L German industrial food crusher blender",
+    category: "home-office",
+    old: 35500,
   },
 ];
