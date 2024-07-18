@@ -1,7 +1,6 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities */
 import { FaTruck, FaUndo } from "react-icons/fa";
-import { Groceries } from "@/lib/assets/categories/supermaket";
 import {
   BsCartPlus,
   BsStarFill,
@@ -28,7 +27,10 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+const computing = Products.slice(193, 211);
 import { addToCart, removeFromCart } from "@/lib/services/Slice";
+import { Products } from "@/lib/assets/allProducts";
+import FormatCurrency from "@/lib/services/FormatCurrency";
 
 function Page({ params }: { params: { id: string } }) {
   const [favourite, setfavourite] = useState(false);
@@ -36,7 +38,7 @@ function Page({ params }: { params: { id: string } }) {
   const makeFavourite = () => {
     setfavourite((previous) => (previous = true));
   };
-  const selectedID = Groceries.find((label) => label.id === params.id);
+  const selectedID = computing.find((label) => label.id === params.id);
   return (
     <div className={`${style.container}`}>
       <div className={`${style.main}`}>
@@ -57,7 +59,7 @@ function Page({ params }: { params: { id: string } }) {
           </span>
           <Separator className="bg-slate-400 my-2" />
           <div className={`${style.price}`}>
-            <p>N{selectedID?.price}</p>
+            <p>{FormatCurrency(selectedID?.price!)}</p>
             <p>Few units left</p>
             <p>shipping from 500 to Agege</p>
             <p>Product rating</p>

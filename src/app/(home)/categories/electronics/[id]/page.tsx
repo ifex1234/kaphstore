@@ -1,7 +1,6 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities */
 import { FaTruck, FaUndo } from "react-icons/fa";
-import { Groceries } from "@/lib/assets/categories/supermaket";
 import {
   BsCartPlus,
   BsStarFill,
@@ -29,14 +28,17 @@ import Link from "next/link";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart, removeFromCart } from "@/lib/services/Slice";
+import { Products } from "@/lib/assets/allProducts";
+import FormatCurrency from "@/lib/services/FormatCurrency";
 
 function Page({ params }: { params: { id: string } }) {
   const [favourite, setfavourite] = useState(false);
+  const electronics = Products.slice(170, 193);
   const dispatch = useDispatch();
   const makeFavourite = () => {
     setfavourite((previous) => (previous = true));
   };
-  const selectedID = Groceries.find((label) => label.id === params.id);
+  const selectedID = electronics.find((label) => label.id === params.id);
   return (
     <div className={`${style.container}`}>
       <div className={`${style.main}`}>
@@ -57,7 +59,7 @@ function Page({ params }: { params: { id: string } }) {
           </span>
           <Separator className="bg-slate-400 my-2" />
           <div className={`${style.price}`}>
-            <p>N{selectedID?.price}</p>
+            <p>{FormatCurrency(selectedID?.price!)}</p>
             <p>Few units left</p>
             <p>shipping from 500 to Agege</p>
             <p>Product rating</p>
@@ -95,52 +97,7 @@ function Page({ params }: { params: { id: string } }) {
         <Separator className="bg-black my-2" />
         <p>Free delivery on thousands of products in Lagos only</p>
         <Link href="">Details</Link>
-        <Separator className="bg-black my-2" />
-        <h2 className="my-3 font-semibold">Choose your Location</h2>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button
-              className="flex flex-row gap-x-2 border-none ring-0  bg-inherit justify-between"
-              variant="outline"
-            >
-              Choose Location <FaAngleDown />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuLabel>Location</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuGroup className=" bg-purple-600 text-white z-20">
-              <Link
-                className=" hover:bg-slate-300 cursor-pointer flex flex-row h-10 w-full items-center gap-x-0 px-3 rounded-md"
-                href="/profile"
-              >
-                <LuUser className="mr-2 h-4 w-4" />
-                <span>Profile</span>
-              </Link>
 
-              <DropdownMenuItem className="cursor-pointer hover:bg-slate-300 flex flex-row h-10 w-full items-center gap-x-0 px-3 rounded-md">
-                <LuSettings className="mr-2 h-4 w-4" />
-                <span>Settings</span>
-              </DropdownMenuItem>
-
-              <Link
-                className=" hover:bg-slate-300 cursor-pointer flex flex-row h-10 w-full items-center gap-x-0 px-3 rounded-md"
-                href="/orders"
-              >
-                <LuBook className="mr-2 h-4 w-4" />
-                <span>My orders</span>
-              </Link>
-
-              <Link
-                className=" hover:bg-slate-300 cursor-pointer flex flex-row h-10 w-full items-center gap-x-0 px-3 rounded-md"
-                href="/favourites"
-              >
-                <LuHeart className="mr-2 h-4 w-4" />
-                <span>Favorites</span>
-              </Link>
-            </DropdownMenuGroup>
-          </DropdownMenuContent>
-        </DropdownMenu>
         <Separator className="bg-black my-2" />
         <div className={`${style.deliveries}`}>
           <div>image</div>

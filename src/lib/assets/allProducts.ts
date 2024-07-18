@@ -1,28 +1,3 @@
-import ima01 from "../../../public/images/categories/mobile/hero/1.jpg";
-import img1 from "../../../public/images/categories/mobile/hero/1 (1).jpg";
-import img2 from "../../../public/images/categories/mobile/hero/1 (2).jpg";
-import img3 from "../../../public/images/categories/mobile/hero/1 (3).jpg";
-import img4 from "../../../public/images/categories/mobile/hero/1 (4).jpg";
-import img5 from "../../../public/images/categories/mobile/hero/1 (5).jpg";
-import img6 from "../../../public/images/categories/mobile/hero/1 (6).jpg";
-import img7 from "../../../public/images/categories/mobile/hero/1 (7).jpg";
-import img8 from "../../../public/images/categories/mobile/hero/1 (8).jpg";
-import img9 from "../../../public/images/categories/mobile/hero/1 (9).jpg";
-import img11 from "../../../public/images/categories/mobile/hero/1 (11).jpg";
-import img12 from "../../../public/images/categories/mobile/hero/1 (12).jpg";
-import img13 from "../../../public/images/categories/mobile/hero/1 (13).jpg";
-import img14 from "../../../public/images/categories/mobile/hero/1 (14).jpg";
-import img15 from "../../../public/images/categories/mobile/hero/1 (15).jpg";
-import img16 from "../../../public/images/categories/mobile/hero/1 (16).jpg";
-import img17 from "../../../public/images/categories/mobile/hero/1 (17).jpg";
-import img18 from "../../../public/images/categories/mobile/hero/1 (18).jpg";
-import img19 from "../../../public/images/categories/mobile/hero/1 (19).jpg";
-import img20 from "../../../public/images/categories/mobile/hero/1 (20).jpg";
-import img21 from "../../../public/images/categories/mobile/hero/1 (21).jpg";
-import img22 from "../../../public/images/categories/mobile/hero/1 (22).jpg";
-import ima23 from "../../../public/images/categories/mobile/hero/1 (23).jpg";
-import ima24 from "../../../public/images/categories/mobile/hero/1 (24).jpg";
-
 // Appliance
 import image27 from "../../../public/images/categories/appliances/1 (1).jpg";
 import image28 from "../../../public/images/categories/appliances/1 (2).jpg";
@@ -34,21 +9,6 @@ import image37 from "../../../public/images/categories/appliances/1 (8).jpg";
 import image40 from "../../../public/images/categories/appliances/1 (9).jpg";
 import image41 from "../../../public/images/categories/appliances/1 (10).jpg";
 import image42 from "../../../public/images/categories/appliances/1 (11).jpg";
-import image43 from "../../../public/images/categories/appliances/1 (12).jpg";
-import image44 from "../../../public/images/categories/appliances/1 (13).jpg";
-import image47 from "../../../public/images/categories/appliances/1 (14).jpg";
-import image48 from "../../../public/images/categories/appliances/1 (15).jpg";
-import image52 from "../../../public/images/categories/appliances/1 (16).jpg";
-import image54 from "../../../public/images/categories/appliances/1 (17).jpg";
-import image56 from "../../../public/images/categories/appliances/1 (18).jpg";
-import image58 from "../../../public/images/categories/appliances/1 (19).jpg";
-import image60 from "../../../public/images/categories/appliances/1 (20).jpg";
-import image61 from "../../../public/images/categories/appliances/1 (21).jpg";
-import image62 from "../../../public/images/categories/appliances/1 (22).jpg";
-import image64 from "../../../public/images/categories/appliances/1 (23).jpg";
-import image66 from "../../../public/images/categories/appliances/1 (24).jpg";
-import image68 from "../../../public/images/categories/appliances/1 (25).jpg";
-import image69 from "../../../public/images/categories/appliances/1 (26).jpg";
 
 //fashion images
 import image70 from "../../../public/images/categories/fashion/1 (1).jpg";
@@ -202,6 +162,51 @@ import image440 from "../../../public/images/categories/electronics/1 (75).jpg";
 import image442 from "../../../public/images/categories/electronics/1 (77).jpg";
 import image445 from "../../../public/images/categories/electronics/1 (80).jpg";
 
+//mobile
+import image501 from "../../../public/images/categories/mobile/1 (28).jpg";
+import image502 from "../../../public/images/categories/mobile/1 (29).jpg";
+import image503 from "../../../public/images/categories/mobile/1 (30).jpg";
+import image504 from "../../../public/images/categories/mobile/1 (31).jpg";
+import image505 from "../../../public/images/categories/mobile/1 (32).jpg";
+import image506 from "../../../public/images/categories/mobile/1 (33).jpg";
+import image507 from "../../../public/images/categories/mobile/1 (34).jpg";
+import image508 from "../../../public/images/categories/mobile/1 (35).jpg";
+import image509 from "../../../public/images/categories/mobile/1 (36).jpg";
+import image510 from "../../../public/images/categories/mobile/1 (37).jpg";
+import image511 from "../../../public/images/categories/mobile/1 (39).jpg";
+import image512 from "../../../public/images/categories/mobile/1 (40).jpg";
+import image513 from "../../../public/images/categories/mobile/1 (41).jpg";
+import image514 from "../../../public/images/categories/mobile/1 (42).jpg";
+import image515 from "../../../public/images/categories/mobile/1 (43).jpg";
+import image516 from "../../../public/images/categories/mobile/1 (44).jpg";
+import image517 from "../../../public/images/categories/mobile/1 (45).jpg";
+import image518 from "../../../public/images/categories/mobile/1 (46).jpg";
+import image519 from "../../../public/images/categories/mobile/1 (47).jpg";
+import image520 from "../../../public/images/categories/mobile/1 (48).jpg";
+import image521 from "../../../public/images/categories/mobile/1 (49).jpg";
+import image522 from "../../../public/images/categories/mobile/1 (50).jpg";
+import image523 from "../../../public/images/categories/mobile/1 (51).jpg";
+import image524 from "../../../public/images/categories/mobile/1 (52).jpg";
+
+// Computing
+import image600 from "../../../public/images/categories/computing/1 (1).jpg";
+import image601 from "../../../public/images/categories/computing/1 (2).jpg";
+import image602 from "../../../public/images/categories/computing/1 (3).jpg";
+import image603 from "../../../public/images/categories/computing/1 (4).jpg";
+import image604 from "../../../public/images/categories/computing/1 (5).jpg";
+import image605 from "../../../public/images/categories/computing/1 (6).jpg";
+import image606 from "../../../public/images/categories/computing/1 (7).jpg";
+import image607 from "../../../public/images/categories/computing/1 (8).jpg";
+import image608 from "../../../public/images/categories/computing/1 (9).jpg";
+import image609 from "../../../public/images/categories/computing/1 (10).jpg";
+import image611 from "../../../public/images/categories/computing/1 (12).jpg";
+import image612 from "../../../public/images/categories/computing/1 (13).jpg";
+import image613 from "../../../public/images/categories/computing/1 (14).jpg";
+import image614 from "../../../public/images/categories/computing/1 (15).jpg";
+import image615 from "../../../public/images/categories/computing/1 (16).jpg";
+import image616 from "../../../public/images/categories/computing/1 (17).jpg";
+import image620 from "../../../public/images/categories/computing/1 (21).jpg";
+import image623 from "../../../public/images/categories/computing/1 (24).jpg";
 import { StaticImageData } from "next/image";
 
 type Props1 = {
@@ -217,171 +222,194 @@ type Props1 = {
 export const Products: Props1 = [
   {
     id: "501",
-    image: ima01,
-    price: 122500,
-    title: "Infinix Smart 8 6.6",
+    image: image501,
+    price: 13500,
+    title: "LASA tripod stand for phone and camera",
     category: "mobile-tablets",
+    old: 19750,
   },
   {
     id: "502",
-    image: img1,
-    price: 116000,
-    title: "Infinix Smart 8 6.6",
+    image: image502,
+    price: 5900,
+    title: "10 LED ring light make up selfie night light",
     category: "mobile-tablets",
+    old: 13900,
   },
   {
     id: "503",
-    image: img2,
-    price: 109500,
-    title: "Infinix Smart 8 6.6",
+    image: image503,
+    price: 10500,
+    title: "2.2 inches full touch screen smart watch",
     category: "mobile-tablets",
+    old: 18000,
   },
   {
     id: "504",
-    image: img3,
-    price: 182065,
-    title: "XIAOMI Redmi 12 6.79",
+    image: image504,
+    price: 4680,
+    title: "Bluetooth headset touch sensor headphone",
     category: "mobile-tablets",
+    old: 9500,
   },
   {
     id: "505",
-    image: img4,
-    price: 220000,
-    title: "itel S23 6.6",
+    image: image505,
+    price: 18900,
+    title: "Oraimo freepod lite 40 hrs playtime wireless earbuds",
     category: "mobile-tablets",
+    old: 30000,
   },
   {
     id: "506",
-    image: img5,
-    price: 96700,
-    title: "Tecno POP 7 6.6",
+    image: image506,
+    price: 4900,
+    title: "Phone cooler with game finger sleeves",
     category: "mobile-tablets",
+    old: 6500,
   },
   {
     id: "507",
-    image: img6,
-    price: 120415,
-    title: "Tecno Pop 8,6.6",
+    image: image507,
+    price: 3999,
+    title: "Guixai in-ear wireless bluetooth headset",
     category: "mobile-tablets",
+    old: 7400,
   },
   {
     id: "508",
-    image: img7,
-    price: 149795,
-    title: "Tecno Spark 20 (KJ5) 6.6",
+    image: image508,
+    price: 17500,
+    title: "Oraimo type-c power bank fast charging..",
     category: "mobile-tablets",
+    old: 40000,
   },
   {
     id: "509",
-    image: img8,
-    price: 452888,
-    title: "Iphone 12",
+    image: image509,
+    price: 4900,
+    title: "Wireless fingerprint touch bluetooth headphones",
     category: "mobile-tablets",
+    old: 7000,
   },
   {
     id: "510",
-    image: img9,
-    price: 524112,
-    title: "Iphone 13",
+    image: image510,
+    price: 11400,
+    title: "T344 smart watch door access smartphone",
     category: "mobile-tablets",
+    old: 17000,
   },
   {
     id: "511",
-    image: img11,
-    price: 115365,
-    title: "Tecno POP 8 (BG6) 6.6",
+    image: image511,
+    price: 11005,
+    title: "Itel 2163 wireless fm torch light dual sim FM",
     category: "mobile-tablets",
+    old: 15000,
   },
   {
     id: "512",
-    image: img12,
-    price: 98870,
-    title: "Tecno POP 8 (BG6) 6.6",
+    image: image512,
+    price: 20000,
+    title: "Oraimo freepods lite 40 hours wireless earbuds",
     category: "mobile-tablets",
+    old: 40000,
   },
   {
     id: "513",
-    image: img13,
-    price: 135000,
-    title: "itel S23 6.6",
+    image: image513,
+    price: 4900,
+    title: "Wireless bluetooth headphone for IOS and Android",
     category: "mobile-tablets",
+    old: 7000,
   },
   {
     id: "514",
-    image: img14,
-    price: 16990,
-    title: "itel 20000mAh Dual Outp… ",
+    image: image514,
+    price: 3990,
+    title: "Wireless bluetooth headphone pink ",
     category: "mobile-tablets",
+    old: 5999,
   },
   {
     id: "515",
-    image: img15,
+    image: image515,
     price: 16000,
-    title: "itel 20000mAh Mobile Po… ",
+    title: "Oraimo 20000mAh Mobile Po… ",
     category: "mobile-tablets",
+    old: 26000,
   },
   {
     id: "516",
-    image: img16,
-    title: "itel S23 6.6' 8GB RAM/25…",
-    price: 135000,
+    image: image516,
+    title: "13 inches ring light + 310 cm tripod with bluetooth remote",
+    price: 12900,
     category: "mobile-tablets",
+    old: 20000,
   },
   {
     id: "517",
-    image: img17,
-    title: "itel TWS BudsAce Calls In…",
-    price: 22000,
+    image: image517,
+    title: "Oraimo freepods 3c ENC calling noise cancellation wireless",
+    price: 36600,
     category: "mobile-tablets",
+    old: 77000,
   },
   {
     id: "518",
-    image: img18,
-    price: 13800,
-    title: "itel 10000mAh Fast Charg…",
+    image: image518,
+    price: 5900,
+    title: "Sport smart watch 1.3 inches waterproof ",
     category: "mobile-tablets",
+    old: 7900,
   },
   {
     id: "519",
-    image: img19,
-    price: 34210,
-    title: "Colmi P28 Plus 1.69'' TFT Full-touch Screen Smart Watch",
+    image: image519,
+    price: 45900,
+    title: "Oraimo boompop over ear bluetooth wireless earphone",
     category: "mobile-tablets",
+    old: 72000,
   },
   {
     id: "520",
-    image: img20,
-    price: 29800,
-    title: "Oraimo Watch 2 GPS Function Football Heatmap Smart Watch… ",
+    image: image520,
+    price: 45900,
+    title: "Oraimo Rock long playtime 2-mic ENC true wireless earphone",
     category: "mobile-tablets",
+    old: 72000,
   },
   {
     id: "521",
-    image: img21,
-    price: 6699,
-    title: "Rechargeable Led Selfie Loop Fill Light For Makeup/vlog",
+    image: image521,
+    price: 13999,
+    title: "Oraimo 10000mah 22.5W slid powerbank",
     category: "mobile-tablets",
+    old: 39000,
   },
   {
     id: "522",
-    image: img22,
-    price: 3999,
-    title: "Wireless Bluetooth Sports Earphones With Mic For All Phone ₦ ",
+    image: image522,
+    price: 225600,
+    title: "Samsung galaxy A15 6.6' 6GB RAM/128 ROM Android 14",
     category: "mobile-tablets",
+    old: 420000,
   },
   {
     id: "523",
-    image: ima23,
-    price: 14540,
-    title: "Nokia 110 Africa Edition Dual SIM Wireless FM, Torch, Camera Phone",
+    image: image523,
+    price: 2990,
+    title: "10 pcs anti sweat mobile game controller",
     category: "mobile-tablets",
   },
   {
     id: "524",
-    image: ima24,
-    price: 2999,
-    title: "Phone Tripod Moblie Phone Clip Bracket Monopod Stand ",
+    image: image524,
+    price: 168000,
+    title: "Itel S24 6.6' 8GB RAM/128GB ROM ",
     category: "mobile-tablets",
+    old: 256000,
   },
   {
     id: "231",
@@ -1543,7 +1571,7 @@ export const Products: Props1 = [
     image: image420,
     price: 73500,
     title: "Zealot s27 60W wireless bluetooth speaker",
-    category: "home-office",
+    category: "electronics",
     old: 155500,
   },
   {
@@ -1551,7 +1579,7 @@ export const Products: Props1 = [
     image: image421,
     price: 201000,
     title: "Hiker 42 inches Android smart TV",
-    category: "home-office",
+    category: "electronics",
     old: 251000,
   },
   {
@@ -1559,7 +1587,7 @@ export const Products: Props1 = [
     image: image422,
     price: 63800,
     title: "Telan Bolan Long sound bar bluetooth speaker",
-    category: "home-office",
+    category: "electronics",
     old: 85500,
   },
   {
@@ -1567,7 +1595,7 @@ export const Products: Props1 = [
     image: image423,
     price: 39100,
     title: "Nexus 55 inches frameless UHD Android TV",
-    category: "home-office",
+    category: "electronics",
     old: 401000,
   },
   {
@@ -1575,7 +1603,7 @@ export const Products: Props1 = [
     image: image424,
     price: 72800,
     title: "Sinecraft Tedbar home theatre bluetooth with woofer",
-    category: "home-office",
+    category: "electronics",
     old: 100000,
   },
   {
@@ -1583,7 +1611,7 @@ export const Products: Props1 = [
     image: image425,
     price: 154900,
     title: "Infinity 32 inches smart Android TV",
-    category: "home-office",
+    category: "electronics",
     old: 185500,
   },
   {
@@ -1591,14 +1619,14 @@ export const Products: Props1 = [
     image: image426,
     price: 82400,
     title: "Newcastle new extra sound bass with display",
-    category: "home-office",
+    category: "electronics",
   },
   {
     id: "707",
     image: image427,
     price: 290500,
     title: "F&D T50X-pro tower bluetooth speaker",
-    category: "home-office",
+    category: "electronics",
     old: 333000,
   },
   {
@@ -1606,7 +1634,7 @@ export const Products: Props1 = [
     image: image428,
     price: 272000,
     title: "F&D T40 tower bluetooth speaker",
-    category: "home-office",
+    category: "electronics",
     old: 300000,
   },
   {
@@ -1614,7 +1642,7 @@ export const Products: Props1 = [
     image: image429,
     price: 172000,
     title: "F&D HTT3 soundbar + subwoofer",
-    category: "home-office",
+    category: "electronics",
     old: 195500,
   },
   {
@@ -1622,7 +1650,7 @@ export const Products: Props1 = [
     image: image430,
     price: 82000,
     title: "Itel 32 inches LED TV",
-    category: "home-office",
+    category: "electronics",
     old: 92500,
   },
   {
@@ -1630,7 +1658,7 @@ export const Products: Props1 = [
     image: image431,
     price: 170000,
     title: "Royal 43 inches LED TV",
-    category: "home-office",
+    category: "electronics",
     old: 180000,
   },
   {
@@ -1638,7 +1666,7 @@ export const Products: Props1 = [
     image: image432,
     price: 161000,
     title: "Hiker 43 inches frameless UHD LED TV",
-    category: "home-office",
+    category: "electronics",
     old: 234000,
   },
   {
@@ -1646,7 +1674,7 @@ export const Products: Props1 = [
     image: image433,
     price: 90900,
     title: "Hikers 32 inches LED TV",
-    category: "home-office",
+    category: "electronics",
     old: 165500,
   },
   {
@@ -1654,7 +1682,7 @@ export const Products: Props1 = [
     image: image434,
     price: 5800,
     title: "DVD/Decoder wall shelf cabinet",
-    category: "home-office",
+    category: "electronics",
     old: 9100,
   },
   {
@@ -1662,7 +1690,7 @@ export const Products: Props1 = [
     image: image435,
     price: 147000,
     title: "TUTU 32 inches smart LED TV",
-    category: "home-office",
+    category: "electronics",
     old: 157000,
   },
   {
@@ -1670,7 +1698,7 @@ export const Products: Props1 = [
     image: image436,
     price: 4900,
     title: "Wireless earpod headfone bluetooth earpiece",
-    category: "home-office",
+    category: "electronics",
     old: 5400,
   },
   {
@@ -1678,7 +1706,7 @@ export const Products: Props1 = [
     image: image437,
     price: 219000,
     title: "Amani 42 inches 4k UHD smart TV",
-    category: "home-office",
+    category: "electronics",
     old: 250500,
   },
   {
@@ -1686,7 +1714,7 @@ export const Products: Props1 = [
     image: image438,
     price: 432000,
     title: "Hisense 50 inches smart HD TV",
-    category: "home-office",
+    category: "electronics",
     old: 435000,
   },
   {
@@ -1694,7 +1722,7 @@ export const Products: Props1 = [
     image: image439,
     price: 10800,
     title: "Power strip 6 AC socket + 3 type C USB port",
-    category: "home-office",
+    category: "electronics",
     old: 31600,
   },
   {
@@ -1702,7 +1730,7 @@ export const Products: Props1 = [
     image: image440,
     price: 395500,
     title: "Samsonic 55 inches smart UHD TV",
-    category: "home-office",
+    category: "electronics",
     old: 545500,
   },
   {
@@ -1710,7 +1738,7 @@ export const Products: Props1 = [
     image: image442,
     price: 55500,
     title: "Weyon 5.1 inches bluetooth speaker",
-    category: "home-office",
+    category: "electronics",
     old: 95500,
   },
   {
@@ -1718,7 +1746,151 @@ export const Products: Props1 = [
     image: image445,
     price: 4900,
     title: "TV guard voltage protection",
-    category: "home-office",
+    category: "electronics",
     old: 19000,
+  },
+  {
+    id: "800",
+    image: image600,
+    price: 210000,
+    title: "HP probook 11 512 SSD/4GB Ram",
+    category: "computing",
+    old: 350000,
+  },
+  {
+    id: "801",
+    image: image601,
+    price: 3100,
+    title: "10 steps laptop stand",
+    category: "computing",
+    old: 5200,
+  },
+  {
+    id: "802",
+    image: image602,
+    price: 3400,
+    title: "10 speed adjustable laptop stand + phone stand",
+    category: "computing",
+    old: 4700,
+  },
+  {
+    id: "803",
+    image: image603,
+    price: 95000,
+    title: "Bluetooth keyboard for microsof surface pro/pro X",
+    category: "computing",
+    old: 146000,
+  },
+  {
+    id: "804",
+    image: image604,
+    price: 2800,
+    title: "10 step laptop stand",
+    category: "computing",
+    old: 5900,
+  },
+  {
+    id: "805",
+    image: image605,
+    price: 3800,
+    title: "2.5g wireless mouse ultra thin",
+    category: "computing",
+    old: 6200,
+  },
+  {
+    id: "806",
+    image: image606,
+    price: 19500,
+    title: "Portable rechargeable muli purpose printer",
+    category: "computing",
+    old: 39000,
+  },
+  {
+    id: "807",
+    image: image607,
+    price: 7200,
+    title: "Eaget pen flash drive OTG micro USD",
+    category: "computing",
+    old: 8300,
+  },
+  {
+    id: "808",
+    image: image608,
+    price: 320000,
+    title: "AOEWELL Laptop Windows 11 intel celeron 6GB/320 GB",
+    category: "computing",
+    old: 550000,
+  },
+  {
+    id: "809",
+    image: image609,
+    price: 4900,
+    title: "Wireless rechargeable mouse 2.4g",
+    category: "computing",
+    old: 7500,
+  },
+  {
+    id: "810",
+    image: image611,
+    price: 4800,
+    title: "LED rechargeable wireless mouse",
+    category: "computing",
+    old: 5900,
+  },
+  {
+    id: "811",
+    image: image612,
+    price: 7100,
+    title: "Hylyst OTG 128GB UBS drive",
+    category: "computing",
+    old: 10400,
+  },
+  {
+    id: "812",
+    image: image613,
+    price: 6900,
+    title: "128gb metal USB flash drive",
+    category: "computing",
+    old: 9400,
+  },
+  {
+    id: "813",
+    image: image614,
+    price: 4800,
+    title: "LED wireless mouse slim",
+    category: "computing",
+    old: 6200,
+  },
+  {
+    id: "814",
+    image: image615,
+    price: 2900,
+    title: "Plastic foldable adjustable stand for laptop",
+    category: "computing",
+    old: 5000,
+  },
+  {
+    id: "815",
+    image: image616,
+    price: 9200,
+    title: "T-wolf thunder wireless charging mouse",
+    category: "computing",
+    old: 15500,
+  },
+  {
+    id: "816",
+    image: image620,
+    price: 12900,
+    title: "MC laptop stand with cooling fan",
+    category: "computing",
+    old: 16700,
+  },
+  {
+    id: "817",
+    image: image623,
+    price: 13000,
+    title: "10' wireless bluetooth keyboard ultaslim LED",
+    category: "computing",
+    old: 24000,
   },
 ];
