@@ -29,3 +29,30 @@
     font-size: 1.275rem;
   }
 }
+
+.notEmpty {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 6.25rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  background-color: red;
+}
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.625rem;
+  width: 100%;
+  background-color: azure;
+}
+.calc {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+}

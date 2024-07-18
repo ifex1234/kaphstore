@@ -33,6 +33,7 @@ import FormatCurrency from "@/lib/services/FormatCurrency";
 
 function Page({ params }: { params: { id: string } }) {
   const [favourite, setfavourite] = useState(false);
+  const delFee = Math.round(Math.random() * 1000);
   const appliances = Products.slice(24, 50);
   const dispatch = useDispatch();
   const makeFavourite = () => {
@@ -67,7 +68,7 @@ function Page({ params }: { params: { id: string } }) {
           <div className={`${style.price}`}>
             <p>{FormatCurrency(selectedID?.price!)}</p>
             <p>Few units left</p>
-            <p>shipping from 500 to Agege</p>
+            <p>shipping from {delFee} to Lagos</p>
             <p>Product rating</p>
             <span className="flex flex-row justify-start w-20">
               <BsStarFill color="purple" /> <BsStarFill color="purple" />
@@ -103,52 +104,7 @@ function Page({ params }: { params: { id: string } }) {
         <Separator className="bg-black my-2" />
         <p>Free delivery on thousands of products in Lagos only</p>
         <Link href="">Details</Link>
-        <Separator className="bg-black my-2" />
-        <h2 className="my-3 font-semibold">Choose your Location</h2>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button
-              className="flex flex-row gap-x-2 border-none ring-0  bg-inherit justify-between"
-              variant="outline"
-            >
-              Choose Location <FaAngleDown />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuLabel>Location</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuGroup className=" bg-purple-600 text-white z-20">
-              <Link
-                className=" hover:bg-slate-300 cursor-pointer flex flex-row h-10 w-full items-center gap-x-0 px-3 rounded-md"
-                href="/profile"
-              >
-                <LuUser className="mr-2 h-4 w-4" />
-                <span>Profile</span>
-              </Link>
 
-              <DropdownMenuItem className="cursor-pointer hover:bg-slate-300 flex flex-row h-10 w-full items-center gap-x-0 px-3 rounded-md">
-                <LuSettings className="mr-2 h-4 w-4" />
-                <span>Settings</span>
-              </DropdownMenuItem>
-
-              <Link
-                className=" hover:bg-slate-300 cursor-pointer flex flex-row h-10 w-full items-center gap-x-0 px-3 rounded-md"
-                href="/orders"
-              >
-                <LuBook className="mr-2 h-4 w-4" />
-                <span>My orders</span>
-              </Link>
-
-              <Link
-                className=" hover:bg-slate-300 cursor-pointer flex flex-row h-10 w-full items-center gap-x-0 px-3 rounded-md"
-                href="/favourites"
-              >
-                <LuHeart className="mr-2 h-4 w-4" />
-                <span>Favorites</span>
-              </Link>
-            </DropdownMenuGroup>
-          </DropdownMenuContent>
-        </DropdownMenu>
         <Separator className="bg-black my-2" />
         <div className={`${style.deliveries}`}>
           <div>image</div>

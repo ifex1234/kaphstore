@@ -176,6 +176,32 @@ import image324 from "../../../public/images/categories/home-office/1 (54).jpg";
 import image325 from "../../../public/images/categories/home-office/1 (55).jpg";
 import image326 from "../../../public/images/categories/home-office/1 (56).jpg";
 import image327 from "../../../public/images/categories/home-office/1 (57).jpg";
+
+// electronics
+import image420 from "../../../public/images/categories/electronics/1 (55).jpg";
+import image421 from "../../../public/images/categories/electronics/1 (56).jpg";
+import image422 from "../../../public/images/categories/electronics/1 (57).jpg";
+import image423 from "../../../public/images/categories/electronics/1 (58).jpg";
+import image424 from "../../../public/images/categories/electronics/1 (59).jpg";
+import image425 from "../../../public/images/categories/electronics/1 (60).jpg";
+import image426 from "../../../public/images/categories/electronics/1 (61).jpg";
+import image427 from "../../../public/images/categories/electronics/1 (62).jpg";
+import image428 from "../../../public/images/categories/electronics/1 (63).jpg";
+import image429 from "../../../public/images/categories/electronics/1 (64).jpg";
+import image430 from "../../../public/images/categories/electronics/1 (65).jpg";
+import image431 from "../../../public/images/categories/electronics/1 (66).jpg";
+import image432 from "../../../public/images/categories/electronics/1 (67).jpg";
+import image433 from "../../../public/images/categories/electronics/1 (68).jpg";
+import image434 from "../../../public/images/categories/electronics/1 (69).jpg";
+import image435 from "../../../public/images/categories/electronics/1 (70).jpg";
+import image436 from "../../../public/images/categories/electronics/1 (71).jpg";
+import image437 from "../../../public/images/categories/electronics/1 (72).jpg";
+import image438 from "../../../public/images/categories/electronics/1 (73).jpg";
+import image439 from "../../../public/images/categories/electronics/1 (74).jpg";
+import image440 from "../../../public/images/categories/electronics/1 (75).jpg";
+import image442 from "../../../public/images/categories/electronics/1 (77).jpg";
+import image445 from "../../../public/images/categories/electronics/1 (80).jpg";
+
 import { StaticImageData } from "next/image";
 
 type Props1 = {
@@ -1511,5 +1537,188 @@ export const Products: Props1 = [
     title: "Silvercrest 2L German industrial food crusher blender",
     category: "home-office",
     old: 35500,
+  },
+  {
+    id: "700",
+    image: image420,
+    price: 73500,
+    title: "Zealot s27 60W wireless bluetooth speaker",
+    category: "home-office",
+    old: 155500,
+  },
+  {
+    id: "701",
+    image: image421,
+    price: 201000,
+    title: "Hiker 42 inches Android smart TV",
+    category: "home-office",
+    old: 251000,
+  },
+  {
+    id: "702",
+    image: image422,
+    price: 63800,
+    title: "Telan Bolan Long sound bar bluetooth speaker",
+    category: "home-office",
+    old: 85500,
+  },
+  {
+    id: "703",
+    image: image423,
+    price: 39100,
+    title: "Nexus 55 inches frameless UHD Android TV",
+    category: "home-office",
+    old: 401000,
+  },
+  {
+    id: "704",
+    image: image424,
+    price: 72800,
+    title: "Sinecraft Tedbar home theatre bluetooth with woofer",
+    category: "home-office",
+    old: 100000,
+  },
+  {
+    id: "705",
+    image: image425,
+    price: 154900,
+    title: "Infinity 32 inches smart Android TV",
+    category: "home-office",
+    old: 185500,
+  },
+  {
+    id: "706",
+    image: image426,
+    price: 82400,
+    title: "Newcastle new extra sound bass with display",
+    category: "home-office",
+  },
+  {
+    id: "707",
+    image: image427,
+    price: 290500,
+    title: "F&D T50X-pro tower bluetooth speaker",
+    category: "home-office",
+    old: 333000,
+  },
+  {
+    id: "708",
+    image: image428,
+    price: 272000,
+    title: "F&D T40 tower bluetooth speaker",
+    category: "home-office",
+    old: 300000,
+  },
+  {
+    id: "709",
+    image: image429,
+    price: 172000,
+    title: "F&D HTT3 soundbar + subwoofer",
+    category: "home-office",
+    old: 195500,
+  },
+  {
+    id: "710",
+    image: image430,
+    price: 82000,
+    title: "Itel 32 inches LED TV",
+    category: "home-office",
+    old: 92500,
+  },
+  {
+    id: "711",
+    image: image431,
+    price: 170000,
+    title: "Royal 43 inches LED TV",
+    category: "home-office",
+    old: 180000,
+  },
+  {
+    id: "712",
+    image: image432,
+    price: 161000,
+    title: "Hiker 43 inches frameless UHD LED TV",
+    category: "home-office",
+    old: 234000,
+  },
+  {
+    id: "713",
+    image: image433,
+    price: 90900,
+    title: "Hikers 32 inches LED TV",
+    category: "home-office",
+    old: 165500,
+  },
+  {
+    id: "714",
+    image: image434,
+    price: 5800,
+    title: "DVD/Decoder wall shelf cabinet",
+    category: "home-office",
+    old: 9100,
+  },
+  {
+    id: "715",
+    image: image435,
+    price: 147000,
+    title: "TUTU 32 inches smart LED TV",
+    category: "home-office",
+    old: 157000,
+  },
+  {
+    id: "716",
+    image: image436,
+    price: 4900,
+    title: "Wireless earpod headfone bluetooth earpiece",
+    category: "home-office",
+    old: 5400,
+  },
+  {
+    id: "717",
+    image: image437,
+    price: 219000,
+    title: "Amani 42 inches 4k UHD smart TV",
+    category: "home-office",
+    old: 250500,
+  },
+  {
+    id: "718",
+    image: image438,
+    price: 432000,
+    title: "Hisense 50 inches smart HD TV",
+    category: "home-office",
+    old: 435000,
+  },
+  {
+    id: "719",
+    image: image439,
+    price: 10800,
+    title: "Power strip 6 AC socket + 3 type C USB port",
+    category: "home-office",
+    old: 31600,
+  },
+  {
+    id: "720",
+    image: image440,
+    price: 395500,
+    title: "Samsonic 55 inches smart UHD TV",
+    category: "home-office",
+    old: 545500,
+  },
+  {
+    id: "721",
+    image: image442,
+    price: 55500,
+    title: "Weyon 5.1 inches bluetooth speaker",
+    category: "home-office",
+    old: 95500,
+  },
+  {
+    id: "722",
+    image: image445,
+    price: 4900,
+    title: "TV guard voltage protection",
+    category: "home-office",
+    old: 19000,
   },
 ];
