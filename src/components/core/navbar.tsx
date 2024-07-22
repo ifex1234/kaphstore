@@ -12,9 +12,12 @@ import {
 import { Drawer } from "../core/drawer";
 import { FaCartShopping } from "react-icons/fa6";
 import { Navlink } from "@/lib/assets/navlink";
+import { RootState } from "@/lib/services/Store";
+import { useSelector } from "react-redux";
 
 function Navbar() {
   const pathname = usePathname();
+  const products = useSelector((state: RootState) => state.store);
   return (
     <nav className="flex flex-row items-center h-16 justify-between text-slate-600 w-full bg-purple-600">
       <Link href="/">
@@ -51,7 +54,9 @@ function Navbar() {
           href="/cart"
         >
           <FaCartShopping fill="white" size={20} />
-          <span className=" absolute -top-3 left-4 text-white">0</span>
+          <span className=" absolute -top-3 left-4 text-white">
+            {products.length}
+          </span>
         </Link>
         <span className="block lg:hidden">
           <Drawer />

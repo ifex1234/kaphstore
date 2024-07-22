@@ -1,11 +1,15 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
+import { StaticImageData } from "next/image";
 
 type CartItems = {
-  name?: string;
+  id: string;
+  image?: StaticImageData;
   price?: number;
-  id: number;
+  title?: string;
+  icon?: string;
   category?: string;
-  img?: string;
+  old?: number;
+  percent?: number;
   qty: number;
 }[];
 //   }
@@ -19,12 +23,13 @@ export const counterSlice = createSlice({
   reducers: {
     addToCart: (state, actions) => {
       state.store.push(actions.payload);
+      console.log("added to cart");
     },
-    removeFromCart: (state, action: PayloadAction<number>) => {
+    removeFromCart: (state, action: PayloadAction<string>) => {
       const newState = state.store.filter((item) => item.id !== action.payload);
       console.log("item removed", newState.length);
     },
-    increment: (state, action: PayloadAction<number>) => {
+    increment: (state, action: PayloadAction<string>) => {
       const selectedItem = action.payload;
       const search = state.store.find((x) => x.id === selectedItem);
 
@@ -37,8 +42,21 @@ export const counterSlice = createSlice({
         search.qty += 1;
       }
     },
+    // increment: (state, action: PayloadAction<string>) => {
+    //   const selectedItem = action.payload;
+    //   const search = state.store.find((x) => x.id === selectedItem);
 
-    decrement: (state, action: PayloadAction<number>) => {
+    //   if (search === undefined) {
+    //     state.store.push({
+    //       id: selectedItem,
+    //       qty: 1,
+    //     });
+    //   } else {
+    //     search.qty += 1;
+    //   }
+    // },
+
+    decrement: (state, action: PayloadAction<string>) => {
       const selectedItem = action.payload;
       const search = state.store.find((x) => x.id === selectedItem);
 

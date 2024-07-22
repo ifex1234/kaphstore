@@ -1,4 +1,5 @@
 import Categories from "@/components/core/Categories";
+import { Toaster } from "@/components/ui/sonner";
 import { Products } from "@/lib/assets/allProducts";
 import React from "react";
 
@@ -7,6 +8,7 @@ export default function Page() {
   return (
     <div className=" md:container">
       <Categories arrayItem={appliances} />
+      <Toaster />
     </div>
   );
 }

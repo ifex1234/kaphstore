@@ -6,6 +6,7 @@ import ContextProvider from "@/components/core/ContextProvider";
 import { TopAds } from "@/components/core/ads";
 import Navbar from "@/components/core/navbar";
 import { Separator } from "@/components/ui/separator";
+import TopNav from "@/components/core/topNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,8 +26,9 @@ export default function RootLayout({
         <ContextProvider>
           <TopAds />
           <Separator />
-          <Separator />
           <Navbar />
+          <Separator />
+          <TopNav />
           <Separator />
           <div className=" w-full">{children}</div>
           <Footer />
