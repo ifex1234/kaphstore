@@ -5,7 +5,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
-import { BsStarFill, BsStarHalf } from "react-icons/bs";
+// import { BsStarFill, BsStarHalf } from "react-icons/bs";
 import { Button } from "../ui/button";
 type Props = {
   id: string;
@@ -21,13 +21,13 @@ type Props = {
 type Prop = {
   arrayItem: Props;
 };
-
 const Categories: React.FC<Prop> = (ObjArr) => {
   const { arrayItem } = ObjArr;
   const pathName = usePathname();
   const handleClick = () => {
     console.log("add to cart button clicked");
   };
+
   return (
     <div className=" lg:container">
       <div className={`${style.container}`}>
@@ -44,14 +44,17 @@ const Categories: React.FC<Prop> = (ObjArr) => {
                 <span className=" line-through mr-4">
                   {FormatCurrency(item.old! ? item.old! : 0)}
                 </span>
-                -{item.old ? ((item.price / item.old!) * 100).toFixed(0) : "-"}
+                -
+                {item.old
+                  ? (((item.old! - item.price) / item.price) * 100).toFixed(0)
+                  : 0}
+                %
               </p>
-              <span className="flex flex-row justify-start w-20 items-center">
+              {/* <span className="flex flex-row justify-start w-20 items-center">
                 <BsStarFill color="purple" /> <BsStarFill color="purple" />
                 <BsStarFill color="purple" />
-                <BsStarFill color="purple" /> <BsStarHalf color="purple" /> (
-                {item.percent! * 25})
-              </span>
+                <BsStarFill color="purple" /> <BsStarHalf color="purple" />
+              </span> */}
               <p>{item.icon}</p>
               <Button
                 className={` bg-purple-600 hover:bg-purple-700 ${style.btn}`}

@@ -217,7 +217,7 @@ type Props1 = {
   icon?: string;
   category: string;
   old?: number;
-  percent?: number;
+  qty: number;
 }[];
 export const Products: Props1 = [
   {
@@ -227,6 +227,7 @@ export const Products: Props1 = [
     title: "LASA tripod stand for phone and camera",
     category: "mobile-tablets",
     old: 19750,
+    qty: 0,
   },
   {
     id: "502",
@@ -235,6 +236,7 @@ export const Products: Props1 = [
     title: "10 LED ring light make up selfie night light",
     category: "mobile-tablets",
     old: 13900,
+    qty: 0,
   },
   {
     id: "503",
@@ -243,6 +245,7 @@ export const Products: Props1 = [
     title: "2.2 inches full touch screen smart watch",
     category: "mobile-tablets",
     old: 18000,
+    qty: 0,
   },
   {
     id: "504",
@@ -251,6 +254,7 @@ export const Products: Props1 = [
     title: "Bluetooth headset touch sensor headphone",
     category: "mobile-tablets",
     old: 9500,
+    qty: 0,
   },
   {
     id: "505",
@@ -259,6 +263,7 @@ export const Products: Props1 = [
     title: "Oraimo freepod lite 40 hrs playtime wireless earbuds",
     category: "mobile-tablets",
     old: 30000,
+    qty: 0,
   },
   {
     id: "506",
@@ -267,6 +272,7 @@ export const Products: Props1 = [
     title: "Phone cooler with game finger sleeves",
     category: "mobile-tablets",
     old: 6500,
+    qty: 0,
   },
   {
     id: "507",
@@ -275,6 +281,7 @@ export const Products: Props1 = [
     title: "Guixai in-ear wireless bluetooth headset",
     category: "mobile-tablets",
     old: 7400,
+    qty: 0,
   },
   {
     id: "508",
@@ -283,6 +290,7 @@ export const Products: Props1 = [
     title: "Oraimo type-c power bank fast charging..",
     category: "mobile-tablets",
     old: 40000,
+    qty: 0,
   },
   {
     id: "509",
@@ -291,6 +299,7 @@ export const Products: Props1 = [
     title: "Wireless fingerprint touch bluetooth headphones",
     category: "mobile-tablets",
     old: 7000,
+    qty: 0,
   },
   {
     id: "510",
@@ -299,6 +308,7 @@ export const Products: Props1 = [
     title: "T344 smart watch door access smartphone",
     category: "mobile-tablets",
     old: 17000,
+    qty: 0,
   },
   {
     id: "511",
@@ -307,6 +317,7 @@ export const Products: Props1 = [
     title: "Itel 2163 wireless fm torch light dual sim FM",
     category: "mobile-tablets",
     old: 15000,
+    qty: 0,
   },
   {
     id: "512",
@@ -315,6 +326,7 @@ export const Products: Props1 = [
     title: "Oraimo freepods lite 40 hours wireless earbuds",
     category: "mobile-tablets",
     old: 40000,
+    qty: 0,
   },
   {
     id: "513",
@@ -323,6 +335,7 @@ export const Products: Props1 = [
     title: "Wireless bluetooth headphone for IOS and Android",
     category: "mobile-tablets",
     old: 7000,
+    qty: 0,
   },
   {
     id: "514",
@@ -331,6 +344,7 @@ export const Products: Props1 = [
     title: "Wireless bluetooth headphone pink ",
     category: "mobile-tablets",
     old: 5999,
+    qty: 0,
   },
   {
     id: "515",
@@ -339,6 +353,7 @@ export const Products: Props1 = [
     title: "Oraimo 20000mAh Mobile Po… ",
     category: "mobile-tablets",
     old: 26000,
+    qty: 0,
   },
   {
     id: "516",
@@ -347,6 +362,7 @@ export const Products: Props1 = [
     price: 12900,
     category: "mobile-tablets",
     old: 20000,
+    qty: 0,
   },
   {
     id: "517",
@@ -355,6 +371,7 @@ export const Products: Props1 = [
     price: 36600,
     category: "mobile-tablets",
     old: 77000,
+    qty: 0,
   },
   {
     id: "518",
@@ -363,6 +380,7 @@ export const Products: Props1 = [
     title: "Sport smart watch 1.3 inches waterproof ",
     category: "mobile-tablets",
     old: 7900,
+    qty: 0,
   },
   {
     id: "519",
@@ -371,6 +389,7 @@ export const Products: Props1 = [
     title: "Oraimo boompop over ear bluetooth wireless earphone",
     category: "mobile-tablets",
     old: 72000,
+    qty: 0,
   },
   {
     id: "520",
@@ -379,6 +398,7 @@ export const Products: Props1 = [
     title: "Oraimo Rock long playtime 2-mic ENC true wireless earphone",
     category: "mobile-tablets",
     old: 72000,
+    qty: 0,
   },
   {
     id: "521",
@@ -387,6 +407,7 @@ export const Products: Props1 = [
     title: "Oraimo 10000mah 22.5W slid powerbank",
     category: "mobile-tablets",
     old: 39000,
+    qty: 0,
   },
   {
     id: "522",
@@ -395,6 +416,7 @@ export const Products: Props1 = [
     title: "Samsung galaxy A15 6.6' 6GB RAM/128 ROM Android 14",
     category: "mobile-tablets",
     old: 420000,
+    qty: 0,
   },
   {
     id: "523",
@@ -402,6 +424,7 @@ export const Products: Props1 = [
     price: 2990,
     title: "10 pcs anti sweat mobile game controller",
     category: "mobile-tablets",
+    qty: 0,
   },
   {
     id: "524",
@@ -410,6 +433,7 @@ export const Products: Props1 = [
     title: "Itel S24 6.6' 8GB RAM/128GB ROM ",
     category: "mobile-tablets",
     old: 256000,
+    qty: 0,
   },
   {
     id: "231",
@@ -418,6 +442,7 @@ export const Products: Props1 = [
     title: "Boscon 2L electric kettle ",
     category: "appliances",
     old: 16500,
+    qty: 0,
   },
   {
     id: "232",
@@ -426,6 +451,7 @@ export const Products: Props1 = [
     title: "Hisense 20L microwave ",
     category: "appliances",
     old: 69470,
+    qty: 0,
   },
   {
     id: "234",
@@ -433,6 +459,7 @@ export const Products: Props1 = [
     price: 109900,
     title: "Nexus chest freezer",
     category: "appliances",
+    qty: 0,
   },
   {
     id: "236",
@@ -440,6 +467,7 @@ export const Products: Props1 = [
     price: 115200,
     title: "Pinnacle washing machine",
     category: "appliances",
+    qty: 0,
   },
   {
     id: "237",
@@ -447,6 +475,7 @@ export const Products: Props1 = [
     price: 335500,
     title: "Nexus 1HP split air conditional",
     category: "appliances",
+    qty: 0,
   },
   {
     id: "238",
@@ -455,6 +484,7 @@ export const Products: Props1 = [
     title: "Lontor 12 inches rechargeable fan + solar",
     category: "appliances",
     old: 42500,
+    qty: 0,
   },
   {
     id: "239",
@@ -462,6 +492,7 @@ export const Products: Props1 = [
     price: 335500,
     title: "Nexus 1HP split air conditional",
     category: "appliances",
+    qty: 0,
   },
   {
     id: "240",
@@ -469,6 +500,7 @@ export const Products: Props1 = [
     price: 25500,
     title: "Lontor 12 inches rechargeable table fan",
     category: "appliances",
+    qty: 0,
   },
   {
     id: "241",
@@ -477,6 +509,7 @@ export const Products: Props1 = [
     title: "Haier thermocool 185L double door refrigerator",
     category: "appliances",
     old: 375000,
+    qty: 0,
   },
   {
     id: "242",
@@ -485,6 +518,7 @@ export const Products: Props1 = [
     title: "Haier thermocool 93L single door refrigerator",
     category: "appliances",
     old: 201000,
+    qty: 0,
   },
   {
     id: "243",
@@ -493,6 +527,7 @@ export const Products: Props1 = [
     title: "Haier thermocool 18l double door refrigerator",
     category: "appliances",
     old: 375000,
+    qty: 0,
   },
   {
     id: "244",
@@ -501,6 +536,7 @@ export const Products: Props1 = [
     title: "Lontor 12 inch rechargeable table fan",
     category: "appliances",
     old: 42500,
+    qty: 0,
   },
   {
     id: "245",
@@ -509,6 +545,7 @@ export const Products: Props1 = [
     title: "Water filter purifyer- 6 layer filtering adjustable universal",
     category: "appliances",
     old: 3417,
+    qty: 0,
   },
   {
     id: "246",
@@ -517,6 +554,7 @@ export const Products: Props1 = [
     title: "Haier thermocool 93liter single door refrigerator",
     category: "appliances",
     old: 201053,
+    qty: 0,
   },
   {
     id: "247",
@@ -525,6 +563,7 @@ export const Products: Props1 = [
     title: "Aeon 200L chest freezer",
     category: "appliances",
     old: 250000,
+    qty: 0,
   },
   {
     id: "248",
@@ -532,6 +571,7 @@ export const Products: Props1 = [
     price: 355158,
     title: "4Haier thermocool 200L chest freezer",
     category: "appliances",
+    qty: 0,
   },
   {
     id: "249",
@@ -540,6 +580,7 @@ export const Products: Props1 = [
     title: "Skyrun 138L double door mount refrigerator",
     category: "appliances",
     old: 290535,
+    qty: 0,
   },
   {
     id: "250",
@@ -548,6 +589,7 @@ export const Products: Props1 = [
     title: "Duravolt 16 inches 3 in 1 rechargeable fan + solar",
     category: "appliances",
     old: 99900,
+    qty: 0,
   },
   {
     id: "251",
@@ -555,6 +597,7 @@ export const Products: Props1 = [
     price: 335500,
     title: "Nexus 1.5HP split air conditional",
     category: "appliances",
+    qty: 0,
   },
   {
     id: "252",
@@ -562,6 +605,7 @@ export const Products: Props1 = [
     price: 135000,
     title: "Aeon 50 x 50 4 burner gas cooker",
     category: "appliances",
+    qty: 0,
   },
   {
     id: "253",
@@ -569,6 +613,7 @@ export const Products: Props1 = [
     price: 270632,
     title: "Haier thermocool 10.2kg top loader semi automatic washing..",
     category: "appliances",
+    qty: 0,
   },
   {
     id: "254",
@@ -576,6 +621,7 @@ export const Products: Props1 = [
     price: 339474,
     title: "Haier thermocool 192L single door refrigerator",
     category: "appliances",
+    qty: 0,
   },
   {
     id: "255",
@@ -584,6 +630,7 @@ export const Products: Props1 = [
     title: "Wind gel summer breeze 150g x2",
     category: "appliances",
     old: 2057,
+    qty: 0,
   },
   {
     id: "256",
@@ -592,6 +639,7 @@ export const Products: Props1 = [
     title: "Glamstar 18 inches rechargeable standing fan",
     category: "appliances",
     old: 65000,
+    qty: 0,
   },
   {
     id: "257",
@@ -600,6 +648,7 @@ export const Products: Props1 = [
     title: "OX spacetek 18 inches standing fan",
     category: "appliances",
     old: 25000,
+    qty: 0,
   },
   {
     id: "259",
@@ -608,6 +657,7 @@ export const Products: Props1 = [
     title: "Silvercrest 2L German industrial food crusher blender",
     category: "appliances",
     old: 35500,
+    qty: 0,
   },
 
   {
@@ -617,7 +667,7 @@ export const Products: Props1 = [
     title: "Cloudon men's 3D U-pouch, underwear boxers, breathable..",
     category: "fashion",
     old: 11000,
-    percent: 45,
+    qty: 0,
   },
   {
     id: "356",
@@ -626,7 +676,7 @@ export const Products: Props1 = [
     title: "High quality damarsk febrics 5 yards",
     category: "fashion",
     old: 89000,
-    percent: 38,
+    qty: 0,
   },
   {
     id: "356",
@@ -634,6 +684,7 @@ export const Products: Props1 = [
     price: 11499,
     title: "High quality Ankara fabrics 6yards",
     category: "fashion",
+    qty: 0,
   },
   {
     id: "357",
@@ -642,7 +693,7 @@ export const Products: Props1 = [
     title: "Esgoal portable raincoat portable with hat",
     category: "fashion",
     old: 19999,
-    percent: 35,
+    qty: 0,
   },
   {
     id: "358",
@@ -651,7 +702,7 @@ export const Products: Props1 = [
     title: "ADDIDAS core sneakers advantage base",
     category: "fashion",
     old: 76642,
-    percent: 50,
+    qty: 0,
   },
   {
     id: "359",
@@ -660,7 +711,7 @@ export const Products: Props1 = [
     title: "ADDIDAS wildwalk sneakers",
     category: "fashion",
     old: 73096,
-    percent: 60,
+    qty: 0,
   },
   {
     id: "360",
@@ -669,7 +720,7 @@ export const Products: Props1 = [
     title: "Men shoes sneaker sport",
     category: "fashion",
     old: 9999,
-    percent: 40,
+    qty: 0,
   },
   {
     id: "361",
@@ -678,7 +729,7 @@ export const Products: Props1 = [
     title: "Binbon men's watch fashion",
     category: "fashion",
     old: 15195,
-    percent: 19,
+    qty: 0,
   },
   {
     id: "362",
@@ -687,7 +738,7 @@ export const Products: Props1 = [
     title: "High waisted abdomen thigh control shaping...",
     category: "fashion",
     old: 11890,
-    percent: 50,
+    qty: 0,
   },
   {
     id: "363",
@@ -696,7 +747,7 @@ export const Products: Props1 = [
     title: "PU fabric casual shoulder bag",
     category: "fashion",
     old: 8999,
-    percent: 72,
+    qty: 0,
   },
   {
     id: "364",
@@ -705,7 +756,7 @@ export const Products: Props1 = [
     title: "Men's sneakers lace up shoes",
     category: "fashion",
     old: 20000,
-    percent: 41,
+    qty: 0,
   },
   {
     id: "365",
@@ -714,7 +765,7 @@ export const Products: Props1 = [
     title: "Men's leather dress shoe-brown",
     category: "fashion",
     old: 21406,
-    percent: 26,
+    qty: 0,
   },
   {
     id: "366",
@@ -723,7 +774,7 @@ export const Products: Props1 = [
     title: "Cloudon men summer breathable boxers brief",
     category: "fashion",
     old: 9500,
-    percent: 34,
+    qty: 0,
   },
   {
     id: "367",
@@ -732,7 +783,7 @@ export const Products: Props1 = [
     title: "ADDIDAS court sleek shoe women",
     category: "fashion",
     old: 122100,
-    percent: 50,
+    qty: 0,
   },
   {
     id: "368",
@@ -741,7 +792,7 @@ export const Products: Props1 = [
     title: "Smart fashion breathable unisex",
     category: "fashion",
     old: 10000,
-    percent: 35,
+    qty: 0,
   },
   {
     id: "369",
@@ -750,7 +801,7 @@ export const Products: Props1 = [
     title: "Gatwiga 3 in 1 bag set",
     category: "fashion",
     old: 15900,
-    percent: 53,
+    qty: 0,
   },
   {
     id: "370",
@@ -758,6 +809,7 @@ export const Products: Props1 = [
     price: 14900,
     title: "Danami Los Angeles California printed hoodie",
     category: "fashion",
+    qty: 0,
   },
   {
     id: "371",
@@ -766,7 +818,7 @@ export const Products: Props1 = [
     title: "El-vin red short",
     category: "fashion",
     old: 14900,
-    percent: 54,
+    qty: 0,
   },
   {
     id: "372",
@@ -775,7 +827,7 @@ export const Products: Props1 = [
     title: "Women bag, ladies bag, hand bag, tote bag",
     category: "fashion",
     old: 5990,
-    percent: 30,
+    qty: 0,
   },
   {
     id: "373",
@@ -784,7 +836,7 @@ export const Products: Props1 = [
     title: "Men wrist watch Quartz black",
     category: "fashion",
     old: 6069,
-    percent: 20,
+    qty: 0,
   },
   {
     id: "374",
@@ -793,7 +845,7 @@ export const Products: Props1 = [
     title: "4 pcs women bag, ladies bag, purse shoulder bag",
     category: "fashion",
     old: 11890,
-    percent: 31,
+    qty: 0,
   },
   {
     id: "375",
@@ -802,7 +854,7 @@ export const Products: Props1 = [
     title: "Women bags, ladies bag, hand bag",
     category: "fashion",
     old: 19990,
-    percent: 55,
+    qty: 0,
   },
   {
     id: "376",
@@ -810,6 +862,7 @@ export const Products: Props1 = [
     price: 11500,
     title: "Men non tarnish gold watch",
     category: "fashion",
+    qty: 0,
   },
   {
     id: "377",
@@ -818,7 +871,7 @@ export const Products: Props1 = [
     title: "Men's casual plain trousers cotton-black",
     category: "fashion",
     old: 19770,
-    percent: 43,
+    qty: 0,
   },
   {
     id: "378",
@@ -827,7 +880,7 @@ export const Products: Props1 = [
     title: "Men's turtle neck formal long",
     category: "fashion",
     old: 12300,
-    percent: 20,
+    qty: 0,
   },
   {
     id: "379",
@@ -836,7 +889,7 @@ export const Products: Props1 = [
     title: "Vintage geometry sequin",
     category: "fashion",
     old: 2500,
-    percent: 64,
+    qty: 0,
   },
   {
     id: "380",
@@ -845,7 +898,7 @@ export const Products: Props1 = [
     title: "Men oxford office loafers",
     category: "fashion",
     old: 18000,
-    percent: 4,
+    qty: 0,
   },
   {
     id: "381",
@@ -854,7 +907,7 @@ export const Products: Props1 = [
     title: "Men lightweight coat double",
     category: "fashion",
     old: 23832,
-    percent: 18,
+    qty: 0,
   },
   {
     id: "382",
@@ -863,7 +916,7 @@ export const Products: Props1 = [
     title: "ADDIDAS core sneakers advantage base",
     category: "fashion",
     old: 76644,
-    percent: 40,
+    qty: 0,
   },
   {
     id: "383",
@@ -872,7 +925,7 @@ export const Products: Props1 = [
     title: "2 in 1 female fashion watch",
     category: "fashion",
     old: 9400,
-    percent: 48,
+    qty: 0,
   },
   {
     id: "384",
@@ -881,7 +934,7 @@ export const Products: Props1 = [
     title: "Ladies corporate vavy blue gown",
     category: "fashion",
     old: 9500,
-    percent: 50,
+    qty: 0,
   },
   {
     id: "385",
@@ -890,7 +943,7 @@ export const Products: Props1 = [
     title: "Nejero female sleek lace lingerin suit",
     category: "fashion",
     old: 4800,
-    percent: 46,
+    qty: 0,
   },
   {
     id: "400",
@@ -899,6 +952,7 @@ export const Products: Props1 = [
     title: "10 pcs bamboo soft fibre toothbrush",
     category: "health-beauty",
     old: 9990,
+    qty: 0,
   },
   {
     id: "401",
@@ -907,6 +961,7 @@ export const Products: Props1 = [
     title: "Nail art crystal extension",
     category: "health-beauty",
     old: 8800,
+    qty: 0,
   },
   {
     id: "402",
@@ -915,6 +970,7 @@ export const Products: Props1 = [
     title: "Neolife chewable all-c",
     category: "health-beauty",
     old: 35000,
+    qty: 0,
   },
   {
     id: "403",
@@ -923,6 +979,7 @@ export const Products: Props1 = [
     title: "USB finishing touch epilator painless..",
     category: "health-beauty",
     old: 11417,
+    qty: 0,
   },
   {
     id: "405",
@@ -931,6 +988,7 @@ export const Products: Props1 = [
     title: "Nivea deep anti-pespirant roll on -for men (pack of 3)",
     category: "health-beauty",
     old: 5400,
+    qty: 0,
   },
   {
     id: "406",
@@ -939,6 +997,7 @@ export const Products: Props1 = [
     title: "Roushun vit c serum",
     category: "health-beauty",
     old: 5000,
+    qty: 0,
   },
   {
     id: "407",
@@ -947,6 +1006,7 @@ export const Products: Props1 = [
     title: "Nivea radiant and even beauty glow",
     category: "health-beauty",
     old: 10200,
+    qty: 0,
   },
   {
     id: "408",
@@ -955,6 +1015,7 @@ export const Products: Props1 = [
     title: "Nivea pearl and beauty anti-perspirant roll-on for women",
     category: "health-beauty",
     old: 5400,
+    qty: 0,
   },
   {
     id: "409",
@@ -963,6 +1024,7 @@ export const Products: Props1 = [
     title: "White-hot jewelry glass diamond nail sticker",
     category: "health-beauty",
     old: 6250,
+    qty: 0,
   },
   {
     id: "410",
@@ -971,6 +1033,7 @@ export const Products: Props1 = [
     title: "Nivea pearl and beauty anti-perspirant roll-on for women",
     category: "health-beauty",
     old: 9400,
+    qty: 0,
   },
   {
     id: "411",
@@ -979,6 +1042,7 @@ export const Products: Props1 = [
     title: "Nivea doShakara pack(Nourishing cocoa body lotion)",
     category: "health-beauty",
     old: 11500,
+    qty: 0,
   },
   {
     id: "412",
@@ -987,6 +1051,7 @@ export const Products: Props1 = [
     title: "Dragon monster rechargeable iron clipper",
     category: "health-beauty",
     old: 7900,
+    qty: 0,
   },
   {
     id: "413",
@@ -995,6 +1060,7 @@ export const Products: Props1 = [
     title: "Nivea perfert & radiant micelar water for women",
     category: "health-beauty",
     old: 7000,
+    qty: 0,
   },
   {
     id: "414",
@@ -1002,6 +1068,7 @@ export const Products: Props1 = [
     price: 1050,
     title: "Close-up anti bacteria zinc triple action",
     category: "health-beauty",
+    qty: 0,
   },
   {
     id: "415",
@@ -1010,6 +1077,7 @@ export const Products: Props1 = [
     title: "Nivea dry comfort anti perspirant spray for women",
     category: "health-beauty",
     old: 9400,
+    qty: 0,
   },
   {
     id: "416",
@@ -1018,6 +1086,7 @@ export const Products: Props1 = [
     title: "Nivea dry impact anti pesrpirant spray for men",
     category: "health-beauty",
     old: 4700,
+    qty: 0,
   },
   {
     id: "417",
@@ -1026,6 +1095,7 @@ export const Products: Props1 = [
     title: "Biore UV aqua rich water essence sunscreen for women",
     category: "health-beauty",
     old: 8600,
+    qty: 0,
   },
   {
     id: "418",
@@ -1034,6 +1104,7 @@ export const Products: Props1 = [
     title: "Dettol skincare blossom bathing soap",
     category: "health-beauty",
     old: 915,
+    qty: 0,
   },
   {
     id: "419",
@@ -1042,6 +1113,7 @@ export const Products: Props1 = [
     title: "Keddy cody active for longevity and vitality(60 capsule)",
     category: "health-beauty",
     old: 22100,
+    qty: 0,
   },
   {
     id: "420",
@@ -1050,6 +1122,7 @@ export const Products: Props1 = [
     title: "Oraimo smart clipper2 super powerful professional ...",
     category: "health-beauty",
     old: 36215,
+    qty: 0,
   },
   {
     id: "421",
@@ -1057,6 +1130,7 @@ export const Products: Props1 = [
     price: 9760,
     title: "Rexona men v8 72h",
     category: "health-beauty",
+    qty: 0,
   },
   {
     id: "422",
@@ -1064,6 +1138,7 @@ export const Products: Props1 = [
     price: 5355,
     title: "Axe excit crisp coconut and pepper scent",
     category: "health-beauty",
+    qty: 0,
   },
   {
     id: "423",
@@ -1072,6 +1147,7 @@ export const Products: Props1 = [
     title: "Micolo fit me primer brightner",
     category: "health-beauty",
     old: 5400,
+    qty: 0,
   },
   {
     id: "424",
@@ -1080,6 +1156,7 @@ export const Products: Props1 = [
     title: "Mini neck massager for neck, back shoulder",
     category: "health-beauty",
     old: 5400,
+    qty: 0,
   },
   {
     id: "425",
@@ -1087,6 +1164,7 @@ export const Products: Props1 = [
     price: 9760,
     title: "Rexona women invisivle 72h",
     category: "health-beauty",
+    qty: 0,
   },
   {
     id: "426",
@@ -1094,6 +1172,7 @@ export const Products: Props1 = [
     price: 6725,
     title: "Dove men body spray extra fresh",
     category: "health-beauty",
+    qty: 0,
   },
   {
     id: "427",
@@ -1102,6 +1181,7 @@ export const Products: Props1 = [
     title: "Oraimo smartclipper2 self sharpening blade ",
     category: "health-beauty",
     old: 37580,
+    qty: 0,
   },
   {
     id: "428",
@@ -1110,6 +1190,7 @@ export const Products: Props1 = [
     title: "Oraimo multifunctional smart trimmer with 4 guided combs",
     category: "health-beauty",
     old: 41500,
+    qty: 0,
   },
   {
     id: "500",
@@ -1118,6 +1199,7 @@ export const Products: Props1 = [
     title: "Neolife light duty cleaner",
     category: "groceries",
     old: 25500,
+    qty: 0,
   },
   {
     id: "501",
@@ -1125,6 +1207,7 @@ export const Products: Props1 = [
     price: 7729,
     title: "Sweet lips natural sweet wine 75cl",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "502",
@@ -1133,6 +1216,7 @@ export const Products: Props1 = [
     title: "Martini brut 75cl",
     category: "groceries",
     old: 15300,
+    qty: 0,
   },
   {
     id: "503",
@@ -1140,6 +1224,7 @@ export const Products: Props1 = [
     price: 11700,
     title: "Martini extra dry vermouth 100cl",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "504",
@@ -1148,6 +1233,7 @@ export const Products: Props1 = [
     title: "Nescafe 3 in 1 breakfast coffee 25g x 10",
     category: "groceries",
     old: 1760,
+    qty: 0,
   },
   {
     id: "505",
@@ -1155,6 +1241,7 @@ export const Products: Props1 = [
     price: 8720,
     title: "Smirnoof intense chocolate flavoured vodka 750ml",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "506",
@@ -1162,6 +1249,7 @@ export const Products: Props1 = [
     price: 8500,
     title: "Pepsi pet 50cl  x 12",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "507",
@@ -1169,6 +1257,7 @@ export const Products: Props1 = [
     price: 9760,
     title: "Gordon pink berry 750ml",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "508",
@@ -1177,6 +1266,7 @@ export const Products: Props1 = [
     title: "Martini rose 75cl",
     category: "groceries",
     old: 15330,
+    qty: 0,
   },
   {
     id: "509",
@@ -1184,6 +1274,7 @@ export const Products: Props1 = [
     price: 4100,
     title: "Good mama floral detergent 1700g",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "510",
@@ -1192,6 +1283,7 @@ export const Products: Props1 = [
     title: "Nestle maggie star seasoning cube",
     category: "groceries",
     old: 1230,
+    qty: 0,
   },
   {
     id: "511",
@@ -1199,6 +1291,7 @@ export const Products: Props1 = [
     price: 16580,
     title: "Johnie walker red label 75cl",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "512",
@@ -1207,6 +1300,7 @@ export const Products: Props1 = [
     title: "Smirnoff ice can 330ml x 24",
     category: "groceries",
     old: 16000,
+    qty: 0,
   },
   {
     id: "513",
@@ -1215,6 +1309,7 @@ export const Products: Props1 = [
     title: "Bacardi 8 year rum 75cl",
     category: "groceries",
     old: 28500,
+    qty: 0,
   },
   {
     id: "514",
@@ -1222,6 +1317,7 @@ export const Products: Props1 = [
     price: 9760,
     title: "Gordon sunset orange 750ml",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "515",
@@ -1229,6 +1325,7 @@ export const Products: Props1 = [
     price: 8500,
     title: "7up pet 50cl x 12",
     category: "groceries",
+    qty: 0,
   },
 
   {
@@ -1238,6 +1335,7 @@ export const Products: Props1 = [
     title: "Origin bitters 20cl x 24",
     category: "groceries",
     old: 41500,
+    qty: 0,
   },
   {
     id: "517",
@@ -1246,6 +1344,7 @@ export const Products: Props1 = [
     title: "Bacardi carta blanca white rum 75cl",
     category: "groceries",
     old: 16130,
+    qty: 0,
   },
   {
     id: "518",
@@ -1253,6 +1352,7 @@ export const Products: Props1 = [
     price: 9840,
     title: "Captain morgan spiced gold rum 75cl",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "519",
@@ -1261,6 +1361,7 @@ export const Products: Props1 = [
     title: "Jik bleach stain removal and germ killer(pack of 3)",
     category: "groceries",
     old: 4570,
+    qty: 0,
   },
   {
     id: "520",
@@ -1268,6 +1369,7 @@ export const Products: Props1 = [
     price: 9860,
     title: "Gordon's moringa citrus blend 75cl",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "521",
@@ -1275,6 +1377,7 @@ export const Products: Props1 = [
     price: 52390,
     title: "Singleton of dufftown 20 year old 75cl",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "522",
@@ -1283,6 +1386,7 @@ export const Products: Props1 = [
     title: "Bacardi spiced rum",
     category: "groceries",
     old: 14140,
+    qty: 0,
   },
   {
     id: "523",
@@ -1290,6 +1394,7 @@ export const Products: Props1 = [
     price: 7090,
     title: "Don royal dry gin 70cl",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "524",
@@ -1297,6 +1402,7 @@ export const Products: Props1 = [
     price: 4580,
     title: "Fanta drink 50cl pet x12",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "525",
@@ -1305,6 +1411,7 @@ export const Products: Props1 = [
     title: "Cway drinking water 75cl x12",
     category: "groceries",
     old: 2550,
+    qty: 0,
   },
   {
     id: "526",
@@ -1313,6 +1420,7 @@ export const Products: Props1 = [
     title: "Nestle golden morn grainsmart",
     category: "groceries",
     old: 3200,
+    qty: 0,
   },
   {
     id: "527",
@@ -1320,6 +1428,7 @@ export const Products: Props1 = [
     price: 8300,
     title: "Indomie regular chicken flavour 70g x40",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "528",
@@ -1327,6 +1436,7 @@ export const Products: Props1 = [
     price: 20000,
     title: "Guiness foreign extra stout can",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "529",
@@ -1334,6 +1444,7 @@ export const Products: Props1 = [
     price: 9100,
     title: "Indomie onion chicken 70g x40",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "530",
@@ -1342,6 +1453,7 @@ export const Products: Props1 = [
     title: "Cway 150cl x6",
     category: "groceries",
     old: 2550,
+    qty: 0,
   },
   {
     id: "531",
@@ -1349,6 +1461,7 @@ export const Products: Props1 = [
     price: 329,
     title: "Good mama floral 170g",
     category: "groceries",
+    qty: 0,
   },
   {
     id: "600",
@@ -1357,6 +1470,7 @@ export const Products: Props1 = [
     title: "Sunking home 200x plus solar light system-yellow",
     category: "home-office",
     old: 111300,
+    qty: 0,
   },
   {
     id: "601",
@@ -1365,6 +1479,7 @@ export const Products: Props1 = [
     title: "4pcs of sofa throw pillow case-18 inches",
     category: "home-office",
     old: 14602,
+    qty: 0,
   },
   {
     id: "602",
@@ -1373,6 +1488,7 @@ export const Products: Props1 = [
     title: "LED human body induction night lamp wall lamp",
     category: "home-office",
     old: 12160,
+    qty: 0,
   },
   {
     id: "603",
@@ -1381,6 +1497,7 @@ export const Products: Props1 = [
     title: "Bocson 2litre electric kettle",
     category: "home-office",
     old: 16500,
+    qty: 0,
   },
   {
     id: "604",
@@ -1389,6 +1506,7 @@ export const Products: Props1 = [
     title: "Hisense 20litre microwave",
     category: "home-office",
     old: 69470,
+    qty: 0,
   },
   {
     id: "605",
@@ -1397,6 +1515,7 @@ export const Products: Props1 = [
     title: "DIY wall clock 3d mirror",
     category: "home-office",
     old: 7100,
+    qty: 0,
   },
   {
     id: "606",
@@ -1404,6 +1523,7 @@ export const Products: Props1 = [
     price: 106842,
     title: "Pinnacle 5.5 kg twin tub washing machine",
     category: "home-office",
+    qty: 0,
   },
   {
     id: "607",
@@ -1411,6 +1531,7 @@ export const Products: Props1 = [
     price: 109900,
     title: "Nexus 45liter bedside fridge- silver",
     category: "home-office",
+    qty: 0,
   },
   {
     id: "608",
@@ -1419,6 +1540,7 @@ export const Products: Props1 = [
     title: "Large cotton bath towel- green",
     category: "home-office",
     old: 15000,
+    qty: 0,
   },
   {
     id: "609",
@@ -1426,6 +1548,7 @@ export const Products: Props1 = [
     price: 315500,
     title: "Nexus 1hp split air conditional",
     category: "home-office",
+    qty: 0,
   },
   {
     id: "610",
@@ -1434,6 +1557,7 @@ export const Products: Props1 = [
     title: "Industrial wastbin black 240liter",
     category: "home-office",
     old: 76700,
+    qty: 0,
   },
   {
     id: "611",
@@ -1442,6 +1566,7 @@ export const Products: Props1 = [
     title: "Haier thermocool 18l double door refrigerator",
     category: "home-office",
     old: 375000,
+    qty: 0,
   },
   {
     id: "612",
@@ -1450,6 +1575,7 @@ export const Products: Props1 = [
     title: "Lontor 12 inch rechargeable table fan",
     category: "home-office",
     old: 42500,
+    qty: 0,
   },
   {
     id: "613",
@@ -1458,6 +1584,7 @@ export const Products: Props1 = [
     title: "Water filter purifyer- 6 layer filtering adjustable universal",
     category: "home-office",
     old: 3417,
+    qty: 0,
   },
   {
     id: "614",
@@ -1466,6 +1593,7 @@ export const Products: Props1 = [
     title: "Haier thermocool 93liter single door refrigerator",
     category: "home-office",
     old: 201053,
+    qty: 0,
   },
   {
     id: "615",
@@ -1474,6 +1602,7 @@ export const Products: Props1 = [
     title: "Aeon 200L chest freezer",
     category: "home-office",
     old: 250000,
+    qty: 0,
   },
   {
     id: "616",
@@ -1481,6 +1610,7 @@ export const Products: Props1 = [
     price: 355158,
     title: "4Haier thermocool 200L chest freezer",
     category: "home-office",
+    qty: 0,
   },
   {
     id: "617",
@@ -1489,6 +1619,7 @@ export const Products: Props1 = [
     title: "Skyrun 138L double door mount refrigerator",
     category: "home-office",
     old: 290535,
+    qty: 0,
   },
   {
     id: "618",
@@ -1497,6 +1628,7 @@ export const Products: Props1 = [
     title: "Duravolt 16 inches 3 in 1 rechargeable fan + solar",
     category: "home-office",
     old: 99900,
+    qty: 0,
   },
   {
     id: "619",
@@ -1504,6 +1636,7 @@ export const Products: Props1 = [
     price: 335500,
     title: "Nexus 1.5HP split air conditional",
     category: "home-office",
+    qty: 0,
   },
   {
     id: "620",
@@ -1511,6 +1644,7 @@ export const Products: Props1 = [
     price: 135000,
     title: "Aeon 50 x 50 4 burner gas cooker",
     category: "home-office",
+    qty: 0,
   },
   {
     id: "621",
@@ -1518,6 +1652,7 @@ export const Products: Props1 = [
     price: 270632,
     title: "Haier thermocool 10.2kg top loader semi automatic washing..",
     category: "home-office",
+    qty: 0,
   },
   {
     id: "622",
@@ -1525,6 +1660,7 @@ export const Products: Props1 = [
     price: 339474,
     title: "Haier thermocool 192L single door refrigerator",
     category: "home-office",
+    qty: 0,
   },
   {
     id: "623",
@@ -1533,6 +1669,7 @@ export const Products: Props1 = [
     title: "Wind gel summer breeze 150g x2",
     category: "home-office",
     old: 2057,
+    qty: 0,
   },
   {
     id: "624",
@@ -1541,6 +1678,7 @@ export const Products: Props1 = [
     title: "Glamstar 18 inches rechargeable standing fan",
     category: "home-office",
     old: 65000,
+    qty: 0,
   },
   {
     id: "625",
@@ -1549,6 +1687,7 @@ export const Products: Props1 = [
     title: "OX spacetek 18 inches standing fan",
     category: "home-office",
     old: 25000,
+    qty: 0,
   },
   {
     id: "626",
@@ -1557,6 +1696,7 @@ export const Products: Props1 = [
     title: "Industrial wastebin 240L -green",
     category: "home-office",
     old: 62199,
+    qty: 0,
   },
   {
     id: "627",
@@ -1565,6 +1705,7 @@ export const Products: Props1 = [
     title: "Silvercrest 2L German industrial food crusher blender",
     category: "home-office",
     old: 35500,
+    qty: 0,
   },
   {
     id: "700",
@@ -1573,6 +1714,7 @@ export const Products: Props1 = [
     title: "Zealot s27 60W wireless bluetooth speaker",
     category: "electronics",
     old: 155500,
+    qty: 0,
   },
   {
     id: "701",
@@ -1581,6 +1723,7 @@ export const Products: Props1 = [
     title: "Hiker 42 inches Android smart TV",
     category: "electronics",
     old: 251000,
+    qty: 0,
   },
   {
     id: "702",
@@ -1589,6 +1732,7 @@ export const Products: Props1 = [
     title: "Telan Bolan Long sound bar bluetooth speaker",
     category: "electronics",
     old: 85500,
+    qty: 0,
   },
   {
     id: "703",
@@ -1597,6 +1741,7 @@ export const Products: Props1 = [
     title: "Nexus 55 inches frameless UHD Android TV",
     category: "electronics",
     old: 401000,
+    qty: 0,
   },
   {
     id: "704",
@@ -1605,6 +1750,7 @@ export const Products: Props1 = [
     title: "Sinecraft Tedbar home theatre bluetooth with woofer",
     category: "electronics",
     old: 100000,
+    qty: 0,
   },
   {
     id: "705",
@@ -1613,6 +1759,7 @@ export const Products: Props1 = [
     title: "Infinity 32 inches smart Android TV",
     category: "electronics",
     old: 185500,
+    qty: 0,
   },
   {
     id: "706",
@@ -1620,6 +1767,7 @@ export const Products: Props1 = [
     price: 82400,
     title: "Newcastle new extra sound bass with display",
     category: "electronics",
+    qty: 0,
   },
   {
     id: "707",
@@ -1628,6 +1776,7 @@ export const Products: Props1 = [
     title: "F&D T50X-pro tower bluetooth speaker",
     category: "electronics",
     old: 333000,
+    qty: 0,
   },
   {
     id: "708",
@@ -1636,6 +1785,7 @@ export const Products: Props1 = [
     title: "F&D T40 tower bluetooth speaker",
     category: "electronics",
     old: 300000,
+    qty: 0,
   },
   {
     id: "709",
@@ -1644,6 +1794,7 @@ export const Products: Props1 = [
     title: "F&D HTT3 soundbar + subwoofer",
     category: "electronics",
     old: 195500,
+    qty: 0,
   },
   {
     id: "710",
@@ -1652,6 +1803,7 @@ export const Products: Props1 = [
     title: "Itel 32 inches LED TV",
     category: "electronics",
     old: 92500,
+    qty: 0,
   },
   {
     id: "711",
@@ -1660,6 +1812,7 @@ export const Products: Props1 = [
     title: "Royal 43 inches LED TV",
     category: "electronics",
     old: 180000,
+    qty: 0,
   },
   {
     id: "712",
@@ -1668,6 +1821,7 @@ export const Products: Props1 = [
     title: "Hiker 43 inches frameless UHD LED TV",
     category: "electronics",
     old: 234000,
+    qty: 0,
   },
   {
     id: "713",
@@ -1676,6 +1830,7 @@ export const Products: Props1 = [
     title: "Hikers 32 inches LED TV",
     category: "electronics",
     old: 165500,
+    qty: 0,
   },
   {
     id: "714",
@@ -1684,6 +1839,7 @@ export const Products: Props1 = [
     title: "DVD/Decoder wall shelf cabinet",
     category: "electronics",
     old: 9100,
+    qty: 0,
   },
   {
     id: "715",
@@ -1692,6 +1848,7 @@ export const Products: Props1 = [
     title: "TUTU 32 inches smart LED TV",
     category: "electronics",
     old: 157000,
+    qty: 0,
   },
   {
     id: "716",
@@ -1700,6 +1857,7 @@ export const Products: Props1 = [
     title: "Wireless earpod headfone bluetooth earpiece",
     category: "electronics",
     old: 5400,
+    qty: 0,
   },
   {
     id: "717",
@@ -1708,6 +1866,7 @@ export const Products: Props1 = [
     title: "Amani 42 inches 4k UHD smart TV",
     category: "electronics",
     old: 250500,
+    qty: 0,
   },
   {
     id: "718",
@@ -1716,6 +1875,7 @@ export const Products: Props1 = [
     title: "Hisense 50 inches smart HD TV",
     category: "electronics",
     old: 435000,
+    qty: 0,
   },
   {
     id: "719",
@@ -1724,6 +1884,7 @@ export const Products: Props1 = [
     title: "Power strip 6 AC socket + 3 type C USB port",
     category: "electronics",
     old: 31600,
+    qty: 0,
   },
   {
     id: "720",
@@ -1732,6 +1893,7 @@ export const Products: Props1 = [
     title: "Samsonic 55 inches smart UHD TV",
     category: "electronics",
     old: 545500,
+    qty: 0,
   },
   {
     id: "721",
@@ -1740,6 +1902,7 @@ export const Products: Props1 = [
     title: "Weyon 5.1 inches bluetooth speaker",
     category: "electronics",
     old: 95500,
+    qty: 0,
   },
   {
     id: "722",
@@ -1748,6 +1911,7 @@ export const Products: Props1 = [
     title: "TV guard voltage protection",
     category: "electronics",
     old: 19000,
+    qty: 0,
   },
   {
     id: "800",
@@ -1756,6 +1920,7 @@ export const Products: Props1 = [
     title: "HP probook 11 512 SSD/4GB Ram",
     category: "computing",
     old: 350000,
+    qty: 0,
   },
   {
     id: "801",
@@ -1764,6 +1929,7 @@ export const Products: Props1 = [
     title: "10 steps laptop stand",
     category: "computing",
     old: 5200,
+    qty: 0,
   },
   {
     id: "802",
@@ -1772,6 +1938,7 @@ export const Products: Props1 = [
     title: "10 speed adjustable laptop stand + phone stand",
     category: "computing",
     old: 4700,
+    qty: 0,
   },
   {
     id: "803",
@@ -1780,6 +1947,7 @@ export const Products: Props1 = [
     title: "Bluetooth keyboard for microsof surface pro/pro X",
     category: "computing",
     old: 146000,
+    qty: 0,
   },
   {
     id: "804",
@@ -1788,6 +1956,7 @@ export const Products: Props1 = [
     title: "10 step laptop stand",
     category: "computing",
     old: 5900,
+    qty: 0,
   },
   {
     id: "805",
@@ -1796,6 +1965,7 @@ export const Products: Props1 = [
     title: "2.5g wireless mouse ultra thin",
     category: "computing",
     old: 6200,
+    qty: 0,
   },
   {
     id: "806",
@@ -1804,6 +1974,7 @@ export const Products: Props1 = [
     title: "Portable rechargeable muli purpose printer",
     category: "computing",
     old: 39000,
+    qty: 0,
   },
   {
     id: "807",
@@ -1812,6 +1983,7 @@ export const Products: Props1 = [
     title: "Eaget pen flash drive OTG micro USD",
     category: "computing",
     old: 8300,
+    qty: 0,
   },
   {
     id: "808",
@@ -1820,6 +1992,7 @@ export const Products: Props1 = [
     title: "AOEWELL Laptop Windows 11 intel celeron 6GB/320 GB",
     category: "computing",
     old: 550000,
+    qty: 0,
   },
   {
     id: "809",
@@ -1828,6 +2001,7 @@ export const Products: Props1 = [
     title: "Wireless rechargeable mouse 2.4g",
     category: "computing",
     old: 7500,
+    qty: 0,
   },
   {
     id: "810",
@@ -1836,6 +2010,7 @@ export const Products: Props1 = [
     title: "LED rechargeable wireless mouse",
     category: "computing",
     old: 5900,
+    qty: 0,
   },
   {
     id: "811",
@@ -1844,6 +2019,7 @@ export const Products: Props1 = [
     title: "Hylyst OTG 128GB UBS drive",
     category: "computing",
     old: 10400,
+    qty: 0,
   },
   {
     id: "812",
@@ -1852,6 +2028,7 @@ export const Products: Props1 = [
     title: "128gb metal USB flash drive",
     category: "computing",
     old: 9400,
+    qty: 0,
   },
   {
     id: "813",
@@ -1860,6 +2037,7 @@ export const Products: Props1 = [
     title: "LED wireless mouse slim",
     category: "computing",
     old: 6200,
+    qty: 0,
   },
   {
     id: "814",
@@ -1868,6 +2046,7 @@ export const Products: Props1 = [
     title: "Plastic foldable adjustable stand for laptop",
     category: "computing",
     old: 5000,
+    qty: 0,
   },
   {
     id: "815",
@@ -1876,6 +2055,7 @@ export const Products: Props1 = [
     title: "T-wolf thunder wireless charging mouse",
     category: "computing",
     old: 15500,
+    qty: 0,
   },
   {
     id: "816",
@@ -1884,6 +2064,7 @@ export const Products: Props1 = [
     title: "MC laptop stand with cooling fan",
     category: "computing",
     old: 16700,
+    qty: 0,
   },
   {
     id: "817",
@@ -1892,5 +2073,6 @@ export const Products: Props1 = [
     title: "10' wireless bluetooth keyboard ultaslim LED",
     category: "computing",
     old: 24000,
+    qty: 0,
   },
 ];

@@ -72,11 +72,7 @@ function Page({ params }: { params: { id: string } }) {
           <div className="flex flex-row items-center justify-between">
             <Button
               className=" flex justify-between flex-row bg-purple-500 hover:bg-purple-700 w-2/3 my-3 h-14"
-              onClick={
-                appliances.find((product) => product.id !== selectedID?.id)
-                  ? () => dispatch(addToCart(selectedID))
-                  : () => dispatch(removeFromCart(selectedID?.id!))
-              }
+              onClick={() => dispatch(addToCart(selectedID))}
             >
               <BsCartPlus size={25} />
               Add to Carts

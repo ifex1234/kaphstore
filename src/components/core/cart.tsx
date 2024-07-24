@@ -25,10 +25,10 @@ function Cart() {
   }, [products]);
   return (
     <div className={`${style.container}`}>
-      {products.length && products.length ? (
+      {products.length ? (
         <div className={`${style.notEmpty} lg:container`}>
           <div className={`${style.mainContent}`}>
-            <h3>cart:({products.length})</h3>
+            <h3>cart:({products.length}) items</h3>
             <Separator />
             {products.map((product) => (
               <div
@@ -78,13 +78,13 @@ function Cart() {
               <h3>Cart Summary</h3>
 
               <div className=" flex flex-row justify-between">
-                <span>Subtotal</span>
-                <span>{totalCart}</span>
+                <span>Subtotal:</span>
+                <span>{FormatCurrency(totalCart)}</span>
               </div>
 
               <div>
                 <Button className="bg-purple-600 hover:bg-gradient-to-l w-full from-purple-500 to-purple-700">
-                  Check out {FormatCurrency(totalCart)}
+                  Check out {FormatCurrency(Number(totalCart.toFixed(2)))}
                 </Button>
               </div>
             </div>
