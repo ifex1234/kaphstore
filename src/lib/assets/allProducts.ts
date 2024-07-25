@@ -234,9 +234,27 @@ import image721 from "../../../public/images/flashsales/1 (42).jpg";
 import image722 from "../../../public/images/flashsales/1 (43).jpg";
 import image723 from "../../../public/images/flashsales/1 (44).jpg";
 import image724 from "../../../public/images/flashsales/1 (45).jpg";
-import image725 from "../../../public/images/flashsales/1 (21).jpg";
-import image726 from "../../../public/images/flashsales/2.jpg";
 
+//Recommended
+import image800 from "../../../public/images/recommended/1 (2).jpg";
+import image801 from "../../../public/images/recommended/1 (3).jpg";
+import image802 from "../../../public/images/recommended/1 (4).jpg";
+import image803 from "../../../public/images/recommended/1 (5).jpg";
+import image804 from "../../../public/images/recommended/1 (6).jpg";
+import image805 from "../../../public/images/recommended/1 (7).jpg";
+import image806 from "../../../public/images/recommended/1 (8).jpg";
+import image807 from "../../../public/images/recommended/1 (9).jpg";
+import image808 from "../../../public/images/recommended/1 (10).jpg";
+import image809 from "../../../public/images/recommended/1 (11).jpg";
+import image810 from "../../../public/images/recommended/1 (12).jpg";
+import image811 from "../../../public/images/recommended/1 (13).jpg";
+import image812 from "../../../public/images/recommended/1 (14).jpg";
+import image813 from "../../../public/images/recommended/1 (15).jpg";
+import image814 from "../../../public/images/recommended/1 (16).jpg";
+import image815 from "../../../public/images/recommended/1 (17).jpg";
+import image816 from "../../../public/images/recommended/1 (18).jpg";
+import image817 from "../../../public/images/recommended/1 (19).jpg";
+import image818 from "../../../public/images/recommended/1 (20).jpg";
 import { StaticImageData } from "next/image";
 
 type Props1 = {
@@ -2319,6 +2337,168 @@ export const Products: Props1 = [
     title: "Men short sleeve T-shirt summer casual",
     category: "flash-sales",
     old: 10500,
+    qty: 0,
+  },
+  {
+    id: "950",
+    image: image800,
+    price: 7200,
+    title: "X53 mobile phone coller rechargeable",
+    category: "recommended",
+    old: 13500,
+    qty: 0,
+  },
+  {
+    id: "951",
+    image: image801,
+    price: 96400,
+    title: "Xiami Redmi A3x 32gb RAM/64gb ROM",
+    category: "recommended",
+    old: 10900,
+    qty: 0,
+  },
+  {
+    id: "952",
+    image: image802,
+    price: 23800,
+    title: "MXS pro TV smart box",
+    category: "recommended",
+    old: 27800,
+    qty: 0,
+  },
+  {
+    id: "953",
+    image: image803,
+    price: 8200,
+    title: "Ace Elec ultra slim 20000mah powerbank",
+    category: "recommended",
+    old: 15000,
+    qty: 0,
+  },
+  {
+    id: "954",
+    image: image804,
+    price: 5200,
+    title: "Philly 10000mah mobile power bank",
+    category: "recommended",
+    old: 8500,
+    qty: 0,
+  },
+  {
+    id: "955",
+    image: image805,
+    price: 6500,
+    title: "Men shoes loafers casual business",
+    category: "recommended",
+    old: 9500,
+    qty: 0,
+  },
+  {
+    id: "956",
+    image: image806,
+    price: 10800,
+    title: "Samsung Galaxy A05 3GB Ram/128GB ROM Android 13",
+    category: "recommended",
+    old: 127500,
+    qty: 0,
+  },
+  {
+    id: "957",
+    image: image807,
+    price: 95000,
+    title: "Itel 32 inche LED TV 1 year warranty",
+    category: "recommended",
+    old: 120000,
+    qty: 0,
+  },
+  {
+    id: "958",
+    image: image808,
+    price: 4800,
+    title: "Men anti slip flop slipper",
+    category: "recommended",
+    old: 9500,
+    qty: 0,
+  },
+  {
+    id: "959",
+    image: image809,
+    price: 13900,
+    title: "Itel 1.83 sones smart watch water proof",
+    category: "recommended",
+    old: 50000,
+    qty: 0,
+  },
+  {
+    id: "960",
+    image: image810,
+    price: 2900,
+    title: "Summer women v-neck sleeveless fashion",
+    category: "recommended",
+    old: 7500,
+    qty: 0,
+  },
+  {
+    id: "961",
+    image: image811,
+    price: 6500,
+    title: "2-in-1 T-shirt men two pieces",
+    category: "recommended",
+    old: 10500,
+    qty: 0,
+  },
+  {
+    id: "962",
+    image: image812,
+    price: 72000,
+    title: "Nokia c-31 3GB RAM/64GB ROM",
+    category: "recommended",
+    old: 105000,
+    qty: 0,
+  },
+  {
+    id: "963",
+    image: image813,
+    price: 16100,
+    title: "Hiker 43' frameless FHD LED TV",
+    category: "recommended",
+    old: 234500,
+    qty: 0,
+  },
+  {
+    id: "964",
+    image: image814,
+    price: 226000,
+    title: "Xiaomi Redmi 13 6.67' 8GB RAM/128GB ROM Android 13",
+    category: "recommended",
+    old: 260000,
+    qty: 0,
+  },
+  {
+    id: "965",
+    image: image815,
+    price: 2400,
+    title: "Unisex anti blue light protective computer LED screen",
+    category: "recommended",
+    old: 3100,
+    qty: 0,
+  },
+  {
+    id: "966",
+    image: image816,
+    price: 5900,
+    title: "Samsung charger superfast charger adaptive",
+    category: "recommended",
+    old: 7500,
+    qty: 0,
+  },
+  {
+    id: "967",
+    image: image817,
+    price: 18800,
+    title: "Qasa solar power portable 148wh(40000mah/3.74v)",
+    category: "recommended",
+    old: 220000,
     qty: 0,
   },
 ];
