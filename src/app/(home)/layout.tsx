@@ -7,6 +7,7 @@ import { TopAds } from "@/components/core/ads";
 import Navbar from "@/components/core/navbar";
 import { Separator } from "@/components/ui/separator";
 import TopNav from "@/components/core/topNav";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,13 @@ export default function RootLayout({
           <TopNav />
           <Separator />
           <div className=" w-full">{children}</div>
+          <Toaster
+            position="bottom-right"
+            toastOptions={{
+              style: { backgroundColor: "purple", color: "white" },
+            }}
+            theme="system"
+          />
           <Footer />
         </ContextProvider>
       </body>

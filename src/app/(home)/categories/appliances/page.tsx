@@ -8,7 +8,11 @@ export default function Page() {
   return (
     <div className=" md:container">
       <Categories arrayItem={appliances} />
-      <Toaster />
+      <Toaster
+        position="bottom-right"
+        toastOptions={{ style: { backgroundColor: "purple", color: "white" } }}
+        theme="system"
+      />
     </div>
   );
 }

@@ -26,13 +26,13 @@ import { toast, Toaster } from "sonner";
 function Page({ params }: { params: { id: string } }) {
   const [favourite, setfavourite] = useState(false);
   const delFee = Math.round(Math.random() * 1000);
-  const appliances = Products.slice(24, 50);
+  const flahSales = Products.slice(211, 235);
   const dispatch = useDispatch();
   const products = useSelector((state: RootState) => state.store);
   const makeFavourite = () => {
     setfavourite((previous) => (previous = true));
   };
-  const selectedID = appliances.find((label) => label.id === params.id);
+  const selectedID = flahSales.find((label) => label.id === params.id);
   return (
     <div className={`${style.container}`}>
       <div className={`${style.main}`}>

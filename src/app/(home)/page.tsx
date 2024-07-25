@@ -17,48 +17,24 @@ export default function Home() {
           <CarouselHome /> <HomeAside />
         </div>
         <SectionMinor />
-        <SubHeader
-          item1={"Flash sales"}
-          item2={"See all"}
-          color={" rgb(173, 12, 170)"}
-        />
+        <SubHeader item1={"Flash sales"} item2={"/flash-sales"} />
         <SectionBig />
         <SectionBorderless
           arrayItem={productsData}
           header={"Top Selling Items"}
         />
-        <SubHeader
-          item1={"Choplife Christmas Deals"}
-          item2={"See all"}
-          color={" rgb(173, 12, 170)"}
-        />
+        <SubHeader item1={"Choplife Christmas Deals"} item2={"See all"} />
         <SectionBorderless arrayItem={Choplife} />
-        <SubHeader
-          item1={"Le drop Official Store Deals"}
-          item2={"See all"}
-          color={" rgb(173, 12, 170)"}
-        />
+        <SubHeader item1={"Le drop Official Store Deals"} item2={"See all"} />
         <SectionBorderless arrayItem={Gins} />
 
         {/* <Sectionwithprice arrayItem={deals1} /> */}
-        <SubHeader
-          item1={"Best Price"}
-          item2={"See all"}
-          color={"bg-purple-700"}
-        />
+        <SubHeader item1={"Best Price"} item2={"See all"} />
         <SectionBorderless arrayItem={BestPrice} />
 
-        <SubHeader
-          item1={"Top Phone deals"}
-          item2={"See all"}
-          color={"rgb(173, 12, 170)"}
-        />
+        <SubHeader item1={"Top Phone deals"} item2={"See all"} />
         <SectionBorderless arrayItem={PhoneDeals} />
-        <SubHeader
-          item1={"Global Best Sellers"}
-          item2={"See all"}
-          color={"rgb(173, 12, 170)"}
-        />
+        <SubHeader item1={"Global Best Sellers"} item2={"See all"} />
         <SectionBorderless arrayItem={Seller} />
       </section>
     </main>

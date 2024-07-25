@@ -207,6 +207,36 @@ import image615 from "../../../public/images/categories/computing/1 (16).jpg";
 import image616 from "../../../public/images/categories/computing/1 (17).jpg";
 import image620 from "../../../public/images/categories/computing/1 (21).jpg";
 import image623 from "../../../public/images/categories/computing/1 (24).jpg";
+
+// Flash sales
+import image700 from "../../../public/images/flashsales/1 (21).jpg";
+import image701 from "../../../public/images/flashsales/1 (22).jpg";
+import image702 from "../../../public/images/flashsales/1 (23).jpg";
+import image703 from "../../../public/images/flashsales/1 (24).jpg";
+import image704 from "../../../public/images/flashsales/1 (25).jpg";
+import image705 from "../../../public/images/flashsales/1 (26).jpg";
+import image706 from "../../../public/images/flashsales/1 (27).jpg";
+import image707 from "../../../public/images/flashsales/1 (28).jpg";
+import image708 from "../../../public/images/flashsales/1 (29).jpg";
+import image709 from "../../../public/images/flashsales/1 (30).jpg";
+import image710 from "../../../public/images/flashsales/1 (31).jpg";
+import image711 from "../../../public/images/flashsales/1 (32).jpg";
+import image712 from "../../../public/images/flashsales/1 (33).jpg";
+import image713 from "../../../public/images/flashsales/1 (34).jpg";
+import image714 from "../../../public/images/flashsales/1 (35).jpg";
+import image715 from "../../../public/images/flashsales/1 (36).jpg";
+import image716 from "../../../public/images/flashsales/1 (37).jpg";
+import image717 from "../../../public/images/flashsales/1 (38).jpg";
+import image718 from "../../../public/images/flashsales/1 (39).jpg";
+import image719 from "../../../public/images/flashsales/1 (40).jpg";
+import image720 from "../../../public/images/flashsales/1 (41).jpg";
+import image721 from "../../../public/images/flashsales/1 (42).jpg";
+import image722 from "../../../public/images/flashsales/1 (43).jpg";
+import image723 from "../../../public/images/flashsales/1 (44).jpg";
+import image724 from "../../../public/images/flashsales/1 (45).jpg";
+import image725 from "../../../public/images/flashsales/1 (21).jpg";
+import image726 from "../../../public/images/flashsales/2.jpg";
+
 import { StaticImageData } from "next/image";
 
 type Props1 = {
@@ -2073,6 +2103,222 @@ export const Products: Props1 = [
     title: "10' wireless bluetooth keyboard ultaslim LED",
     category: "computing",
     old: 24000,
+    qty: 0,
+  },
+  {
+    id: "900",
+    image: image700,
+    price: 4150,
+    title: "Lipton pet bottle peach 45cl x12",
+    category: "flash-sales",
+    old: 6150,
+    qty: 0,
+  },
+  {
+    id: "901",
+    image: image701,
+    price: 6000,
+    title: "Oraimo 10000mah power bank two device same time",
+    category: "flash-sales",
+    old: 24020,
+    qty: 0,
+  },
+  {
+    id: "902",
+    image: image702,
+    price: 4900,
+    title: "FnGen 03 classy luxury watch with date week-coffee",
+    category: "flash-sales",
+    old: 22000,
+    qty: 0,
+  },
+  {
+    id: "903",
+    image: image703,
+    price: 12500,
+    title: "2023 vintage casual men canvas sneaker",
+    category: "flash-sales",
+    old: 15500,
+    qty: 0,
+  },
+  {
+    id: "904",
+    image: image704,
+    price: 6200,
+    title: "Hyslt metal OTG 128gb USB flash drive",
+    category: "flash-sales",
+    old: 7200,
+    qty: 0,
+  },
+  {
+    id: "905",
+    image: image705,
+    price: 3200,
+    title: "DIY wall clock 3D clock",
+    category: "flash-sales",
+    old: 7100,
+    qty: 0,
+  },
+  {
+    id: "906",
+    image: image706,
+    price: 19900,
+    title: "Nexus 16' standing fan",
+    category: "flash-sales",
+    old: 25500,
+    qty: 0,
+  },
+  {
+    id: "907",
+    image: image707,
+    price: 14000,
+    title: "Itel power lite 20000mah powerbank",
+    category: "flash-sales",
+    old: 28000,
+    qty: 0,
+  },
+  {
+    id: "908",
+    image: image708,
+    price: 15500,
+    title: "Ace elec power bank 30000mah portable",
+    category: "flash-sales",
+    old: 19000,
+    qty: 0,
+  },
+  {
+    id: "910",
+    image: image710,
+    price: 109000,
+    title: "Samsung galaxy A05 4GB/64GB Android 13",
+    category: "flash-sales",
+    old: 135000,
+    qty: 0,
+  },
+  {
+    id: "911",
+    image: image711,
+    price: 16100,
+    title: "Binatone smooth cliding steam iron",
+    category: "flash-sales",
+    old: 17000,
+    qty: 0,
+  },
+  {
+    id: "912",
+    image: image712,
+    price: 109000,
+    title: "Infinix smart 8 6.6' 3GB RAM/64GB ROM Android 13",
+    category: "flash-sales",
+    old: 150000,
+    qty: 0,
+  },
+  {
+    id: "913",
+    image: image713,
+    price: 41580,
+    title: "Oraimo Boompop over-ear bluetooth wireless headphone",
+    category: "flash-sales",
+    old: 72000,
+    qty: 0,
+  },
+  {
+    id: "914",
+    image: image714,
+    price: 6500,
+    title: "Nivea perfect and radiant 3-in-1 face cleanser for women-150ml",
+    category: "flash-sales",
+    old: 7150,
+    qty: 0,
+  },
+  {
+    id: "915",
+    image: image715,
+    price: 420050,
+    title: "Hisense 60' smart UHD TV",
+    category: "flash-sales",
+    old: 450050,
+    qty: 0,
+  },
+  {
+    id: "916",
+    image: image716,
+    price: 179000,
+    title: "Hisense 121 liter single door refrigerator",
+    category: "flash-sales",
+    old: 189000,
+    qty: 0,
+  },
+  {
+    id: "917",
+    image: image717,
+    price: 307000,
+    title: "Techno camon 20 pro-5G",
+    category: "flash-sales",
+    old: 350000,
+    qty: 0,
+  },
+  {
+    id: "918",
+    image: image718,
+    price: 200000,
+    title: "Senwie 4.5kva low start manual generator",
+    category: "flash-sales",
+    old: 205000,
+    qty: 0,
+  },
+  {
+    id: "919",
+    image: image719,
+    price: 6600,
+    title: "Metal flat 128GB USB flash adapter",
+    category: "flash-sales",
+    old: 10400,
+    qty: 0,
+  },
+  {
+    id: "920",
+    image: image720,
+    price: 5100,
+    title: "Couple watches men watches women watches",
+    category: "flash-sales",
+    old: 21900,
+    qty: 0,
+  },
+  {
+    id: "921",
+    image: image721,
+    price: 14500,
+    title: "V8 external live sound card microphone set",
+    category: "flash-sales",
+    old: 43000,
+    qty: 0,
+  },
+  {
+    id: "922",
+    image: image722,
+    price: 10500,
+    title: "Qasa rechargeable lantern",
+    category: "flash-sales",
+    old: 15500,
+    qty: 0,
+  },
+  {
+    id: "923",
+    image: image723,
+    price: 13200,
+    title: "Patchwork Zipper jacket two side",
+    category: "flash-sales",
+    old: 17900,
+    qty: 0,
+  },
+  {
+    id: "924",
+    image: image724,
+    price: 7200,
+    title: "Men short sleeve T-shirt summer casual",
+    category: "flash-sales",
+    old: 10500,
     qty: 0,
   },
 ];
