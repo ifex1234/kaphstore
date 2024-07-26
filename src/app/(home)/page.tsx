@@ -22,6 +22,8 @@ export default function Home() {
         <SectionBorderless
           arrayItem={productsData}
           header={"Top Selling Items"}
+          link="see all"
+          href="/recommeded"
         />
         <SubHeader item1={"Choplife Christmas Deals"} item2={"See all"} />
         <SectionBorderless arrayItem={Choplife} />

@@ -1,5 +1,6 @@
 import styles from "@/lib/styles/sectionborderless.module.scss";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 type Props = {
   id: number;
   title: string;
@@ -8,16 +9,21 @@ type Props = {
 }[];
 type Props2 = {
   header?: string;
+  link?: string;
   arrayItem: Props;
+  href?: string;
 };
 
 export const SectionBorderless: React.FC<Props2> = (props) => {
-  const { header, arrayItem } = props;
+  const { header, arrayItem, link, href } = props;
 
   return (
     <div className={`${styles.container}`}>
-      <div className=" px-2">
+      <div className=" px-2 flex flex-row justify-between">
         <p className=" text-2xl font-bold">{header}</p>
+        <Link href={`${href}`} className="p-2">
+          {link}
+        </Link>
       </div>
 
       <div className={`${styles.array_wrapper}`}>
