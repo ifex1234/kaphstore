@@ -95,10 +95,7 @@ function Cart() {
           <div className={`${style.cart}`}>
             <h4>Your cart is empty!</h4>
             <p>Browse our categories and discover our best deals!</p>
-            <Button
-              className=" bg-purple-600 hover:bg-purple-800 h-12 text-white"
-              onClick={() => router.push("/")}
-            >
+            <Button className={`${style.btn}`} onClick={() => router.push("/")}>
               Start Shopping
             </Button>
           </div>

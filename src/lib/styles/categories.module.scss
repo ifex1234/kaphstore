@@ -1,3 +1,4 @@
+@use "variables";
 .container {
   display: flex;
   flex-direction: row;
@@ -10,7 +11,12 @@
 .btn {
   display: none;
 }
+.main {
+  background-color: variables.$main_color4;
+}
 .arrayCont {
+  background-color: variables.$main_color3;
+  color: variables.$main_color11;
   display: flex;
   flex-direction: column;
   width: 11rem;
@@ -21,10 +27,11 @@
   padding: 0.625rem;
   font-size: small;
   &:hover {
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: variables.$box_shadow;
     cursor: pointer;
     .btn {
       display: block;
+      @extend %buttons;
     }
   }
 }

@@ -29,7 +29,7 @@ const Categories: React.FC<Prop> = (ObjArr) => {
   };
 
   return (
-    <div className=" lg:container">
+    <div className={`lg:container ${style.main}`}>
       <div className={`${style.container}`}>
         {arrayItem.map((item) => (
           <Link href={`${pathName}/${item.id}`} key={item.id}>
@@ -56,10 +56,7 @@ const Categories: React.FC<Prop> = (ObjArr) => {
                 <BsStarFill color="purple" /> <BsStarHalf color="purple" />
               </span> */}
               <p>{item.icon}</p>
-              <Button
-                className={` bg-purple-600 hover:bg-purple-700 ${style.btn}`}
-                onClick={handleClick}
-              >
+              <Button className={`${style.btn}`} onClick={handleClick}>
                 Add to Cart
               </Button>
             </div>

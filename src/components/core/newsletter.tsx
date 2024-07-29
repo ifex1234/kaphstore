@@ -24,12 +24,8 @@ function Newsletter() {
             className="w-2/3 h-12 px-8"
           />{" "}
           <LuMail className=" absolute top-4 left-2" size={19} />
-          <Button className="hover:border-purple-700 hover:text-purple-700 hover:border h-12">
-            Male
-          </Button>{" "}
-          <Button className="hover:border-purple-700 hover:text-purple-700 hover:border h-12">
-            Female
-          </Button>
+          <Button className={` h-12 ${styles.btn}`}>Male</Button>
+          <Button className={` h-12 ${styles.btn}`}>Female</Button>
         </span>
         <div className="flex flex-row gap-x-2 mt-2">
           <Checkbox className="mt-1" />

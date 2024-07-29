@@ -19,9 +19,9 @@ function Navbar() {
   const pathname = usePathname();
   const products = useSelector((state: RootState) => state.store);
   return (
-    <nav className="flex flex-row items-center h-16 justify-between text-slate-600 w-full bg-purple-600">
+    <nav className="flex flex-row items-center h-16 justify-between text-slate-600 w-full bg-fuchsia-500">
       <Link href="/">
-        <span className=" origin-center  hover:rotate-360 text-white px-2 md:hidden xl:block">
+        <span className=" origin-center  hover:text-fuchsia-900 text-white px-2 md:hidden xl:block">
           Home
         </span>
       </Link>
@@ -37,7 +37,7 @@ function Navbar() {
                       pathname === `${Links.href}`
                         ? "bg-slate-200 text-purple-900"
                         : ""
-                    }  hover:text-purple-700 hover:text-base hover:bg-slate-200  bg-purple-600 text-white`}
+                    }  hover:text-fuchsia-900 hover:text-base hover:bg-fuchsia-400  bg-fuchsia-500 text-white`}
                   >
                     {Links.label}
                   </NavigationMenuLink>

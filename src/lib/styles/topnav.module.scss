@@ -1,6 +1,6 @@
+@use "variables";
 @mixin flex-con {
-  display: flex;
-  flex-direction: row;
+  @extend %flex-row;
   justify-content: space-between;
 }
 .container {
@@ -11,8 +11,7 @@
   align-items: center;
 }
 .inputdiv {
-  display: flex;
-  flex-direction: row;
+  @extend %flex-row;
   align-items: center;
   gap: 0.625rem;
   width: 50%;
@@ -27,4 +26,10 @@
   .container {
     display: none;
   }
+}
+.btn {
+  @extend %buttons;
+}
+.bg_main {
+  background-color: variables.$main_color3;
 }

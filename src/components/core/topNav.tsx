@@ -15,9 +15,7 @@ function TopNav() {
           className=" w-10/12"
           placeholder="Search products, brands and categories"
         />
-        <Button className=" bg-purple-500 hover:bg-purple-700 text-white">
-          Search
-        </Button>
+        <Button className={`${style.btn}`}>Search</Button>
       </div>
       <div className={`${style.account}`}>
         <span className=" flex flex-row items-center justify-between gap-x-2">

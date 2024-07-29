@@ -1,6 +1,7 @@
+@use "variables";
 .container {
-  background-color: #333;
-  color: white;
+  background-image: variables.$bg_linear;
+  color: variables.$main_color2;
   height: 350px;
   gap: 10px;
   padding: 10px;
@@ -21,6 +22,9 @@
 }
 @media screen and (max-width: 380px) {
   .container {
-    height: 570px;
+    height: 600px;
   }
+}
+.btn {
+  @extend %buttons1;
 }

@@ -1,0 +1,4 @@
+@use "sass:meta";
+body.dark {
+  @include meta.load-css("dark-theme", $with: ("border-contrast": true));
+}

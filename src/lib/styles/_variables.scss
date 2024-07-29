@@ -1,0 +1,71 @@
+// $dark-theme: true !default;
+// $primary-color: #f8bbd0 !default;
+// $accent-color: #6a1b9a !default;
+
+// @if $dark-theme {
+//   $primary-color: darken($primary-color, 60%);
+//   $accent-color: lighten($accent-color, 60%);
+// }
+// .button {
+// background-color: $primary-color;
+// border: 1px solid $accent-color;
+// border-radius: 3px;
+// }
+
+$secondary_color_font: #444;
+$secondary_color_font_dark: #888;
+$primary_font_size: 0.875rem;
+$secondary_font_size: 0.75rem;
+$header_font_size_primary: 1.5rem;
+$header_font_size_secondary: 1.125rem;
+$box_shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+$main_color1: #fdf6fc;
+$main_color2: #fcebfc;
+$main_color3: #f7d7f5;
+$main_color4: #f0b7e9;
+$main_color5: #e78bdc;
+$main_color6: #d864c9;
+$main_color7: #ba3fa7;
+$main_color8: #9a3188;
+$main_color9: #7e2a6e;
+$main_color10: #68275b;
+$main_color11: #430f39;
+$bg_linear: linear-gradient(to bottom right, $main_color7, $main_color5);
+$bg_linear2: linear-gradient($main_color6, $main_color8);
+$bg_color_light: $main_color2;
+$bg_color_dark: #222;
+$primary_color_font: $main_color10;
+$primary_color_font_dark: $main_color1;
+$header_color: $main_color11;
+$hover: $main_color8;
+$default_button: $main_color6;
+$active: $main_color10;
+%flex-centre {
+  display: flex;
+  justify-content: center;
+}
+%flex-col {
+  display: flex;
+  flex-direction: column;
+}
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+%buttons {
+  background-color: $main_color6;
+  color: $main_color2;
+  &:hover {
+    background-color: $main_color9;
+    color: $main_color1;
+  }
+}
+%buttons1 {
+  background-color: $main_color2;
+  color: $main_color10;
+  border-color: $main_color10;
+  &:hover {
+    background-color: $main_color10;
+    color: $main_color1;
+  }
+}

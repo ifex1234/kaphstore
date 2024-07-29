@@ -1,0 +1,9 @@
+@use "variables";
+$border-contrast: false !default;
+code {
+  background-color: variables.$bg_color_dark;
+  color: $primary_color_font_dark;
+  @if $border-contrast {
+    border-color: #dadbdf;
+  }
+}

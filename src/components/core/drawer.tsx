@@ -41,10 +41,13 @@ export function Drawer() {
       <SheetTrigger asChild>
         <MdMenu fill="white" size={30} />
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className=" bg-fuchsia-600 text-fuchsia-100">
         <SheetHeader className="mt-5 md:hidden">
-          <div className="w-10/12">
-            <Input placeholder="Search products and categories" />
+          <div className="w-10/12 text-fuchsia-200">
+            <Input
+              className=" border-e-fuchsia-100 "
+              placeholder="Search products and categories"
+            />
           </div>
         </SheetHeader>
         <span className="flex gap-3 flex-col w-full my-7">
