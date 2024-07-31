@@ -23,6 +23,7 @@ function Cart() {
       products.reduce((arg1: number, arg2) => arg1 + arg2.price! * arg2.qty, 0)
     );
   }, [products]);
+
   return (
     <div className={`${style.container}`}>
       {products.length ? (
@@ -41,13 +42,16 @@ function Cart() {
                   </span>
                   <span className=" flex flex-col gap-2">
                     <span>{FormatCurrency(product.price!)} </span>
-                    <span> {FormatCurrency(product.old!)}</span>
+                    <span className=" line-through">
+                      {" "}
+                      {FormatCurrency(product.old!)}
+                    </span>
                   </span>
                 </div>
                 <div className={`${style.btnContainer}`}>
                   <Button
-                    onClick={() => removeFromCart(product.id)}
-                    className=" bg-purple-500 text-white hover:bg-purple-700 flex flex-row gap-5"
+                    onClick={() => removeFromCart(Number(product.id))}
+                    className={`${style.btn} w-28 flex justify-between`}
                   >
                     {" "}
                     <LuTrash />
@@ -56,14 +60,14 @@ function Cart() {
                   <span className={`${style.calc}`}>
                     <Button
                       onClick={() => dispatch(decrement(product.id))}
-                      className="bg-purple-500 text-white hover:bg-purple-700"
+                      className={`${style.btn}`}
                     >
                       -
                     </Button>
                     {product.qty}
                     <Button
                       onClick={() => dispatch(increment(product.id))}
-                      className="bg-purple-500 text-white hover:bg-purple-700"
+                      className={`${style.btn}`}
                     >
                       +
                     </Button>
@@ -83,7 +87,10 @@ function Cart() {
               </div>
 
               <div>
-                <Button className="bg-purple-600 hover:bg-gradient-to-l w-full from-purple-500 to-purple-700">
+                <Button
+                  className={`${style.btn} w-full`}
+                  onClick={() => router.push("/check-out")}
+                >
                   Check out {FormatCurrency(Number(totalCart.toFixed(2)))}
                 </Button>
               </div>

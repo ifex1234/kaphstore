@@ -1,43 +1,74 @@
-import { CarouselHome } from "@/components/core/carousel";
-import HomeAside from "@/components/core/homeAside";
 import { SectionBorderless } from "@/components/core/sectionBorderless";
 import SectionBig from "@/components/core/sectionBig";
 import { SectionMinor } from "@/components/core/sectionMinor";
 import SubHeader from "@/components/core/subHeader";
-import { PhoneDeals } from "@/lib/assets/deals";
-import { Choplife, Gins, BestPrice } from "@/lib/assets/deals";
-import { Seller } from "@/lib/assets/other/store";
-import { productsData } from "@/lib/assets/section2";
+import { Products } from "@/lib/assets/allProducts";
 
 export default function Home() {
+  const recommended = Products.slice(235, 241);
+  const appliance = Products.slice(24, 30);
+  const computers = Products.slice(193, 199);
+  const electronics = Products.slice(170, 178);
+  const fashion = Products.slice(50, 57);
+  const groceries = Products.slice(110, 117);
+  const health_beauty = Products.slice(82, 88);
+  const home_office = Products.slice(142, 148);
+  const mobile = Products.slice(0, 7);
   return (
     <main>
       <section className=" rounded-sm mb-5">
-        <div className=" flex flex-row  my-2 gap-1">
-          <CarouselHome /> <HomeAside />
-        </div>
         <SectionMinor />
         <SubHeader item1={"Flash sales"} item2={"/flash-sales"} />
         <SectionBig />
         <SectionBorderless
-          arrayItem={productsData}
+          arrayItem={recommended}
           header={"Top Selling Items"}
           link="see all"
           href="/recommeded"
         />
-        <SubHeader item1={"Choplife Christmas Deals"} item2={"See all"} />
-        <SectionBorderless arrayItem={Choplife} />
-        <SubHeader item1={"Le drop Official Store Deals"} item2={"See all"} />
-        <SectionBorderless arrayItem={Gins} />
+        <SubHeader
+          item1={"Top Appliance Deals"}
+          item2={"/categories/appliances"}
+        />
+        <SectionBorderless arrayItem={appliance} />
+        <SubHeader
+          item1={"Top Computer Deals"}
+          item2={"/categories/computers"}
+        />
+        <SectionBorderless arrayItem={computers} />
 
-        {/* <Sectionwithprice arrayItem={deals1} /> */}
-        <SubHeader item1={"Best Price"} item2={"See all"} />
-        <SectionBorderless arrayItem={BestPrice} />
+        <SubHeader
+          item1={"Top Electronics Deals"}
+          item2={"/categories/electronics"}
+        />
+        <SectionBorderless arrayItem={electronics} />
 
-        <SubHeader item1={"Top Phone deals"} item2={"See all"} />
-        <SectionBorderless arrayItem={PhoneDeals} />
-        <SubHeader item1={"Global Best Sellers"} item2={"See all"} />
-        <SectionBorderless arrayItem={Seller} />
+        <SubHeader item1={"Top Fashion deals"} item2={"/categories/fashion"} />
+        <SectionBorderless arrayItem={fashion} />
+
+        <SubHeader
+          item1={"Super Groceries deals"}
+          item2={"/categories/groceries"}
+        />
+        <SectionBorderless arrayItem={groceries} />
+
+        <SubHeader
+          item1={"Top Health and Beauty deals"}
+          item2={"/categories/health-beauty"}
+        />
+        <SectionBorderless arrayItem={health_beauty} />
+
+        <SubHeader
+          item1={"Home and Office deals"}
+          item2={"/categories/home-office"}
+        />
+        <SectionBorderless arrayItem={home_office} />
+
+        <SubHeader
+          item1={"Top Mobile deals"}
+          item2={"/categories/mobile-tablet"}
+        />
+        <SectionBorderless arrayItem={mobile} />
       </section>
     </main>
   );

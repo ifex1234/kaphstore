@@ -5,7 +5,8 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
-// import { BsStarFill, BsStarHalf } from "react-icons/bs";
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/lib/services/Slice";
 import { Button } from "../ui/button";
 type Props = {
   id: string;
@@ -24,9 +25,7 @@ type Prop = {
 const Categories: React.FC<Prop> = (ObjArr) => {
   const { arrayItem } = ObjArr;
   const pathName = usePathname();
-  const handleClick = () => {
-    console.log("add to cart button clicked");
-  };
+  const dispatch = useDispatch();
 
   return (
     <div className={`lg:container ${style.main}`}>
@@ -50,13 +49,11 @@ const Categories: React.FC<Prop> = (ObjArr) => {
                   : 0}
                 %
               </p>
-              {/* <span className="flex flex-row justify-start w-20 items-center">
-                <BsStarFill color="purple" /> <BsStarFill color="purple" />
-                <BsStarFill color="purple" />
-                <BsStarFill color="purple" /> <BsStarHalf color="purple" />
-              </span> */}
               <p>{item.icon}</p>
-              <Button className={`${style.btn}`} onClick={handleClick}>
+              <Button
+                className={`${style.btn}`}
+                // onClick={() => dispatch(addToCart(arrayItem))}
+              >
                 Add to Cart
               </Button>
             </div>

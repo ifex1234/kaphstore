@@ -262,10 +262,12 @@ type Props1 = {
   image: StaticImageData;
   price: number;
   title: string;
-  icon?: string;
   category: string;
   old?: number;
   qty: number;
+  value?: number;
+  itemLeft?: string;
+  itemLeftValue?: number;
 }[];
 export const Products: Props1 = [
   {
@@ -2140,6 +2142,9 @@ export const Products: Props1 = [
     category: "flash-sales",
     old: 24020,
     qty: 0,
+    value: 20,
+    itemLeft: "1100 items left",
+    itemLeftValue: 20,
   },
   {
     id: "902",
@@ -2149,6 +2154,9 @@ export const Products: Props1 = [
     category: "flash-sales",
     old: 22000,
     qty: 0,
+    value: 60,
+    itemLeft: "100 items left",
+    itemLeftValue: 50,
   },
   {
     id: "903",
@@ -2158,6 +2166,9 @@ export const Products: Props1 = [
     category: "flash-sales",
     old: 15500,
     qty: 0,
+    value: 80,
+    itemLeft: "400 items left",
+    itemLeftValue: 10,
   },
   {
     id: "904",
@@ -2167,6 +2178,9 @@ export const Products: Props1 = [
     category: "flash-sales",
     old: 7200,
     qty: 0,
+    value: 10,
+    itemLeft: "200 items left",
+    itemLeftValue: 80,
   },
   {
     id: "905",
@@ -2176,6 +2190,9 @@ export const Products: Props1 = [
     category: "flash-sales",
     old: 7100,
     qty: 0,
+    value: 44,
+    itemLeft: "55 items left",
+    itemLeftValue: 60,
   },
   {
     id: "906",
@@ -2185,6 +2202,9 @@ export const Products: Props1 = [
     category: "flash-sales",
     old: 25500,
     qty: 0,
+    value: 15,
+    itemLeft: "110 items left",
+    itemLeftValue: 40,
   },
   {
     id: "907",

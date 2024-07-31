@@ -1,3 +1,4 @@
+@use "variables";
 .container {
   width: 100%;
   display: flex;
@@ -93,4 +94,11 @@
     background-color: #fff;
     padding: 0.3125rem;
   }
+}
+.btn {
+  @extend %buttons;
+  @extend %flex-row;
+  justify-content: space-between;
+  width: 12.5rem;
+  height: 3.375rem;
 }

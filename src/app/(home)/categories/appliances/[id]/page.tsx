@@ -21,7 +21,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToCart, removeFromCart } from "@/lib/services/Slice";
 import FormatCurrency from "@/lib/services/FormatCurrency";
 import { RootState } from "@/lib/services/Store";
-import { toast, Toaster } from "sonner";
 
 function Page({ params }: { params: { id: string } }) {
   const [favourite, setfavourite] = useState(false);
@@ -47,8 +46,8 @@ function Page({ params }: { params: { id: string } }) {
           <span className="flex flex-col my-5 px-5">
             <p>Share this product on:</p>
             <span className="flex flex-row gap-x-2">
-              <BsTwitter />
-              <BsFacebook />
+              <BsTwitter className=" cursor-pointer" />
+              <BsFacebook className=" cursor-pointer" />
             </span>
           </span>
         </div>
@@ -72,29 +71,13 @@ function Page({ params }: { params: { id: string } }) {
           <Separator className="bg-slate-400 my-2" />
           <div className="flex flex-row items-center justify-between">
             <Button
-              className=" flex justify-between flex-row bg-purple-500 hover:bg-purple-700 w-2/3 my-3 h-14"
-              variant="outline"
-              onClick={() =>
-                toast("Item added to cart", {
-                  action: {
-                    label: "Happy shopping",
-                    onClick: () => dispatch(addToCart(selectedID)),
-                  },
-                })
-              }
-            >
-              <BsCartPlus size={25} />
-              Add to Cart
-              <div />
-            </Button>
-            {/* <Button
-              className=" flex justify-between flex-row bg-purple-500 hover:bg-purple-700 w-2/3 my-3 h-14"
+              className={`${style.btn}`}
               onClick={() => dispatch(addToCart(selectedID))}
             >
               <BsCartPlus size={25} />
               Add to Carts
               <div />
-            </Button> */}
+            </Button>
             <LuHeart
               size={25}
               color="purple"
@@ -141,7 +124,6 @@ function Page({ params }: { params: { id: string } }) {
           <p>Warranty 1 Year Warranty</p>
         </div>
       </div>
-      <Toaster />
     </div>
   );
 }

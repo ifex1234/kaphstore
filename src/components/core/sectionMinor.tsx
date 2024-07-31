@@ -12,7 +12,7 @@ export const SectionMinor = () => {
     <div className={`${style.container}`}>
       {Section_1data.map((item, idx: number) => {
         return (
-          <Link href="product-page" key={idx}>
+          <Link href="/" key={idx}>
             <div className={`${style.content}`}>
               <div>
                 <Image src={item.Image} alt={item.title} priority />

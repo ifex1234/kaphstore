@@ -1,0 +1,28 @@
+@use "variables";
+
+.container {
+  width: 100%;
+  background-color: variables.$main_color4;
+  min-height: 50vh;
+  @extend %flex-col;
+  justify-content: center;
+  align-items: center;
+  color: variables.$main_color3;
+}
+.content {
+  @extend %flex-col;
+  justify-content: center;
+  align-items: center;
+  background-color: variables.$main_color6;
+  gap: 1.25rem;
+  height: 90%;
+  padding: 1.25rem;
+  border-radius: 0.9375rem;
+  h2 {
+    font-size: variables.$header_font_size_primary;
+    color: variables.$main_color1;
+    @extend %flex-row;
+    align-items: center;
+    gap: 0.9375rem;
+  }
+}

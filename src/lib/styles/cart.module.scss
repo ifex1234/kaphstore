@@ -53,7 +53,8 @@
   width: 20%;
   @extend %flex-col;
   gap: 0.25rem;
-  background-color: rgb(233, 227, 217);
+  background-color: variables.$main_color7;
+  color: variables.$main_color2;
   height: 8rem;
   margin: 1.625rem 0;
   border-radius: 0.3125rem;

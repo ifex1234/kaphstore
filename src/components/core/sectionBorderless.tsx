@@ -2,10 +2,11 @@ import styles from "@/lib/styles/sectionborderless.module.scss";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 type Props = {
-  id: number;
+  id: string;
   title: string;
   image: StaticImageData;
   price: number;
+  category: string;
 }[];
 type Props2 = {
   header?: string;
@@ -28,7 +29,11 @@ export const SectionBorderless: React.FC<Props2> = (props) => {
 
       <div className={`${styles.array_wrapper}`}>
         {arrayItem.slice(0, 6).map((item) => (
-          <div key={item.id} className={`${styles.array_content}`}>
+          <Link
+            href={`/${item.category}/${item.id}`}
+            key={item.id}
+            className={`${styles.array_content}`}
+          >
             <div>
               <Image src={item.image} alt={item.title} priority />
             </div>
@@ -38,7 +43,7 @@ export const SectionBorderless: React.FC<Props2> = (props) => {
             <div className=" my-1 px-1">
               <p className=" text-xs">₦{item.price}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

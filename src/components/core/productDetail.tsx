@@ -10,36 +10,54 @@ import {
 } from "react-icons/bs";
 import React from "react";
 import style from "@/lib/styles/productDetails.module.scss";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { LuHeart } from "react-icons/lu";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addToCart, removeFromCart } from "@/lib/services/Slice";
-import { Products } from "@/lib/assets/allProducts";
+import { addToCart } from "@/lib/services/Slice";
 import FormatCurrency from "@/lib/services/FormatCurrency";
 
-function Page({ params }: { params: { id: string } }) {
-  const fashion = Products.slice(49, 82);
+type Props1 = {
+  id: string;
+  image: StaticImageData;
+  price: number;
+  title: string;
+  category: string;
+  old: number;
+  qty: number;
+}[];
+type Props2 = {
+  arrayData: Props1;
+  id: string;
+};
+export const ProductDetails: React.FC<Props2> = (props) => {
+  const { id, arrayData } = props;
   const [favourite, setfavourite] = useState(false);
-  const dispatch = useDispatch();
   const delFee = Math.round(Math.random() * 1000);
+  const dispatch = useDispatch();
   const makeFavourite = () => {
     setfavourite((previous) => (previous = true));
   };
-  const selectedID = fashion.find((label) => label.id === params.id);
+  const selectedID = arrayData.find((label) => label.id === id);
   return (
     <div className={`${style.container}`}>
       <div className={`${style.main}`}>
         <div className={`${style.image}`}>
-          <Image width={311} height={311} src={selectedID?.image!} alt="" />
+          <Image
+            width={311}
+            height={311}
+            src={selectedID?.image!}
+            alt=""
+            priority
+          />
           <span className="flex flex-col my-5 px-5">
             <p>Share this product on:</p>
             <span className="flex flex-row gap-x-2">
-              <BsTwitter />
-              <BsFacebook />
+              <BsTwitter className=" cursor-pointer" />
+              <BsFacebook className=" cursor-pointer" />
             </span>
           </span>
         </div>
@@ -51,7 +69,6 @@ function Page({ params }: { params: { id: string } }) {
           <Separator className="bg-slate-400 my-2" />
           <div className={`${style.price}`}>
             <p>{FormatCurrency(selectedID?.price!)}</p>
-
             <p>Few units left</p>
             <p>shipping from {delFee} to Lagos</p>
             <p>Product rating</p>
@@ -64,11 +81,11 @@ function Page({ params }: { params: { id: string } }) {
           <Separator className="bg-slate-400 my-2" />
           <div className="flex flex-row items-center justify-between">
             <Button
-              className={`${style.btn}`}
+              className=" flex justify-between flex-row bg-purple-500 hover:bg-purple-700 w-2/3 my-3 h-14"
               onClick={() => dispatch(addToCart(selectedID))}
             >
               <BsCartPlus size={25} />
-              Add to Cart
+              Add to Carts
               <div />
             </Button>
             <LuHeart
@@ -85,6 +102,7 @@ function Page({ params }: { params: { id: string } }) {
         <Separator className="bg-black my-2" />
         <p>Free delivery on thousands of products in Lagos only</p>
         <Link href="">Details</Link>
+
         <Separator className="bg-black my-2" />
         <div className={`${style.deliveries}`}>
           <div>image</div>
@@ -118,6 +136,6 @@ function Page({ params }: { params: { id: string } }) {
       </div>
     </div>
   );
-}
+};
 
-export default Page;
+export default ProductDetails;

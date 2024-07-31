@@ -49,8 +49,8 @@ function Newsletter() {
             <p>Get access to exclusive offers!</p>
           </div>
           <div className="w-full flex flex-row gap-3">
-            <Image width={80} src={img2} alt="app store logo" />
-            <Image height={80} src={img3} alt="play store logo" />
+            <Image width={70} src={img2} alt="app store logo" />
+            <Image height={70} src={img3} alt="play store logo" />
           </div>
         </div>
       </div>

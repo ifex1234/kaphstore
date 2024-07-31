@@ -8,7 +8,7 @@ export function Sonner() {
       variant="outline"
       onClick={() =>
         toast("An item added to cart", {
-          description: "SClick to add to cart",
+          description: "Click to add to cart",
           action: {
             label: "add-to-cart",
             onClick: () => console.log("added to cart"),

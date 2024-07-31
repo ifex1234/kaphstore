@@ -63,12 +63,8 @@ function Page({ params }: { params: { id: string } }) {
           <Separator className="bg-slate-400 my-2" />
           <div className="flex flex-row items-center justify-between">
             <Button
-              className=" flex justify-between flex-row bg-purple-500 hover:bg-purple-700 w-2/3 my-3 h-14"
-              // onClick={
-              //   arrayItem.find((product) => product.id !== item.id)
-              //     ? () => dispatch(addToCart(item))
-              //     : () => dispatch(removeFromCart(item.id!))
-              // }
+              className={`${style.btn}`}
+              onClick={() => dispatch(addToCart(selectedID))}
             >
               <BsCartPlus size={25} />
               Add to Cart
