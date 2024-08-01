@@ -24,7 +24,7 @@ export default function Home() {
           arrayItem={recommended}
           header={"Top Selling Items"}
           link="see all"
-          href="/recommeded"
+          href="/categories/recommended"
         />
         <SubHeader
           item1={"Top Appliance Deals"}

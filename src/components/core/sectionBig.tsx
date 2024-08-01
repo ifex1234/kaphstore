@@ -1,4 +1,3 @@
-import { productsData } from "@/lib/assets/section2";
 import styles from "@/lib/styles/sectionbig.module.scss";
 import Image from "next/image";
 import { Progress } from "../ui/progress";

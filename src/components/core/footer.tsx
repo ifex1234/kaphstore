@@ -9,7 +9,7 @@ function Footer() {
       <Newsletter />
 
       <div
-        className={` flex flex-col md:flex-row text-white px-5 gap-4 justify-between py-5 ${styles.first_row}`}
+        className={` flex flex-col md:flex-row gap-4 justify-between py-5 ${styles.first_row}`}
       >
         <div className={`${styles.foot}`}>
           <div className={`${styles.layer2}`}>

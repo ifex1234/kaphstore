@@ -74,14 +74,7 @@ function Page({ params }: { params: { id: string } }) {
             <Button
               className=" flex justify-between flex-row bg-purple-500 hover:bg-purple-700 w-2/3 my-3 h-14"
               variant="outline"
-              onClick={() =>
-                toast("Item added to cart", {
-                  action: {
-                    label: "Happy shopping",
-                    onClick: () => dispatch(addToCart(selectedID)),
-                  },
-                })
-              }
+              onClick={() => dispatch(addToCart(selectedID))}
             >
               <BsCartPlus size={25} />
               Add to Cart

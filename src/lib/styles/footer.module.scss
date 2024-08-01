@@ -9,7 +9,7 @@
   color: variables.$main_color1;
   justify-content: space-between;
   padding: 2.625rem 20px;
-  @extend %flex-row;
+  // @extend %flex-row;
 
   h4 {
     font-size: large;

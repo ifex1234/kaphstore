@@ -30,7 +30,7 @@ export const SectionBorderless: React.FC<Props2> = (props) => {
       <div className={`${styles.array_wrapper}`}>
         {arrayItem.slice(0, 6).map((item) => (
           <Link
-            href={`/${item.category}/${item.id}`}
+            href={`/categories/${item.category}/${item.id}`}
             key={item.id}
             className={`${styles.array_content}`}
           >

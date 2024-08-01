@@ -5,7 +5,12 @@ import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 import { Separator } from "../ui/separator";
 import { useEffect, useState } from "react";
-import { increment, decrement, removeFromCart } from "@/lib/services/Slice";
+import {
+  increment,
+  decrement,
+  removeFromCart,
+  clearCart,
+} from "@/lib/services/Slice";
 import { useSelector, useDispatch } from "react-redux";
 import type { RootState } from "@/lib/services/Store";
 import Image from "next/image";
@@ -89,7 +94,7 @@ function Cart() {
               <div>
                 <Button
                   className={`${style.btn} w-full`}
-                  onClick={() => router.push("/check-out")}
+                  onClick={() => clearCart}
                 >
                   Check out {FormatCurrency(Number(totalCart.toFixed(2)))}
                 </Button>

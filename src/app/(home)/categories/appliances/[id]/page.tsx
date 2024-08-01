@@ -18,18 +18,19 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, removeFromCart } from "@/lib/services/Slice";
+import { addToCart } from "@/lib/services/Slice";
 import FormatCurrency from "@/lib/services/FormatCurrency";
 import { RootState } from "@/lib/services/Store";
 
 function Page({ params }: { params: { id: string } }) {
-  const [favourite, setfavourite] = useState(false);
+  const [favourite, setfavourite] = useState(true);
   const delFee = Math.round(Math.random() * 1000);
   const appliances = Products.slice(24, 50);
   const dispatch = useDispatch();
   const products = useSelector((state: RootState) => state.store);
   const makeFavourite = () => {
-    setfavourite((previous) => (previous = true));
+    setfavourite(!favourite);
+    console.log("hhhhh");
   };
   const selectedID = appliances.find((label) => label.id === params.id);
   return (
@@ -79,10 +80,10 @@ function Page({ params }: { params: { id: string } }) {
               <div />
             </Button>
             <LuHeart
+              className=" cursor-pointer"
               size={25}
-              color="purple"
-              fill={`${favourite ? "purple" : ""}`}
-              onClick={() => makeFavourite}
+              onClick={makeFavourite}
+              fill={`${favourite ? "#ba3fa7" : "transparent"}`}
             />
           </div>
         </div>
