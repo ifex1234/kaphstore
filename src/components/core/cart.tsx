@@ -94,7 +94,7 @@ function Cart() {
               <div>
                 <Button
                   className={`${style.btn} w-full`}
-                  onClick={() => clearCart}
+                  onClick={() => clearCart()}
                 >
                   Check out {FormatCurrency(Number(totalCart.toFixed(2)))}
                 </Button>

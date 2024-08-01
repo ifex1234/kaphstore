@@ -17,17 +17,15 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addToCart } from "@/lib/services/Slice";
 import FormatCurrency from "@/lib/services/FormatCurrency";
-import { RootState } from "@/lib/services/Store";
 
 function Page({ params }: { params: { id: string } }) {
   const [favourite, setfavourite] = useState(true);
   const delFee = Math.round(Math.random() * 1000);
   const appliances = Products.slice(24, 50);
   const dispatch = useDispatch();
-  const products = useSelector((state: RootState) => state.store);
   const makeFavourite = () => {
     setfavourite(!favourite);
   };

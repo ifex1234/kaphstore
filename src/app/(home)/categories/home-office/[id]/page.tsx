@@ -27,7 +27,7 @@ function Page({ params }: { params: { id: string } }) {
   const dispatch = useDispatch();
   const home = Products.slice(142, 170);
   const makeFavourite = () => {
-    setfavourite((previous) => (previous = true));
+    setfavourite(!favourite);
   };
   const selectedID = home.find((label) => label.id === params.id);
   return (
@@ -67,14 +67,14 @@ function Page({ params }: { params: { id: string } }) {
               onClick={() => dispatch(addToCart(selectedID))}
             >
               <BsCartPlus size={25} />
-              Add to Cart
+              Add to Carts
               <div />
             </Button>
             <LuHeart
+              className=" cursor-pointer md:inline-block hidden"
               size={25}
-              color="purple"
-              fill={`${favourite ? "purple" : ""}`}
-              onClick={() => makeFavourite}
+              onClick={makeFavourite}
+              fill={`${favourite ? "#ba3fa7" : "transparent"}`}
             />
           </div>
         </div>

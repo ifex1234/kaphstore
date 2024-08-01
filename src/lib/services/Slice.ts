@@ -24,13 +24,11 @@ export const counterSlice = createSlice({
   reducers: {
     addToCart: (state, actions) => {
       state.store.push(actions.payload);
-      setTimeout(() => toast("Item added to cart"), 200);
+      setTimeout(() => toast("Item added to cart"), 2000);
     },
     removeFromCart: (state, action: PayloadAction<number>) => {
-      const result = state.store.filter(
-        (item) => Number(item.id) !== action.payload
-      );
-      console.log("hello");
+      state.store.filter((item) => Number(item.id) != action.payload);
+      setTimeout(() => toast("Item added to cart"), 1500);
     },
     increment: (state, action: PayloadAction<string>) => {
       const selectedItem = action.payload;
@@ -42,7 +40,7 @@ export const counterSlice = createSlice({
           qty: 1,
         });
       } else {
-        search.qty += 1;
+        search.qty++;
       }
     },
     decrement: (state, action: PayloadAction<string>) => {

@@ -19,7 +19,7 @@ function Navbar() {
   const pathname = usePathname();
   const products = useSelector((state: RootState) => state.store);
   return (
-    <nav className="flex flex-row items-center h-16 justify-between text-slate-600 w-full bg-fuchsia-500">
+    <nav className="flex px-2 flex-row items-center h-16 justify-between text-slate-600 w-full bg-fuchsia-500">
       <Link href="/">
         <span className=" origin-center  hover:text-fuchsia-900 text-white px-2 lg:hidden xl:block">
           Home
