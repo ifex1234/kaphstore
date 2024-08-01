@@ -30,7 +30,6 @@ function Page({ params }: { params: { id: string } }) {
   const products = useSelector((state: RootState) => state.store);
   const makeFavourite = () => {
     setfavourite(!favourite);
-    console.log("hhhhh");
   };
   const selectedID = appliances.find((label) => label.id === params.id);
   return (
@@ -54,8 +53,14 @@ function Page({ params }: { params: { id: string } }) {
         </div>
 
         <div className={`${style.specs}`}>
-          <span>
+          <span className=" flex justify-between">
             <h2>{selectedID?.title}</h2>
+            <LuHeart
+              className=" cursor-pointer md:hidden"
+              size={25}
+              onClick={makeFavourite}
+              fill={`${favourite ? "#ba3fa7" : "transparent"}`}
+            />
           </span>
           <Separator className="bg-slate-400 my-2" />
           <div className={`${style.price}`}>
@@ -80,7 +85,7 @@ function Page({ params }: { params: { id: string } }) {
               <div />
             </Button>
             <LuHeart
-              className=" cursor-pointer"
+              className=" cursor-pointer md:inline-block hidden"
               size={25}
               onClick={makeFavourite}
               fill={`${favourite ? "#ba3fa7" : "transparent"}`}

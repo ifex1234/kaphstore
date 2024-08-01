@@ -6,7 +6,6 @@ import ContextProvider from "@/components/core/ContextProvider";
 import { TopAds } from "@/components/core/ads";
 import Navbar from "@/components/core/navbar";
 import { Separator } from "@/components/ui/separator";
-import TopNav from "@/components/core/topNav";
 import { Toaster } from "sonner";
 import style from "../../lib/styles/topnav.module.scss";
 
@@ -32,7 +31,7 @@ export default function RootLayout({
           <Separator />
           <Navbar />
           <Separator />
-          <TopNav />
+          {/* <TopNav /> */}
           <Separator />
           <div className=" w-full">{children}</div>
           <Toaster

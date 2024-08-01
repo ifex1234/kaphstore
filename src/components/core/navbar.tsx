@@ -21,7 +21,7 @@ function Navbar() {
   return (
     <nav className="flex flex-row items-center h-16 justify-between text-slate-600 w-full bg-fuchsia-500">
       <Link href="/">
-        <span className=" origin-center  hover:text-fuchsia-900 text-white px-2 md:hidden xl:block">
+        <span className=" origin-center  hover:text-fuchsia-900 text-white px-2 lg:hidden xl:block">
           Home
         </span>
       </Link>
@@ -50,7 +50,7 @@ function Navbar() {
 
       <div className=" flex justify-between items-center flex-row gap-5 px-2">
         <Link
-          className="flex flex-row items-center gap-x-2 justify-end relative md:hidden"
+          className="flex flex-row items-center gap-x-2 justify-end relative"
           href="/cart"
         >
           <FaCartShopping fill="white" size={20} />
