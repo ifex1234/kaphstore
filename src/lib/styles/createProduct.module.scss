@@ -1,0 +1,39 @@
+@use "variables";
+.container {
+  width: 100%;
+}
+.form {
+  background-color: variables.$main_color6;
+  color: variables.$main_color1;
+  padding: 1.25rem;
+  margin: auto;
+  width: 43.75rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  span {
+    padding: auto;
+  }
+  button {
+    background-color: variables.$main_color8;
+    color: variables.$main_color1;
+    height: 1.9375rem;
+    width: 6.25rem;
+    border-radius: 0.25rem;
+  }
+}
+.field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 17.9rem;
+  height: 2.075rem;
+  border-radius: 0.25rem;
+  gap: 1.25rem;
+  margin: 10px 0;
+  justify-content: space-between;
+  input {
+    height: 30px;
+    border-radius: 0.25rem;
+  }
+}

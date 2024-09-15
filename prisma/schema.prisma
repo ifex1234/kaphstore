@@ -37,7 +37,7 @@ model Product {
     prevPrice Int
     currPrice Int
     category category
-    quantity Int
+    quantity Int @default(0)
     cart Cart @relation(fields: [cartID],references: [id])
     cartID Int
 }

@@ -1,10 +1,10 @@
-import Cart from "@/components/core/cart";
+import Dashboard from "@/components/core/dashboard";
 import React from "react";
 
 function page() {
   return (
     <div>
-      <Cart />
+      <Dashboard />
     </div>
   );
 }

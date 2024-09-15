@@ -6,7 +6,6 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
 import { useDispatch } from "react-redux";
-import { addToCart } from "@/lib/services/Slice";
 import { Button } from "../ui/button";
 type Props = {
   id: string;
