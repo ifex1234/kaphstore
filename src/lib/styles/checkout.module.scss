@@ -13,14 +13,13 @@
   @extend %flex-col;
   justify-content: center;
   align-items: center;
-  background-color: variables.$main_color6;
   gap: 1.25rem;
   height: 90%;
   padding: 1.25rem;
   border-radius: 0.9375rem;
   h2 {
     font-size: variables.$header_font_size_primary;
-    color: variables.$main_color1;
+    color: variables.$main_color9;
     @extend %flex-row;
     align-items: center;
     gap: 0.9375rem;

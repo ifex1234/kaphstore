@@ -1,10 +1,10 @@
-import Dashboard from "@/components/core/dashboard";
+import Orders from "@/components/core/orders";
 import React from "react";
 
 function page() {
   return (
     <div>
-      <Dashboard />
+      <Orders />
     </div>
   );
 }

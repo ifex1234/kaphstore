@@ -82,6 +82,7 @@ function Cart() {
               </div>
             ))}
           </div>
+
           <div className={`${style.checkOut}`}>
             <div>
               <h3>Cart Summary</h3>

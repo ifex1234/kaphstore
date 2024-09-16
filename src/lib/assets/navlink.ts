@@ -1,6 +1,7 @@
 type Prop = {
   id: number;
   href:
+    | "/dashboard"
     | "/categories/appliances"
     | "/categories/computers"
     | "/categories/electronics"
@@ -51,5 +52,10 @@ export const Navlink: Prop = [
     id: 7,
     href: "/categories/home-office",
     label: "Home and office",
+  },
+  {
+    id: 8,
+    href: "/dashboard",
+    label: "Dashboard",
   },
 ];
