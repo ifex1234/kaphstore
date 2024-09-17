@@ -1,9 +1,10 @@
 "use client";
+import axios from "axios";
 import React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { FormSchema } from "./schema";
+import { FormSchema } from "../../../lib/schemas/create-productschema";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -15,12 +16,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import style from "@/lib/styles/createProduct.module.scss";
-
-// const formSchema = z.object({
-//   username: z.string().min(2, {
-//     message: "Username must be at least 2 characters.",
-//   }),
-// });
 
 export default function Page() {
   const form = useForm<z.infer<typeof FormSchema>>({
@@ -37,9 +32,33 @@ export default function Page() {
   });
 
   function onSubmit(values: z.infer<typeof FormSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
+    let {
+      prevPrice,
+      productUrl,
+      imageUrl,
+      title,
+      category,
+      currPrice,
+      quantity,
+    } = values;
+    // axios
+    //   .post("http://127.0.0.1:3000/api/products", {
+    //     prevPrice,
+    //     productUrl,
+    //     imageUrl,
+    //     title,
+    //     category,
+    //     currPrice,
+    //     quantity,
+    //   })
+    //   .then(function (response) {
+    //     console.log(response);
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error);
+    //   });
     console.log(values);
+
     // let {prevPrice,productUrl,imageUrl, title, category, currPrice, quantity} = values
     // productUrl= "",
     //   imageUrl= "",

@@ -17,9 +17,28 @@ type Props = {
   category: string;
   percent?: number;
 }[];
-
+enum category {
+  mobile_tablet,
+  appliances,
+  computers,
+  groceries,
+  electronics,
+  fashion,
+  beauty_health,
+  home_office,
+}
+type Prop2 = {
+  id: number;
+  imageUrl: string;
+  title: string;
+  productUrl: String;
+  previousPrice: String;
+  currentPrice: String;
+  category: category;
+  quantity: String;
+}[];
 type Prop = {
-  arrayItem: Props;
+  arrayItem: Prop2;
 };
 const Categories: React.FC<Prop> = (ObjArr) => {
   const { arrayItem } = ObjArr;
@@ -33,22 +52,37 @@ const Categories: React.FC<Prop> = (ObjArr) => {
           <Link href={`${pathName}/${item.id}`} key={item.id}>
             <div className={`${style.arrayCont}`}>
               <div className={`${style.arrayItem}`}>
-                <Image src={item.image} alt={item.title} priority />
+                <Image
+                  width={300}
+                  height={300}
+                  src={item.imageUrl}
+                  alt={item.title}
+                  priority
+                />
               </div>
               <p>{item.title}</p>
-              <p>{FormatCurrency(item.price)}</p>
+              <p>{FormatCurrency(Number(item.currentPrice))}</p>
               <p>
                 {" "}
                 <span className=" line-through mr-4">
-                  {FormatCurrency(item.old! ? item.old! : 0)}
+                  {FormatCurrency(
+                    Number(item.previousPrice)!
+                      ? Number(item.previousPrice)!
+                      : 0
+                  )}
                 </span>
                 -
-                {item.old
-                  ? (((item.old! - item.price) / item.price) * 100).toFixed(0)
+                {item.previousPrice
+                  ? (
+                      ((Number(item.previousPrice)! -
+                        Number(item.currentPrice)) /
+                        Number(item.currentPrice)) *
+                      100
+                    ).toFixed(0)
                   : 0}
                 %
               </p>
-              <p>{item.icon}</p>
+              <p>{item.quantity}</p>
               <Button
                 className={`${style.btn}`}
                 // onClick={() => dispatch(addToCart(arrayItem))}
