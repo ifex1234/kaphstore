@@ -7,21 +7,31 @@ import React from "react";
 import { usePathname } from "next/navigation";
 import { useDispatch } from "react-redux";
 import { Button } from "../ui/button";
-type Props = {
-  id: string;
-  image: StaticImageData;
-  title: string;
-  price: number;
-  icon?: string;
-  old?: number;
-  category: string;
-  percent?: number;
-}[];
 
+enum category {
+  mobile_tablet,
+  appliances,
+  computers,
+  groceries,
+  electronics,
+  fashion,
+  beauty_health,
+  home_office,
+}
+type Prop2 = {
+  id: number;
+  imageUrl: string;
+  title: string;
+  productUrl: String;
+  previousPrice: String;
+  currentPrice: String;
+  category: category;
+  quantity: String;
+}[];
 type Prop = {
-  arrayItem: Props;
+  arrayItem: Prop2;
 };
-const Categories: React.FC<Prop> = (ObjArr) => {
+const TestAppliance: React.FC<Prop> = (ObjArr) => {
   const { arrayItem } = ObjArr;
   const pathName = usePathname();
   const dispatch = useDispatch();
@@ -36,29 +46,34 @@ const Categories: React.FC<Prop> = (ObjArr) => {
                 <Image
                   width={300}
                   height={300}
-                  src={item.image}
+                  src={item.imageUrl}
                   alt={item.title}
                   priority
                 />
               </div>
               <p>{item.title}</p>
-              <p>{FormatCurrency(Number(item.price))}</p>
+              <p>{FormatCurrency(Number(item.currentPrice))}</p>
               <p>
                 {" "}
                 <span className=" line-through mr-4">
-                  {FormatCurrency(Number(item.old)! ? Number(item.old)! : 0)}
+                  {FormatCurrency(
+                    Number(item.previousPrice)!
+                      ? Number(item.previousPrice)!
+                      : 0
+                  )}
                 </span>
                 -
-                {item.old
+                {item.previousPrice
                   ? (
-                      ((Number(item.old)! - Number(item.price)) /
-                        Number(item.price)) *
+                      ((Number(item.previousPrice)! -
+                        Number(item.currentPrice)) /
+                        Number(item.currentPrice)) *
                       100
                     ).toFixed(0)
                   : 0}
                 %
               </p>
-              <p>{item.icon}</p>
+              <p>{item.quantity}</p>
               <Button
                 className={`${style.btn}`}
                 // onClick={() => dispatch(addToCart(arrayItem))}
@@ -73,4 +88,4 @@ const Categories: React.FC<Prop> = (ObjArr) => {
   );
 };
 
-export default Categories;
+export default TestAppliance;
