@@ -1,7 +1,6 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities */
 import { FaTruck, FaUndo } from "react-icons/fa";
-import { Products } from "@/lib/assets/allProducts";
 import {
   BsCartPlus,
   BsStarFill,
@@ -20,16 +19,26 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/lib/services/Slice";
 import FormatCurrency from "@/lib/services/FormatCurrency";
+import { fetchProduct } from "@/lib/api";
+import { useQuery } from "@tanstack/react-query";
 
 function Page({ params }: { params: { id: string } }) {
+  const { data, isError, isLoading } = useQuery({
+    queryKey: ["product", params.id],
+    queryFn: () => fetchProduct(params.id),
+    enabled: !!params.id,
+  });
   const [favourite, setfavourite] = useState(true);
   const delFee = Math.round(Math.random() * 1000);
-  const appliances = Products.slice(24, 50);
   const dispatch = useDispatch();
+
   const makeFavourite = () => {
     setfavourite(!favourite);
   };
-  const selectedID = appliances.find((label) => label.id === params.id);
+
+  if (isLoading) return <div>loading...</div>;
+  if (isError) return <div>error...</div>;
+
   return (
     <div className={`${style.container}`}>
       <div className={`${style.main}`}>
@@ -37,7 +46,7 @@ function Page({ params }: { params: { id: string } }) {
           <Image
             width={311}
             height={311}
-            src={selectedID?.image!}
+            src={data.imageUrl!}
             alt=""
             priority
           />
@@ -52,17 +61,11 @@ function Page({ params }: { params: { id: string } }) {
 
         <div className={`${style.specs}`}>
           <span className=" flex justify-between">
-            <h2>{selectedID?.title}</h2>
-            <LuHeart
-              className=" cursor-pointer md:hidden"
-              size={25}
-              onClick={makeFavourite}
-              fill={`${favourite ? "#ba3fa7" : "transparent"}`}
-            />
+            <h2>{data.title}</h2>
           </span>
           <Separator className="bg-slate-400 my-2" />
           <div className={`${style.price}`}>
-            <p>{FormatCurrency(selectedID?.price!)}</p>
+            <p>{FormatCurrency(data.currentPrice!)}</p>
             <p>Few units left</p>
             <p>shipping from {delFee} to Lagos</p>
             <p>Product rating</p>
@@ -76,7 +79,7 @@ function Page({ params }: { params: { id: string } }) {
           <div className="flex flex-row items-center justify-between">
             <Button
               className={`${style.btn}`}
-              onClick={() => dispatch(addToCart(selectedID))}
+              onClick={() => dispatch(addToCart(data))}
             >
               <BsCartPlus size={25} />
               Add to Carts

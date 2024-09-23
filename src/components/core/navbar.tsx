@@ -14,14 +14,15 @@ import { FaCartShopping } from "react-icons/fa6";
 import { Navlink } from "@/lib/assets/navlink";
 import { RootState } from "@/lib/services/Store";
 import { useSelector } from "react-redux";
+import SignInButon from "./sign-in";
 
 function Navbar() {
   const pathname = usePathname();
   const products = useSelector((state: RootState) => state.store);
   return (
-    <nav className="flex px-2 flex-row items-center h-16 justify-between text-slate-600 w-full bg-fuchsia-500">
+    <nav className="flex  px-2 flex-row items-center h-16 justify-between text-slate-600 w-full bg-fuchsia-500">
       <Link href="/">
-        <span className=" origin-center  hover:text-fuchsia-900 text-white px-2 lg:hidden xl:block">
+        <span className=" origin-center  hover:text-fuchsia-900 text-white px-2 lg:hidden xl:block mx-5">
           Home
         </span>
       </Link>
@@ -47,11 +48,12 @@ function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
       </span>
+      <SignInButon />
 
       <div className=" flex justify-between items-center flex-row gap-5 px-2">
         <Link
           className="flex flex-row items-center gap-x-2 justify-end relative"
-          href="/cart"
+          href="/dashboard/cart"
         >
           <FaCartShopping fill="white" size={20} />
           <span className=" absolute -top-3 left-4 text-white">

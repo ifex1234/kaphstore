@@ -1,11 +1,10 @@
 "use client";
 import FormatCurrency from "@/lib/services/FormatCurrency";
 import style from "@/lib/styles/categories.module.scss";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
-import { useDispatch } from "react-redux";
 import { Button } from "../ui/button";
 
 enum category {
@@ -34,13 +33,12 @@ type Prop = {
 const TestAppliance: React.FC<Prop> = (ObjArr) => {
   const { arrayItem } = ObjArr;
   const pathName = usePathname();
-  const dispatch = useDispatch();
 
   return (
     <div className={`lg:container ${style.main}`}>
       <div className={`${style.container}`}>
         {arrayItem.map((item) => (
-          <Link href={`${pathName}/${item.id}`} key={item.id}>
+          <Link href={`${pathName}/${item.productUrl}`} key={item.id}>
             <div className={`${style.arrayCont}`}>
               <div className={`${style.arrayItem}`}>
                 <Image
@@ -73,7 +71,6 @@ const TestAppliance: React.FC<Prop> = (ObjArr) => {
                   : 0}
                 %
               </p>
-              <p>{item.quantity}</p>
               <Button
                 className={`${style.btn}`}
                 // onClick={() => dispatch(addToCart(arrayItem))}

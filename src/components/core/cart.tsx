@@ -5,19 +5,16 @@ import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 import { Separator } from "../ui/separator";
 import { useEffect, useState } from "react";
-import {
-  increment,
-  decrement,
-  removeFromCart,
-  clearCart,
-} from "@/lib/services/Slice";
+import { increment, decrement, removeFromCart } from "@/lib/services/Slice";
 import { useSelector, useDispatch } from "react-redux";
 import type { RootState } from "@/lib/services/Store";
 import Image from "next/image";
 import FormatCurrency from "@/lib/services/FormatCurrency";
 import { LuTrash } from "react-icons/lu";
+import axios from "axios";
 
 function Cart() {
+  const orderID = 123456;
   const router = useRouter();
   const products = useSelector((state: RootState) => state.store);
   const dispatch = useDispatch();
@@ -25,10 +22,33 @@ function Cart() {
 
   useEffect(() => {
     setTotalCart(
-      products.reduce((arg1: number, arg2) => arg1 + arg2.price! * arg2.qty, 0)
+      products.reduce(
+        (arg1: number, arg2) => arg1 + arg2.currentPrice! * arg2.quantity,
+        0
+      )
     );
   }, [products]);
-
+  console.log(products);
+  const check_out = () => {
+    products.map((content) => {
+      axios
+        .post(`http://127.0.0.1:3001/api/products/${content.id}`, {
+          title: content.title,
+          id: content.id,
+          productUrl: content.productUrl,
+          imageUrl: content.imageUrl,
+          currentPrice: content.currentPrice,
+          quantity: content.quantity,
+        })
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    });
+    router.push("/check-out");
+  };
   return (
     <div className={`${style.container}`}>
       {products.length ? (
@@ -43,42 +63,43 @@ function Cart() {
               >
                 <div className={`${style.details}`}>
                   <span className="w-32 h-11">
-                    <Image src={product.image!} alt="" />
+                    <Image
+                      src={product.imageUrl!}
+                      alt={product.productUrl!}
+                      width={300}
+                      height={300}
+                    />
                   </span>
+                  <span className=" flex flex-col gap-2"></span>
                   <span className=" flex flex-col gap-2">
-                    <span>{FormatCurrency(product.price!)} </span>
-                    <span className=" line-through">
-                      {" "}
-                      {FormatCurrency(product.old!)}
+                    <span>{product.title} </span>
+                    <span>{FormatCurrency(product.currentPrice!)} </span>
+                    <span className={`${style.calc}`}>
+                      <Button
+                        onClick={() => dispatch(decrement(product.id))}
+                        className={`${style.btn}`}
+                      >
+                        -
+                      </Button>
+                      {product.quantity}
+                      <Button
+                        onClick={() => dispatch(increment(product.id))}
+                        className={`${style.btn}`}
+                      >
+                        +
+                      </Button>
                     </span>
+                    <Button
+                      onClick={() => removeFromCart(Number(product.id))}
+                      className={`${style.btn} w-28 flex justify-between`}
+                    >
+                      {" "}
+                      <LuTrash />
+                      Remove
+                    </Button>
                   </span>
                 </div>
-                <div className={`${style.btnContainer}`}>
-                  <Button
-                    onClick={() => removeFromCart(Number(product.id))}
-                    className={`${style.btn} w-28 flex justify-between`}
-                  >
-                    {" "}
-                    <LuTrash />
-                    Remove
-                  </Button>
-                  <span className={`${style.calc}`}>
-                    <Button
-                      onClick={() => dispatch(decrement(product.id))}
-                      className={`${style.btn}`}
-                    >
-                      -
-                    </Button>
-                    {product.qty}
-                    <Button
-                      onClick={() => dispatch(increment(product.id))}
-                      className={`${style.btn}`}
-                    >
-                      +
-                    </Button>
-                  </span>
-                </div>{" "}
-                <Separator />
+                <div className={`${style.btnContainer}`}></div> <Separator />
               </div>
             ))}
           </div>
@@ -95,7 +116,8 @@ function Cart() {
               <div>
                 <Button
                   className={`${style.btn} w-full`}
-                  onClick={() => clearCart()}
+                  // onClick={() => router.push("/check-out")}
+                  onClick={() => check_out}
                 >
                   Check out {FormatCurrency(Number(totalCart.toFixed(2)))}
                 </Button>

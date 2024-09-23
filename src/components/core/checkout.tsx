@@ -19,16 +19,25 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useQuery } from "@tanstack/react-query";
+import { fetchOrderByOrderId } from "@/lib/api";
 export const description = "Dashboard";
 
 export default function Checkout() {
+  const orderId = 12345;
+  const { data, isError, isLoading } = useQuery({
+    queryKey: ["my-order"],
+    queryFn: () => fetchOrderByOrderId(orderId),
+  });
+  if (isLoading) return <div>loading...</div>;
+  if (isError) return <div>error...</div>;
   return (
     <div>
       <Card className="overflow-hidden" x-chunk="dashboard-05-chunk-4">
         <CardHeader className="flex flex-row items-start bg-muted/50">
           <div className="grid gap-0.5">
             <CardTitle className="group flex items-center gap-2 text-lg">
-              Order Oe31b70H
+              Order ID:{data?.orderId}
               <Button
                 size="icon"
                 variant="outline"
@@ -38,7 +47,9 @@ export default function Checkout() {
                 <span className="sr-only">Copy Order ID</span>
               </Button>
             </CardTitle>
-            <CardDescription>Date: November 23, 2023</CardDescription>
+            <CardDescription>
+              {/* Date: {data?.createdAt.toLocaleDateString()} */}
+            </CardDescription>
           </div>
           <div className="ml-auto flex items-center gap-1">
             <Button size="sm" variant="outline" className="h-8 gap-1">
@@ -69,7 +80,8 @@ export default function Checkout() {
             <ul className="grid gap-3">
               <li className="flex items-center justify-between">
                 <span className="text-muted-foreground">
-                  Glimmer Lamps x <span>2</span>
+                  {data?.productName}
+                  <span>{data?.quantity}</span>
                 </span>
                 <span>$250.00</span>
               </li>

@@ -2,20 +2,31 @@ import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { StaticImageData } from "next/image";
 import { toast } from "sonner";
 
-type CartItems = {
-  id: string;
-  image?: StaticImageData;
+enum Category {
+  mobile_tablet,
+  appliances,
+  computers,
+  groceries,
+  electronics,
+  fashion,
+  beauty_health,
+  home_office,
+}
+type ProductProp = {
+  id: number;
   price?: number;
+  cartID?: number;
+  currentPrice?: number;
+  previousPrice?: number;
+  category?: Category;
+  imageUrl?: string;
+  productUrl?: string;
   title?: string;
-  icon?: string;
-  category?: string;
-  old?: number;
-  percent?: number;
-  qty: number;
+  quantity: number;
 }[];
 //   }
 const initialState = {
-  store: <CartItems>[],
+  store: <ProductProp>[],
 };
 
 export const counterSlice = createSlice({
@@ -28,38 +39,50 @@ export const counterSlice = createSlice({
     },
     removeFromCart: (state, action: PayloadAction<number>) => {
       state.store.filter((item) => Number(item.id) != action.payload);
-      setTimeout(() => toast("Item added to cart"), 1500);
+      setTimeout(() => toast("Item removed cart"), 1500);
     },
-    increment: (state, action: PayloadAction<string>) => {
+    increment: (state, action: PayloadAction<number>) => {
       const selectedItem = action.payload;
       const search = state.store.find((x) => x.id === selectedItem);
 
       if (search === undefined) {
         state.store.push({
           id: selectedItem,
-          qty: 1,
+          quantity: 1,
         });
       } else {
-        search.qty++;
+        search.quantity++;
       }
     },
-    decrement: (state, action: PayloadAction<string>) => {
+    decrement: (state, action: PayloadAction<number>) => {
       const selectedItem = action.payload;
       const search = state.store.find((x) => x.id === selectedItem);
 
       if (search === undefined) return;
-      else if (search.qty === 0) return;
+      else if (search.quantity === 0) return;
       else {
-        search.qty -= 1;
+        search.quantity -= 1;
       }
     },
     clearCart: (state) => {
       state.store = [];
     },
+    checkOut: (state) => {
+      const newStore = JSON.parse(JSON.stringify(state.store));
+      state.store = [];
+      console.log(newStore);
+      return newStore;
+    },
   },
 });
 
-export const { addToCart, increment, decrement, removeFromCart, clearCart } =
-  counterSlice.actions;
+export const {
+  addToCart,
+  increment,
+  decrement,
+  removeFromCart,
+  clearCart,
+  checkOut,
+} = counterSlice.actions;
 
 export default counterSlice.reducer;
