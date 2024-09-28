@@ -17,7 +17,6 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import FormatCurrency from "@/lib/services/FormatCurrency";
 import { toast, Toaster } from "sonner";
 import useStore from "@/lib/services/zustStore";
@@ -26,7 +25,6 @@ function Page({ params }: { params: { id: string } }) {
   const [favourite, setfavourite] = useState(false);
   const delFee = Math.round(Math.random() * 1000);
   const flahSales = Products.slice(235, 255);
-  const dispatch = useDispatch();
   const makeFavourite = () => {
     setfavourite((previous) => (previous = true));
   };

@@ -5,7 +5,6 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
-import { useDispatch } from "react-redux";
 import { Button } from "../ui/button";
 type Props = {
   id: string;
@@ -24,7 +23,6 @@ type Prop = {
 const Categories: React.FC<Prop> = (ObjArr) => {
   const { arrayItem } = ObjArr;
   const pathName = usePathname();
-  const dispatch = useDispatch();
 
   return (
     <div className={`lg:container ${style.main}`}>
