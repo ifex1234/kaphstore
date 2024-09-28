@@ -26,19 +26,11 @@ type ProductProp = {
 }[];
 type ProductProp1 = {
   id?: number;
-  price?: number;
   currentPrice?: number;
-  previousPrice?: number;
   category?: Category;
   imageUrl?: string;
-  productUrl?: string;
   title?: string;
   quantity: number;
-};
-type State = {
-  state: ProductProp;
-  id: number;
-  cart: ProductProp1;
 };
 
 type CartProp = {

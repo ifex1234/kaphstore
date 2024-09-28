@@ -18,21 +18,20 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, removeFromCart } from "@/lib/services/Slice";
 import FormatCurrency from "@/lib/services/FormatCurrency";
-import { RootState } from "@/lib/services/Store";
 import { toast, Toaster } from "sonner";
+import useStore from "@/lib/services/zustStore";
 
 function Page({ params }: { params: { id: string } }) {
   const [favourite, setfavourite] = useState(false);
   const delFee = Math.round(Math.random() * 1000);
   const flahSales = Products.slice(235, 255);
   const dispatch = useDispatch();
-  const products = useSelector((state: RootState) => state.store);
   const makeFavourite = () => {
     setfavourite((previous) => (previous = true));
   };
   const selectedID = flahSales.find((label) => label.id === params.id);
+  const add_to_cart = useStore((state) => state.addTCart);
   return (
     <div className={`${style.container}`}>
       <div className={`${style.main}`}>
@@ -78,7 +77,7 @@ function Page({ params }: { params: { id: string } }) {
                 toast("Item added to cart", {
                   action: {
                     label: "Happy shopping",
-                    onClick: () => dispatch(addToCart(selectedID)),
+                    onClick: () => add_to_cart,
                   },
                 })
               }

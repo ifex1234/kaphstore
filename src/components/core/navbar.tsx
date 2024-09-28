@@ -12,13 +12,10 @@ import {
 import { Drawer } from "../core/drawer";
 import { FaCartShopping } from "react-icons/fa6";
 import { Navlink } from "@/lib/assets/navlink";
-import { RootState } from "@/lib/services/Store";
-import { useSelector } from "react-redux";
 import useStore from "@/lib/services/zustStore";
 
 function Navbar() {
   const pathname = usePathname();
-  // const products = useSelector((state: RootState) => state.store);
   const products = useStore((state) => state.cart);
   return (
     <nav className="flex  px-2 flex-row items-center h-16 justify-between text-slate-600 w-full bg-fuchsia-500">

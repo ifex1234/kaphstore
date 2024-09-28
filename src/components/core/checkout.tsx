@@ -62,20 +62,6 @@ export default function Checkout() {
                 Track Order
               </span>
             </Button>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button size="icon" variant="outline" className="h-8 w-8">
-                  <MoreVertical className="h-3.5 w-3.5" />
-                  <span className="sr-only">More</span>
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem>Edit</DropdownMenuItem>
-                <DropdownMenuItem>Export</DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>Trash</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
           </div>
         </CardHeader>
         <CardContent className="p-6 text-sm">
@@ -88,7 +74,7 @@ export default function Checkout() {
                     {item.title}
                     <span>{item.quantity}</span>
                   </span>
-                  <span>{FormatCurrency(item.price!)}</span>
+                  <span>{FormatCurrency(item.currentPrice!)}</span>
                 </li>
               ))}
             </ul>

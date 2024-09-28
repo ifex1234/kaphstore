@@ -16,9 +16,8 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addToCart } from "@/lib/services/Slice";
 import FormatCurrency from "@/lib/services/FormatCurrency";
+import useStore from "@/lib/services/zustStore";
 
 type Props1 = {
   id: string;
@@ -37,11 +36,11 @@ export const ProductDetails: React.FC<Props2> = (props) => {
   const { id, arrayData } = props;
   const [favourite, setfavourite] = useState(false);
   const delFee = Math.round(Math.random() * 1000);
-  const dispatch = useDispatch();
   const makeFavourite = () => {
     setfavourite((previous) => (previous = true));
   };
   const selectedID = arrayData.find((label) => label.id === id);
+  const add_to_cart = useStore((state) => state.addTCart);
   return (
     <div className={`${style.container}`}>
       <div className={`${style.main}`}>
@@ -82,7 +81,7 @@ export const ProductDetails: React.FC<Props2> = (props) => {
           <div className="flex flex-row items-center justify-between">
             <Button
               className=" flex justify-between flex-row bg-purple-500 hover:bg-purple-700 w-2/3 my-3 h-14"
-              onClick={() => dispatch(addToCart(selectedID))}
+              onClick={() => add_to_cart}
             >
               <BsCartPlus size={25} />
               Add to Carts

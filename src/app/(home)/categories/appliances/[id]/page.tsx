@@ -16,7 +16,6 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
 import FormatCurrency from "@/lib/services/FormatCurrency";
 import { fetchProduct } from "@/lib/api";
 import { useQuery } from "@tanstack/react-query";
@@ -30,7 +29,6 @@ function Page({ params }: { params: { id: string } }) {
   });
   const [favourite, setfavourite] = useState(true);
   const delFee = Math.round(Math.random() * 1000);
-  const dispatch = useDispatch();
 
   const makeFavourite = () => {
     setfavourite(!favourite);

@@ -16,43 +16,57 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { addToCart, removeFromCart } from "@/lib/services/Slice";
-import { Products } from "@/lib/assets/allProducts";
 import FormatCurrency from "@/lib/services/FormatCurrency";
+import { fetchProduct } from "@/lib/api";
+import { useQuery } from "@tanstack/react-query";
+import useStore from "@/lib/services/zustStore";
 
 function Page({ params }: { params: { id: string } }) {
+  const { data, isError, isLoading } = useQuery({
+    queryKey: ["product", params.id],
+    queryFn: () => fetchProduct(params.id),
+    enabled: !!params.id,
+  });
+  const [favourite, setfavourite] = useState(true);
   const delFee = Math.round(Math.random() * 1000);
-  const [favourite, setfavourite] = useState(false);
-  const dispatch = useDispatch();
-  const home = Products.slice(142, 170);
+
   const makeFavourite = () => {
     setfavourite(!favourite);
   };
-  const selectedID = home.find((label) => label.id === params.id);
+  const add_to_cart = useStore((state) => state.addTCart);
+
+  if (isLoading) return <div>loading...</div>;
+  if (isError) return <div>error...</div>;
+
   return (
     <div className={`${style.container}`}>
       <div className={`${style.main}`}>
         <div className={`${style.image}`}>
-          <Image width={311} height={311} src={selectedID?.image!} alt="" />
+          <Image
+            width={311}
+            height={311}
+            src={data.imageUrl!}
+            alt=""
+            priority
+          />
           <span className="flex flex-col my-5 px-5">
             <p>Share this product on:</p>
             <span className="flex flex-row gap-x-2">
-              <BsTwitter />
-              <BsFacebook />
+              <BsTwitter className=" cursor-pointer" />
+              <BsFacebook className=" cursor-pointer" />
             </span>
           </span>
         </div>
 
         <div className={`${style.specs}`}>
-          <span>
-            <h2>{selectedID?.title}</h2>
+          <span className=" flex justify-between">
+            <h2>{data.title}</h2>
           </span>
           <Separator className="bg-slate-400 my-2" />
           <div className={`${style.price}`}>
-            <p>{FormatCurrency(selectedID?.price!)}</p>
+            <p>{FormatCurrency(data.currentPrice!)}</p>
             <p>Few units left</p>
-            <p>shipping from {delFee} to Agege</p>
+            <p>shipping from {delFee} to Lagos</p>
             <p>Product rating</p>
             <span className="flex flex-row justify-start w-20">
               <BsStarFill color="purple" /> <BsStarFill color="purple" />
@@ -64,7 +78,7 @@ function Page({ params }: { params: { id: string } }) {
           <div className="flex flex-row items-center justify-between">
             <Button
               className={`${style.btn}`}
-              onClick={() => dispatch(addToCart(selectedID))}
+              onClick={() => add_to_cart(data)}
             >
               <BsCartPlus size={25} />
               Add to Carts
