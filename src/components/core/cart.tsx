@@ -5,19 +5,17 @@ import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 import { Separator } from "../ui/separator";
 import { useEffect, useState } from "react";
-import { increment, decrement, removeFromCart } from "@/lib/services/Slice";
-import { useSelector, useDispatch } from "react-redux";
-import type { RootState } from "@/lib/services/Store";
 import Image from "next/image";
 import FormatCurrency from "@/lib/services/FormatCurrency";
 import { LuTrash } from "react-icons/lu";
-import axios from "axios";
+import useStore from "@/lib/services/zustStore";
 
 function Cart() {
-  const orderID = 123456;
   const router = useRouter();
-  const products = useSelector((state: RootState) => state.store);
-  const dispatch = useDispatch();
+  const products = useStore((state) => state.cart);
+  // const decrement = useStore((state) => state.decreaseQty);
+  // const increment = useStore((state) => state.increaseQty);
+  const remove = useStore((state) => state.removeItem);
   const [totalCart, setTotalCart] = useState(0);
 
   useEffect(() => {
@@ -29,26 +27,7 @@ function Cart() {
     );
   }, [products]);
   console.log(products);
-  const check_out = () => {
-    products.map((content) => {
-      axios
-        .post(`http://127.0.0.1:3001/api/products/${content.id}`, {
-          title: content.title,
-          id: content.id,
-          productUrl: content.productUrl,
-          imageUrl: content.imageUrl,
-          currentPrice: content.currentPrice,
-          quantity: content.quantity,
-        })
-        .then(function (response) {
-          console.log(response);
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-    });
-    router.push("/check-out");
-  };
+
   return (
     <div className={`${style.container}`}>
       {products.length ? (
@@ -59,7 +38,7 @@ function Cart() {
             {products.map((product) => (
               <div
                 key={product.id}
-                className={` h-64 w-full flex flex-col gap-2`}
+                className={` h-72 w-full flex flex-col gap-2`}
               >
                 <div className={`${style.details}`}>
                   <span className="w-32 h-11">
@@ -75,22 +54,22 @@ function Cart() {
                     <span>{product.title} </span>
                     <span>{FormatCurrency(product.currentPrice!)} </span>
                     <span className={`${style.calc}`}>
-                      <Button
-                        onClick={() => dispatch(decrement(product.id))}
+                      {/* <Button
+                        onClick={() => decrement()}
                         className={`${style.btn}`}
                       >
                         -
-                      </Button>
+                      </Button> */}
                       {product.quantity}
-                      <Button
-                        onClick={() => dispatch(increment(product.id))}
+                      {/* <Button
+                        onClick={() => increment(product.id)}
                         className={`${style.btn}`}
                       >
                         +
-                      </Button>
+                      </Button> */}
                     </span>
                     <Button
-                      onClick={() => removeFromCart(Number(product.id))}
+                      onClick={() => remove(product.id!)}
                       className={`${style.btn} w-28 flex justify-between`}
                     >
                       {" "}
@@ -99,7 +78,9 @@ function Cart() {
                     </Button>
                   </span>
                 </div>
-                <div className={`${style.btnContainer}`}></div> <Separator />
+                {/* <div className={`${style.btnContainer}`}>
+                </div>{" "} */}
+                <Separator />
               </div>
             ))}
           </div>
@@ -116,8 +97,7 @@ function Cart() {
               <div>
                 <Button
                   className={`${style.btn} w-full`}
-                  // onClick={() => router.push("/check-out")}
-                  onClick={() => check_out}
+                  onClick={() => router.push("/check-out")}
                 >
                   Check out {FormatCurrency(Number(totalCart.toFixed(2)))}
                 </Button>

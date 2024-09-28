@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../../app/globals.css";
 import Footer from "@/components/core/footer";
-import ContextProvider from "@/components/core/ContextProvider";
 import { TopAds } from "@/components/core/ads";
 import Navbar from "@/components/core/navbar";
 import { Separator } from "@/components/ui/separator";
@@ -10,7 +9,6 @@ import { Toaster } from "sonner";
 import style from "../../lib/styles/topnav.module.scss";
 import QueryContext from "@/lib/contextProviders/queryContext";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import Providers from "@/lib/contextProviders/authProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,28 +27,24 @@ export default function RootLayout({
       <body
         className={`${inter.className}flex flex-col md:container ${style.bg_main}`}
       >
-        <Providers>
-          <QueryContext>
-            <ContextProvider>
-              <TopAds />
-              <Separator />
-              <Navbar />
-              <Separator />
-              {/* <TopNav /> */}
-              <Separator />
-              <div className=" w-full">{children}</div>
-              <Toaster
-                position="bottom-right"
-                toastOptions={{
-                  style: { backgroundColor: "purple", color: "white" },
-                }}
-                theme="system"
-              />
-              <Footer />
-            </ContextProvider>
-            <ReactQueryDevtools position="bottom" />
-          </QueryContext>
-        </Providers>
+        <QueryContext>
+          <TopAds />
+          <Separator />
+          <Navbar />
+          <Separator />
+          {/* <TopNav /> */}
+          <Separator />
+          <div className=" w-full">{children}</div>
+          <Toaster
+            position="bottom-right"
+            toastOptions={{
+              style: { backgroundColor: "purple", color: "white" },
+            }}
+            theme="system"
+          />
+          <Footer />
+          <ReactQueryDevtools position="bottom" />
+        </QueryContext>
       </body>
     </html>
   );

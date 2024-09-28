@@ -17,10 +17,10 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addToCart } from "@/lib/services/Slice";
 import FormatCurrency from "@/lib/services/FormatCurrency";
 import { fetchProduct } from "@/lib/api";
 import { useQuery } from "@tanstack/react-query";
+import useStore from "@/lib/services/zustStore";
 
 function Page({ params }: { params: { id: string } }) {
   const { data, isError, isLoading } = useQuery({
@@ -35,6 +35,7 @@ function Page({ params }: { params: { id: string } }) {
   const makeFavourite = () => {
     setfavourite(!favourite);
   };
+  const add_to_cart = useStore((state) => state.addTCart);
 
   if (isLoading) return <div>loading...</div>;
   if (isError) return <div>error...</div>;
@@ -79,7 +80,7 @@ function Page({ params }: { params: { id: string } }) {
           <div className="flex flex-row items-center justify-between">
             <Button
               className={`${style.btn}`}
-              onClick={() => dispatch(addToCart(data))}
+              onClick={() => add_to_cart(data)}
             >
               <BsCartPlus size={25} />
               Add to Carts

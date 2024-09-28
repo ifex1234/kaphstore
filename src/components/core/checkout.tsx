@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
 import { Copy, CreditCard, MoreVertical, Truck } from "lucide-react";
@@ -19,25 +19,29 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useQuery } from "@tanstack/react-query";
-import { fetchOrderByOrderId } from "@/lib/api";
+import useStore from "@/lib/services/zustStore";
+import FormatCurrency from "@/lib/services/FormatCurrency";
 export const description = "Dashboard";
 
 export default function Checkout() {
   const orderId = 12345;
-  const { data, isError, isLoading } = useQuery({
-    queryKey: ["my-order"],
-    queryFn: () => fetchOrderByOrderId(orderId),
-  });
-  if (isLoading) return <div>loading...</div>;
-  if (isError) return <div>error...</div>;
+  const [totalCart, setTotalCart] = useState(0);
+  const products = useStore((state) => state.cart);
+  useEffect(() => {
+    setTotalCart(
+      products.reduce(
+        (arg1: number, arg2) => arg1 + arg2.currentPrice! * arg2.quantity,
+        0
+      )
+    );
+  }, [products]);
   return (
     <div>
       <Card className="overflow-hidden" x-chunk="dashboard-05-chunk-4">
         <CardHeader className="flex flex-row items-start bg-muted/50">
           <div className="grid gap-0.5">
             <CardTitle className="group flex items-center gap-2 text-lg">
-              Order ID:{data?.orderId}
+              Order ID:{orderId}
               <Button
                 size="icon"
                 variant="outline"
@@ -78,37 +82,33 @@ export default function Checkout() {
           <div className="grid gap-3">
             <div className="font-semibold">Order Details</div>
             <ul className="grid gap-3">
-              <li className="flex items-center justify-between">
-                <span className="text-muted-foreground">
-                  {data?.productName}
-                  <span>{data?.quantity}</span>
-                </span>
-                <span>$250.00</span>
-              </li>
-              <li className="flex items-center justify-between">
-                <span className="text-muted-foreground">
-                  Aqua Filters x <span>1</span>
-                </span>
-                <span>$49.00</span>
-              </li>
+              {products.map((item) => (
+                <li className="flex items-center justify-between" key={item.id}>
+                  <span className="text-muted-foreground">
+                    {item.title}
+                    <span>{item.quantity}</span>
+                  </span>
+                  <span>{FormatCurrency(item.price!)}</span>
+                </li>
+              ))}
             </ul>
             <Separator className="my-2" />
             <ul className="grid gap-3">
               <li className="flex items-center justify-between">
                 <span className="text-muted-foreground">Subtotal</span>
-                <span>$299.00</span>
+                <span>{FormatCurrency(Number(totalCart.toFixed(2)))}</span>
               </li>
               <li className="flex items-center justify-between">
                 <span className="text-muted-foreground">Shipping</span>
-                <span>$5.00</span>
+                <span>{FormatCurrency(5.0)}</span>
               </li>
               <li className="flex items-center justify-between">
                 <span className="text-muted-foreground">Tax</span>
-                <span>$25.00</span>
+                <span>{FormatCurrency(25.0)}</span>
               </li>
               <li className="flex items-center justify-between font-semibold">
                 <span className="text-muted-foreground">Total</span>
-                <span>$329.00</span>
+                <span>{FormatCurrency(5 + 25 + totalCart)} </span>
               </li>
             </ul>
           </div>
