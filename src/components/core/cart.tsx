@@ -13,8 +13,6 @@ import useStore from "@/lib/services/zustStore";
 function Cart() {
   const router = useRouter();
   const products = useStore((state) => state.cart);
-  // const decrement = useStore((state) => state.decreaseQty);
-  // const increment = useStore((state) => state.increaseQty);
   const remove = useStore((state) => state.removeItem);
   const [totalCart, setTotalCart] = useState(0);
 

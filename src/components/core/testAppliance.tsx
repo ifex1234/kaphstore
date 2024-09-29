@@ -6,8 +6,9 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
+import useStore from "@/lib/services/zustStore";
 
-enum category {
+enum Category {
   mobile_tablet,
   appliances,
   computers,
@@ -18,14 +19,16 @@ enum category {
   home_office,
 }
 type Prop2 = {
-  id: number;
-  imageUrl: string;
-  title: string;
-  productUrl: String;
-  previousPrice: String;
-  currentPrice: String;
-  category: category;
-  quantity: String;
+  id?: number;
+  price?: number;
+  cartID?: number;
+  currentPrice?: number;
+  previousPrice?: number;
+  category?: Category;
+  imageUrl?: string;
+  productUrl?: string;
+  title?: string;
+  quantity: number;
 }[];
 type Prop = {
   arrayItem: Prop2;
@@ -33,6 +36,7 @@ type Prop = {
 const TestAppliance: React.FC<Prop> = (ObjArr) => {
   const { arrayItem } = ObjArr;
   const pathName = usePathname();
+  const add_to_cart = useStore((state) => state.addTCart);
 
   return (
     <div className={`lg:container ${style.main}`}>
@@ -44,8 +48,8 @@ const TestAppliance: React.FC<Prop> = (ObjArr) => {
                 <Image
                   width={300}
                   height={300}
-                  src={item.imageUrl}
-                  alt={item.title}
+                  src={item.imageUrl!}
+                  alt={item.title!}
                   priority
                 />
               </div>
@@ -73,7 +77,7 @@ const TestAppliance: React.FC<Prop> = (ObjArr) => {
               </p>
               <Button
                 className={`${style.btn}`}
-                // onClick={() => dispatch(addToCart(arrayItem))}
+                onClick={() => add_to_cart(arrayItem)}
               >
                 Add to Cart
               </Button>

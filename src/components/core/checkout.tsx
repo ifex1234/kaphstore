@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { Separator } from "../ui/separator";
-import { Copy, CreditCard, MoreVertical, Truck } from "lucide-react";
+import { Copy, CreditCard, Truck } from "lucide-react";
 
 import {
   Card,
@@ -12,13 +12,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import useStore from "@/lib/services/zustStore";
 import FormatCurrency from "@/lib/services/FormatCurrency";
 export const description = "Dashboard";
@@ -70,10 +63,7 @@ export default function Checkout() {
             <ul className="grid gap-3">
               {products.map((item) => (
                 <li className="flex items-center justify-between" key={item.id}>
-                  <span className="text-muted-foreground">
-                    {item.title}
-                    <span>{item.quantity}</span>
-                  </span>
+                  <span className="text-muted-foreground">{item.title}</span>
                   <span>{FormatCurrency(item.currentPrice!)}</span>
                 </li>
               ))}
@@ -86,15 +76,25 @@ export default function Checkout() {
               </li>
               <li className="flex items-center justify-between">
                 <span className="text-muted-foreground">Shipping</span>
-                <span>{FormatCurrency(5.0)}</span>
+                <span>
+                  {FormatCurrency(Number(totalCart.toFixed(2)) * 0.02)}
+                </span>
               </li>
               <li className="flex items-center justify-between">
                 <span className="text-muted-foreground">Tax</span>
-                <span>{FormatCurrency(25.0)}</span>
+                <span>
+                  {FormatCurrency(Number(totalCart.toFixed(2)) * 0.001)}
+                </span>
               </li>
               <li className="flex items-center justify-between font-semibold">
                 <span className="text-muted-foreground">Total</span>
-                <span>{FormatCurrency(5 + 25 + totalCart)} </span>
+                <span>
+                  {FormatCurrency(
+                    Number(totalCart.toFixed(2)) * 0.02 +
+                      Number(totalCart.toFixed(2)) * 0.001 +
+                      totalCart
+                  )}{" "}
+                </span>
               </li>
             </ul>
           </div>
