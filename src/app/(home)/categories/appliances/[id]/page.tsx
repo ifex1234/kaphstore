@@ -20,6 +20,7 @@ import FormatCurrency from "@/lib/services/FormatCurrency";
 import { fetchProduct } from "@/lib/api";
 import { useQuery } from "@tanstack/react-query";
 import useStore from "@/lib/services/zustStore";
+import Loader from "@/components/core/loader";
 
 function Page({ params }: { params: { id: string } }) {
   const { data, isError, isLoading } = useQuery({
@@ -28,14 +29,26 @@ function Page({ params }: { params: { id: string } }) {
     enabled: !!params.id,
   });
   const [favourite, setfavourite] = useState(true);
+  const [inCart, setInCart] = useState(false);
   const delFee = Math.round(Math.random() * 1000);
+  const cart = useStore((state) => state.cart);
 
   const makeFavourite = () => {
     setfavourite(!favourite);
   };
+  const addToCart = (id: number) => {
+    const selectId = cart.find((item) => item.id === id);
+    if (selectId === undefined) {
+      add_to_cart(data);
+      setTimeout(() => setInCart(!inCart), 3000);
+      console.log("logged");
+    } else {
+      console.log("item in cart");
+    }
+  };
   const add_to_cart = useStore((state) => state.addTCart);
 
-  if (isLoading) return <div>loading...</div>;
+  if (isLoading) return <Loader />;
   if (isError) return <div>error...</div>;
 
   return (
@@ -78,10 +91,10 @@ function Page({ params }: { params: { id: string } }) {
           <div className="flex flex-row items-center justify-between">
             <Button
               className={`${style.btn}`}
-              onClick={() => add_to_cart(data)}
+              onClick={() => addToCart(data.id)}
             >
               <BsCartPlus size={25} />
-              Add to Carts
+              {inCart ? "Item now in cart" : "Add to Cart"}
               <div />
             </Button>
             <LuHeart

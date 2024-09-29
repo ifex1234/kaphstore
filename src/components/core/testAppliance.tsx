@@ -3,7 +3,7 @@ import FormatCurrency from "@/lib/services/FormatCurrency";
 import style from "@/lib/styles/categories.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
 import useStore from "@/lib/services/zustStore";
@@ -36,7 +36,6 @@ type Prop = {
 const TestAppliance: React.FC<Prop> = (ObjArr) => {
   const { arrayItem } = ObjArr;
   const pathName = usePathname();
-  const add_to_cart = useStore((state) => state.addTCart);
 
   return (
     <div className={`lg:container ${style.main}`}>
@@ -75,12 +74,7 @@ const TestAppliance: React.FC<Prop> = (ObjArr) => {
                   : 0}
                 %
               </p>
-              <Button
-                className={`${style.btn}`}
-                onClick={() => add_to_cart(arrayItem)}
-              >
-                Add to Cart
-              </Button>
+              <Button className={`${style.btn}`}>More Information</Button>
             </div>
           </Link>
         ))}
