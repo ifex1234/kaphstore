@@ -1,34 +1,6 @@
 import axios from "axios";
 import { number, z } from "zod";
 
-enum Category {
-  mobile_tablet,
-  appliances,
-  computers,
-  groceries,
-  electronics,
-  fashion,
-  beauty_health,
-  home_office,
-}
-type ProductProp = {
-  id: number;
-  price: number;
-  cartID: number;
-  currentPrice: number;
-  previousPrice: number;
-  category: Category;
-  imageUrl: string;
-  productUrl: string;
-  title: string;
-  quantity: number;
-}[];
-const getCartScema = z.object({
-  productName: z.string(),
-  imageUrl: z.string(),
-  price: z.number(),
-  quantity: z.number(),
-});
 type orderSchema = {
   productName: string;
   imageUrl: string;

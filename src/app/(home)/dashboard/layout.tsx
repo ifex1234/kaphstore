@@ -15,7 +15,7 @@ export default async function layout({ children }: Prop) {
   return (
     <div>
       <DashboardLayout />
-      <Suspense fallback={<Loader />}>{children}</Suspense>
+      {children}
     </div>
   );
 }

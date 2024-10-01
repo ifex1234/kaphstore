@@ -84,14 +84,7 @@ function Page({ params }: { params: { id: string } }) {
               Add to Cart
               <div />
             </Button>
-            {/* <Button
-              className=" flex justify-between flex-row bg-purple-500 hover:bg-purple-700 w-2/3 my-3 h-14"
-              onClick={() => dispatch(addToCart(selectedID))}
-            >
-              <BsCartPlus size={25} />
-              Add to Carts
-              <div />
-            </Button> */}
+
             <LuHeart
               size={25}
               color="purple"

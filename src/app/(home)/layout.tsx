@@ -9,13 +9,6 @@ import { Toaster } from "sonner";
 import style from "../../lib/styles/topnav.module.scss";
 import QueryContext from "@/lib/contextProviders/queryContext";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +27,6 @@ export default function RootLayout({
       <body
         className={`${inter.className}flex flex-col md:container ${style.bg_main}`}
       >
-        {/* <ClerkProvider> */}
         <QueryContext>
           <TopAds />
           <Separator />
@@ -53,7 +45,6 @@ export default function RootLayout({
           <Footer />
           <ReactQueryDevtools position="bottom" />
         </QueryContext>
-        {/* </ClerkProvider> */}
       </body>
     </html>
   );

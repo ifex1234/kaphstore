@@ -254,7 +254,6 @@ import image814 from "../../../public/images/recommended/1 (16).jpg";
 import image815 from "../../../public/images/recommended/1 (17).jpg";
 import image816 from "../../../public/images/recommended/1 (18).jpg";
 import image817 from "../../../public/images/recommended/1 (19).jpg";
-import image818 from "../../../public/images/recommended/1 (20).jpg";
 import { StaticImageData } from "next/image";
 
 type Props1 = {

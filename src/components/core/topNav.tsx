@@ -3,7 +3,6 @@ import style from "@/lib/styles/topnav.module.scss";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { FaCartShopping } from "react-icons/fa6";
-import { Dropdown } from "./dropdown";
 import Link from "next/link";
 
 function TopNav() {
@@ -18,9 +17,6 @@ function TopNav() {
         <Button className={`${style.btn}`}>Search</Button>
       </div>
       <div className={`${style.account}`}>
-        <span className=" flex flex-row items-center justify-between gap-x-2">
-          <Dropdown />
-        </span>
         <span className="">
           <Link
             className="flex flex-row items-center gap-x-2 justify-end relative"

@@ -203,7 +203,9 @@ export default function Checkout() {
           </div>
         </CardContent>
         <CardFooter className="flex flex-row justify-around items-center border-t bg-muted/50 px-6 py-3">
-          <Button className="bg-red-600">Cancel order</Button>
+          <Button onClick={router.back} className="bg-red-600">
+            Cancel order
+          </Button>
           <AlertDialog>
             <AlertDialogTrigger asChild>
               <Button
