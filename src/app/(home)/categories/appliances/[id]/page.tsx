@@ -20,7 +20,7 @@ import FormatCurrency from "@/lib/services/FormatCurrency";
 import { fetchProduct } from "@/lib/api";
 import { useQuery } from "@tanstack/react-query";
 import useStore from "@/lib/services/zustStore";
-import Loader from "@/components/core/loader";
+import { LoadingSkeletonSecondary } from "@/components/core/skeleton";
 
 function Page({ params }: { params: { id: string } }) {
   const { data, isError, isLoading } = useQuery({
@@ -48,7 +48,7 @@ function Page({ params }: { params: { id: string } }) {
   };
   const add_to_cart = useStore((state) => state.addTCart);
 
-  if (isLoading) return <Loader />;
+  if (isLoading) return <LoadingSkeletonSecondary />;
   if (isError) return <div>error...</div>;
 
   return (

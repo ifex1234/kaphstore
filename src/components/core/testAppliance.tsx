@@ -6,7 +6,6 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
-import useStore from "@/lib/services/zustStore";
 
 enum Category {
   mobile_tablet,
@@ -74,7 +73,10 @@ const TestAppliance: React.FC<Prop> = (ObjArr) => {
                   : 0}
                 %
               </p>
-              <Button className={`${style.btn}`}>More Information</Button>
+              <Button className={`${style.btn}`}>
+                More <br />
+                Information
+              </Button>
             </div>
           </Link>
         ))}

@@ -18,11 +18,13 @@ import {
   TooltipTrigger,
   TooltipProvider,
 } from "@/components/ui/tooltip";
+import Logout from "./logout";
+import { LuHeart } from "react-icons/lu";
 
 export default function DashboardLayout() {
   return (
     <div>
-      <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
+      <aside className="fixed inset-y-0 left-0 z-10 hidden w-24 flex-col border-r bg-background sm:flex">
         <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
           <Link
             href="#"
@@ -89,6 +91,13 @@ export default function DashboardLayout() {
               <TooltipContent side="right">Settings</TooltipContent>
             </Tooltip>
           </TooltipProvider>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Logout />
+              </TooltipTrigger>
+            </Tooltip>
+          </TooltipProvider>
         </nav>
       </aside>
       <Sheet>
@@ -125,17 +134,25 @@ export default function DashboardLayout() {
               href="/dashboard/profile"
               className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
             >
-              <Package className="h-5 w-5" />
+              <Users2 className="h-5 w-5" />
               Profile
+            </Link>
+
+            <Link
+              href="/dashboard/favorites"
+              className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
+            >
+              <LuHeart className="mr-2 h-4 w-4" /> Favorites
             </Link>
 
             <Link
               href="dashboard/settings"
               className="flex items-center gap-4 px-2.5 text-muted-foreground hover:text-foreground"
             >
-              <LineChart className="h-5 w-5" />
+              <Settings className="h-5 w-5" />
               Settings
             </Link>
+            <Logout />
           </nav>
         </SheetContent>
       </Sheet>

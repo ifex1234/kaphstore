@@ -68,22 +68,6 @@ export function Drawer() {
           <Separator />
         </span>
 
-        <span className="flex gap-3 flex-col w-full my-7">
-          <h3>My Account</h3>
-          {myAccount.map((link) => (
-            <SheetClose className="flex float-start" key={link.id} asChild>
-              <Link
-                className=" hover:bg-slate-300 cursor-pointer flex flex-row h-10 w-full items-center gap-x-0 px-3 rounded-md"
-                href={link.href}
-              >
-                {link.icon}
-                <span>{link.label}</span>
-              </Link>
-            </SheetClose>
-          ))}
-          <Separator />
-        </span>
-
         <SheetFooter>
           <SheetClose asChild>
             <div className=" cursor-pointer flex flex-row h-10 w-full items-center gap-x-3 px-3 rounded-md"></div>

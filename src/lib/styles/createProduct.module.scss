@@ -7,10 +7,15 @@
   color: variables.$main_color1;
   padding: 1.25rem;
   margin: auto;
-  width: 43.75rem;
+  margin-bottom: 1.25rem;
+  width: 25.75rem;
   display: flex;
   gap: 0.5rem;
   flex-direction: column;
+  border-radius: 0.625rem;
+  height: auto;
+  justify-content: space-evenly;
+
   span {
     padding: auto;
   }
@@ -20,20 +25,22 @@
     height: 1.9375rem;
     width: 6.25rem;
     border-radius: 0.25rem;
+    margin: 0.625rem;
   }
 }
 .field {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 17.9rem;
+  width: 20.9rem;
   height: 2.075rem;
   border-radius: 0.25rem;
   gap: 1.25rem;
   margin: 10px 0;
-  justify-content: space-between;
+  justify-content: space-around;
   input {
     height: 30px;
     border-radius: 0.25rem;
+    margin-left: 1.125rem;
   }
 }

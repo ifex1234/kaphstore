@@ -1,5 +1,5 @@
 import axios from "axios";
-import { z } from "zod";
+import { number, z } from "zod";
 
 enum Category {
   mobile_tablet,
@@ -41,6 +41,25 @@ type orderSchema = {
   sum: number;
 };
 
+const getUserSchema = z.object({
+  firstName: z.string(),
+  lastName: z.string(),
+  address: z.string(),
+  phoneNo: z.string(),
+  email: z.string(),
+});
+type FectchUser = z.infer<typeof getUserSchema>;
+export const fetchUser = async (userId: string): Promise<FectchUser> => {
+  const option = {
+    method: "GET",
+    url: `http://127.0.0.1:3001/api/users/${userId}`,
+  };
+  console.log("Fetching user...");
+  const requestData = await axios.request(option).then((r) => r.data);
+  console.log(requestData);
+  return requestData;
+};
+
 export const fetchProducts = async (category: string) => {
   const option = {
     method: "GET",
@@ -64,7 +83,15 @@ export const fetchProduct = async (id: string) => {
   return data;
 };
 
-export const fetchOrderByUser = async (userId: number) => {
+type OrderProp = {
+  id: number;
+  createdAt: Date;
+  userId: string;
+  orderId: number;
+  sum: number;
+}[];
+
+export const fetchOrderByUser = async (userId: string): Promise<OrderProp> => {
   const option = {
     method: "GET",
     url: `http://127.0.0.1:3001/api/orders/all-orders/${userId}`,

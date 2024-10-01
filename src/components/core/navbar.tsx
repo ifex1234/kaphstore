@@ -13,6 +13,7 @@ import { Drawer } from "../core/drawer";
 import { FaCartShopping } from "react-icons/fa6";
 import { Navlink } from "@/lib/assets/navlink";
 import useStore from "@/lib/services/zustStore";
+import SignIn from "./sign-in";
 
 function Navbar() {
   const pathname = usePathname();
@@ -46,6 +47,7 @@ function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
       </span>
+      {/* <SignIn /> */}
 
       <div className=" flex justify-between items-center flex-row gap-5 px-2">
         <Link

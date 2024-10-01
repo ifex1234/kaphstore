@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import {
   Form,
   FormControl,
@@ -16,8 +17,13 @@ import {
 import { Input } from "@/components/ui/input";
 import style from "@/lib/styles/createProduct.module.scss";
 import { NewUserFormSchema } from "@/lib/schemas/newUserSchema";
+import { Textarea } from "../ui/textarea";
+import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 
-export default function SignUpForm() {
+export default function CreateUserInfo() {
+  const { user } = useKindeBrowserClient();
+  const router = useRouter();
   const form = useForm<z.infer<typeof NewUserFormSchema>>({
     resolver: zodResolver(NewUserFormSchema),
     defaultValues: {
@@ -25,27 +31,32 @@ export default function SignUpForm() {
       lastName: "",
       email: "",
       password: "",
+      address: "",
+      phoneNo: "",
     },
   });
 
   function onSubmit(values: z.infer<typeof NewUserFormSchema>) {
-    let { lastName, firstName, email, password } = values;
+    let { lastName, firstName, email, password, phoneNo, address } = values;
     console.log(values);
     axios
-      .post("http://127.0.0.1:3000/api/users", {
+      .post("http://127.0.0.1:3001/api/auth/signup", {
         lastName,
         firstName,
         email,
         password,
+        phoneNo,
+        userId: String(user?.id),
+        address,
       })
       .then(function (response) {
-        console.log(response);
+        console.log(response.statusText);
       })
       .catch(function (error) {
         console.log(error);
       });
-
-    (firstName = ""), (lastName = ""), (email = ""), (password = "");
+    setTimeout(() => toast("Your Profile created successfully"), 5000);
+    setTimeout(() => router.push("/dashboard"), 8000);
   }
   return (
     <Form {...form}>
@@ -97,6 +108,32 @@ export default function SignUpForm() {
               <FormLabel>password</FormLabel>
               <FormControl>
                 <Input placeholder="password" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="phoneNo"
+          render={({ field }) => (
+            <FormItem className={`${style.field}`}>
+              <FormLabel>Phone number</FormLabel>
+              <FormControl>
+                <Input placeholder="Phone number" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="address"
+          render={({ field }) => (
+            <FormItem className={`${style.field}`}>
+              <FormLabel>Address</FormLabel>
+              <FormControl>
+                <Textarea placeholder="Address" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

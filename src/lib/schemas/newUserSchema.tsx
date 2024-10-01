@@ -7,4 +7,6 @@ export const NewUserFormSchema = z.object({
   password: z.string(),
   firstName: z.string(),
   lastName: z.string(),
+  address: z.string(),
+  phoneNo: z.string(),
 });
