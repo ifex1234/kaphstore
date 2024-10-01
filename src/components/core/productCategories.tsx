@@ -32,7 +32,7 @@ type Prop2 = {
 type Prop = {
   arrayItem: Prop2;
 };
-const TestAppliance: React.FC<Prop> = (ObjArr) => {
+const ProductsCategory: React.FC<Prop> = (ObjArr) => {
   const { arrayItem } = ObjArr;
   const pathName = usePathname();
 
@@ -85,4 +85,4 @@ const TestAppliance: React.FC<Prop> = (ObjArr) => {
   );
 };
 
-export default TestAppliance;
+export default ProductsCategory;

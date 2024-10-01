@@ -1,12 +1,24 @@
-import Categories from "@/components/core/Categories";
-import { Products } from "@/lib/assets/allProducts";
+"use client";
 import React from "react";
-
+import { useQuery } from "@tanstack/react-query";
+import { fetchProducts } from "@/lib/api";
+import { LoadingSkeleton } from "@/components/core/skeleton";
+import ProductsCategory from "@/components/core/productCategories";
 export default function Page() {
-  const home = Products.slice(142, 170);
+  const { data, isError, isLoading } = useQuery({
+    queryKey: ["home_office"],
+    queryFn: () => fetchProducts("home_office"),
+  });
+  if (isLoading)
+    return (
+      <div>
+        <LoadingSkeleton />
+      </div>
+    );
+  if (isError) return <div>error...</div>;
   return (
     <div className=" md:container">
-      <Categories arrayItem={home} />
+      <ProductsCategory arrayItem={data} />
     </div>
   );
 }

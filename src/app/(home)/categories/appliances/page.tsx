@@ -2,8 +2,8 @@
 import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import { fetchProducts } from "@/lib/api";
-import TestAppliance from "@/components/core/testAppliance";
 import { LoadingSkeleton } from "@/components/core/skeleton";
+import ProductsCategory from "@/components/core/productCategories";
 export default function Page() {
   const { data, isError, isLoading } = useQuery({
     queryKey: ["appliances"],
@@ -16,10 +16,9 @@ export default function Page() {
       </div>
     );
   if (isError) return <div>error...</div>;
-  console.log(data);
   return (
     <div className=" md:container">
-      <TestAppliance arrayItem={data} />
+      <ProductsCategory arrayItem={data} />
     </div>
   );
 }

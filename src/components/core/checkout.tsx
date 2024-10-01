@@ -183,7 +183,7 @@ export default function Checkout() {
               <div className="flex items-center justify-between">
                 <dt className="text-muted-foreground">Phone</dt>
                 <dd>
-                  <a href="tel:">{data?.phoneNo}</a>
+                  <a href="tel:">{isLoading ? "..." : data?.phoneNo}</a>
                 </dd>
               </div>
             </dl>

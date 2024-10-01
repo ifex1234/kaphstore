@@ -23,7 +23,7 @@
   .array_wrapper {
     margin: 0 0.625rem;
     display: flex;
-    height: 12.75rem;
+    height: 14.25rem;
     width: 100%;
     flex-direction: row;
     overflow-x: scroll;
@@ -36,7 +36,7 @@
     gap: 0.4125rem;
     display: flex;
     flex-direction: column;
-    height: 95%;
+    height: 92%;
     font-size: xx-small;
     &:hover {
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2),
