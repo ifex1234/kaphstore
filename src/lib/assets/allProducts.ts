@@ -336,7 +336,7 @@ export const Products: Props1 = [
     id: "508",
     image: image508,
     price: 17500,
-    title: "Oraimo type-c power bank fast charging..",
+    title: "Oraimo-type-c-power-bank-fast-charging",
     category: "mobile-tablet",
     old: 40000,
     qty: 1,
