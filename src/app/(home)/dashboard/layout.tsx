@@ -1,6 +1,5 @@
 import DashboardLayout from "@/components/core/dashboardLayout";
-import Loader from "@/components/core/loader";
-import React, { Suspense } from "react";
+import React from "react";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { redirect } from "next/navigation";
 
