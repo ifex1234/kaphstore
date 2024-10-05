@@ -7,16 +7,9 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { UserSchema } from "@/lib/schemas/zod";
 import { z } from "zod";
 
-const UserSchema = z.object({
-  firstName: z.string(),
-  lastName: z.string(),
-  address: z.string(),
-  phoneNo: z.string(),
-  email: z.string(),
-  userId: z.string().optional(),
-});
 type FectchUser = z.infer<typeof UserSchema>;
 
 export function BillingTable({

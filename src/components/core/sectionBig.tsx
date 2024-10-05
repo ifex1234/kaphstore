@@ -5,16 +5,6 @@ import { Products } from "@/lib/assets/allProducts";
 import Link from "next/link";
 
 const SectionBig = () => {
-  type Props = {
-    id: number;
-    image: string;
-    title: string;
-    price: number;
-    itemLeft?: string;
-    value?: number;
-    itemLeftValue: number;
-  };
-
   return (
     <div className={`${styles.container}`}>
       {Products.slice(212, 218).map((content) => (

@@ -3,10 +3,6 @@ import Image from "next/image";
 import { Section_1data } from "@/lib/assets/section1";
 import style from "@/lib/styles/sectionminor.module.scss";
 
-type Props = {
-  Image: string;
-  title: string;
-};
 export const SectionMinor = () => {
   return (
     <div className={`${style.container}`}>

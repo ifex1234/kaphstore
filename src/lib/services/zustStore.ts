@@ -1,36 +1,9 @@
 import { toast } from "sonner";
 import { create } from "zustand";
+import { ProductSchema } from "../schemas/zod";
+import { z } from "zod";
 
-enum Category {
-  mobile_tablet,
-  appliances,
-  computers,
-  groceries,
-  electronics,
-  fashion,
-  beauty_health,
-  home_office,
-}
-type ProductProp = {
-  id?: number;
-  price?: number;
-  cartID?: number;
-  currentPrice?: number;
-  previousPrice?: number;
-  category?: Category;
-  imageUrl?: string;
-  productUrl?: string;
-  title?: string;
-  quantity: number;
-}[];
-type ProductProp1 = {
-  id?: number;
-  currentPrice?: number;
-  category?: Category;
-  imageUrl?: string;
-  title?: string;
-  quantity: number;
-};
+type ProductProp = z.infer<typeof ProductSchema>;
 
 type CartProp = {
   orderID: number;

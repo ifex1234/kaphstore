@@ -3,7 +3,7 @@ import FormatCurrency from "@/lib/services/FormatCurrency";
 import style from "@/lib/styles/categories.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import { usePathname } from "next/navigation";
 import { Button } from "../ui/button";
 

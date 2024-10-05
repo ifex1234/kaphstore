@@ -1,26 +1,12 @@
 import axios from "axios";
-import { number, z } from "zod";
+import { z } from "zod";
+import {
+  getUserSchema,
+  OrderPropArray,
+  Category,
+  productSchema,
+} from "./schemas/zod";
 
-type orderSchema = {
-  productName: string;
-  imageUrl: string;
-  price: number;
-  quantity: number;
-  id: number;
-  createdAt: Date;
-  orderId: number;
-  userID: number;
-  sum: number;
-};
-
-const getUserSchema = z.object({
-  firstName: z.string(),
-  lastName: z.string(),
-  address: z.string(),
-  phoneNo: z.string(),
-  email: z.string(),
-  userId: z.string().optional(),
-});
 type FectchUser = z.infer<typeof getUserSchema>;
 export const fetchUser = async (userId: string): Promise<FectchUser> => {
   const option = {
@@ -32,8 +18,8 @@ export const fetchUser = async (userId: string): Promise<FectchUser> => {
   console.log(requestData);
   return requestData;
 };
-
-export const fetchProducts = async (category: string) => {
+type Categories = z.infer<typeof Category>;
+export const fetchProducts = async (category: Categories) => {
   const option = {
     method: "GET",
     url: `https://kaphstore-server.onrender.com/api/products/all-products/${category}`,
@@ -43,8 +29,8 @@ export const fetchProducts = async (category: string) => {
   console.log(requestData);
   return requestData;
 };
-
-export const fetchProduct = async (id: string) => {
+type ProductProp2 = z.infer<typeof productSchema>;
+export const fetchProduct = async (id: string): Promise<ProductProp2> => {
   const option = {
     method: "GET",
     url: `https://kaphstore-server.onrender.com/api/products/${id}`,
@@ -56,13 +42,7 @@ export const fetchProduct = async (id: string) => {
   return data;
 };
 
-type OrderProp = {
-  id: number;
-  createdAt: Date;
-  userId: string;
-  orderId: number;
-  sum: number;
-}[];
+type OrderProp = z.infer<typeof OrderPropArray>;
 
 export const fetchOrderByUser = async (userId: string): Promise<OrderProp> => {
   const option = {
@@ -70,16 +50,5 @@ export const fetchOrderByUser = async (userId: string): Promise<OrderProp> => {
     url: `https://kaphstore-server.onrender.com/api/orders/all-orders/${userId}`,
   };
   const data = await axios.request(option).then((r) => r.data);
-  return data;
-};
-export const fetchOrderByOrderId = async (
-  orderId: number
-): Promise<orderSchema> => {
-  const option = {
-    method: "GET",
-    url: `https://kaphstore-server.onrender.com/api/orders/all-orders/${orderId}`,
-  };
-  const data = await axios.request(option).then((r) => r.data);
-  console.log(data);
   return data;
 };

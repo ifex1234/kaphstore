@@ -16,10 +16,10 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import style from "@/lib/styles/createProduct.module.scss";
-import { NewUserFormSchema } from "@/lib/schemas/newUserSchema";
 import { Textarea } from "../ui/textarea";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
+import { NewUserFormSchema } from "@/lib/schemas/zod";
 
 export default function CreateUserInfo() {
   const { user } = useKindeBrowserClient();
