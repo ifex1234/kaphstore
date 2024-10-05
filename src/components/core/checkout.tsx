@@ -60,7 +60,7 @@ export default function Checkout() {
   function processPayment(orderId: number) {
     confirmation(orderId);
     axios
-      .post("http://127.0.0.1:3001/api/orders", {
+      .post("https://kaphstore-server.onrender.com/api/orders", {
         userId: String(user?.id),
         orderId,
         sum: totalCart,
