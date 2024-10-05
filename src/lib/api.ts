@@ -19,6 +19,7 @@ const getUserSchema = z.object({
   address: z.string(),
   phoneNo: z.string(),
   email: z.string(),
+  userId: z.string().optional(),
 });
 type FectchUser = z.infer<typeof getUserSchema>;
 export const fetchUser = async (userId: string): Promise<FectchUser> => {

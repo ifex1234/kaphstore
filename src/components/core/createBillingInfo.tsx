@@ -40,7 +40,7 @@ export default function CreateUserInfo() {
     let { lastName, firstName, email, password, phoneNo, address } = values;
     console.log(values);
     axios
-      .post("http://127.0.0.1:3001/api/auth/signup", {
+      .post("https://kaphstore-server.onrender.com/api/users/signup", {
         lastName,
         firstName,
         email,

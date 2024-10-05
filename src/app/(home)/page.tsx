@@ -1,8 +1,12 @@
+"use client";
 import { SectionBorderless } from "@/components/core/sectionBorderless";
 import SectionBig from "@/components/core/sectionBig";
 import { SectionMinor } from "@/components/core/sectionMinor";
 import SubHeader from "@/components/core/subHeader";
 import { Products } from "@/lib/assets/allProducts";
+import { LoadingSkeleton } from "@/components/core/skeleton";
+import { fetchProducts } from "@/lib/api";
+import { useQuery } from "@tanstack/react-query";
 
 export default function Home() {
   const recommended = Products.slice(235, 241);
@@ -14,6 +18,16 @@ export default function Home() {
   const health_beauty = Products.slice(82, 88);
   const home_office = Products.slice(142, 148);
   const mobile = Products.slice(0, 7);
+
+  const {
+    data: applianceData,
+    isError: applianceError,
+    isLoading: applianceLoading,
+  } = useQuery({
+    queryKey: ["appliances"],
+    queryFn: () => fetchProducts("appliances"),
+  });
+
   return (
     <main>
       <section className=" rounded-sm mb-5">
@@ -30,7 +44,12 @@ export default function Home() {
           item1={"Top Appliance Deals"}
           item2={"/categories/appliances"}
         />
-        <SectionBorderless arrayItem={appliance} />
+        {applianceLoading ? (
+          <LoadingSkeleton />
+        ) : (
+          <SectionBorderless arrayItem={applianceData} />
+        )}
+
         <SubHeader
           item1={"Top Computer Deals"}
           item2={"/categories/computers"}

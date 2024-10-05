@@ -24,6 +24,7 @@ import { fetchOrderByUser } from "@/lib/api";
 import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import FormatCurrency from "@/lib/services/FormatCurrency";
 import Loader from "./loader";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 function Orders() {
   const { user } = useKindeBrowserClient();
@@ -45,15 +46,26 @@ function Orders() {
     <div className="p-5">
       <div className="grid auto-rows-max items-start gap-4 md:gap-8 lg:col-span-2">
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
-          <Card className="sm:col-span-2" x-chunk="dashboard-05-chunk-0">
-            <CardHeader className="pb-3">
-              <CardTitle>Your Orders</CardTitle>
+          <Card
+            className="sm:col-span-2 space-y-3"
+            x-chunk="dashboard-05-chunk-0"
+          >
+            <CardHeader className="pb-3 space-y-3">
+              <CardTitle>
+                <Avatar>
+                  <AvatarImage src={user?.picture!} />
+                  <AvatarFallback>PI</AvatarFallback>
+                </Avatar>
+                Welcome back {user?.given_name}, How is your day going
+              </CardTitle>
               <CardDescription className="max-w-lg text-balance leading-relaxed">
-                View Catalogue of all your orders
+                Catalogue of all your orders are displayed here
               </CardDescription>
             </CardHeader>
             <CardFooter>
-              <Button onClick={() => router.push("/")}>Start shopping</Button>
+              <Button onClick={() => router.push("/")}>
+                Continue shopping
+              </Button>
             </CardFooter>
           </Card>
         </div>
