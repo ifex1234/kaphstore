@@ -82,6 +82,14 @@ export default function Home() {
     queryKey: ["office"],
     queryFn: () => fetchProducts("home_office"),
   });
+  const {
+    data: recommendedData,
+    isError: recommendedError,
+    isLoading: recommendedLoading,
+  } = useQuery({
+    queryKey: ["recommended"],
+    queryFn: () => fetchProducts("recommended"),
+  });
 
   return (
     <main>
@@ -95,6 +103,11 @@ export default function Home() {
           link="see all"
           href="/categories/recommended"
         /> */}
+        {recommendedLoading ? (
+          <LoadingSkeleton />
+        ) : (
+          <SectionBorderless arrayItem={recommendedData} />
+        )}
         <SubHeader
           item1={"Top Appliance Deals"}
           item2={"/categories/appliances"}
