@@ -10,6 +10,7 @@ export const Category = z.enum([
   "beauty_health",
   "home_office",
   "recommended",
+  "flash_sales",
 ]);
 
 export const getUserSchema = z.object({

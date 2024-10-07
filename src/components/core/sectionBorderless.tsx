@@ -3,30 +3,29 @@ import FormatCurrency from "@/lib/services/FormatCurrency";
 import styles from "@/lib/styles/sectionborderless.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import { z } from "zod";
-// type Props = {
-//   id?: number;
-//   currentPrice?: number;
-//   category?: Category;
-//   imageUrl?: string;
-//   productUrl?: string;
-//   title?: string;
-// }[];
-// enum Category {
-//   mobile_tablet,
-//   appliances,
-//   computers,
-//   groceries,
-//   electronics,
-//   fashion,
-//   beauty_health,
-//   home_office,
-// }
-type ProductProp = z.infer<typeof SectionBorderlessSchema>;
+
+type Props = {
+  id?: number;
+  currentPrice?: number;
+  category?: Category;
+  imageUrl?: string;
+  productUrl?: string;
+  title?: string;
+}[];
+enum Category {
+  mobile_tablet,
+  appliances,
+  computers,
+  groceries,
+  electronics,
+  fashion,
+  beauty_health,
+  home_office,
+}
 type Props2 = {
   header?: string;
   link?: string;
-  arrayItem: ProductProp;
+  arrayItem: Props;
   href?: string;
 };
 

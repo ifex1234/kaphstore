@@ -25,6 +25,7 @@ import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import FormatCurrency from "@/lib/services/FormatCurrency";
 import Loader from "./loader";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Logout from "./logout";
 
 function Orders() {
   const { user } = useKindeBrowserClient();
@@ -62,10 +63,11 @@ function Orders() {
                 Catalogue of all your orders are displayed here
               </CardDescription>
             </CardHeader>
-            <CardFooter>
+            <CardFooter className=" space-x-5">
               <Button onClick={() => router.push("/")}>
                 Continue shopping
               </Button>
+              <Logout />
             </CardFooter>
           </Card>
         </div>

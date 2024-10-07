@@ -17,7 +17,7 @@ function SkeletonCardMain() {
 }
 export function LoadingSkeleton() {
   return (
-    <div className={`${style.container} space-x-8 flex flex-row md:flex-col`}>
+    <div className={`${style.container} space-x-3 flex flex-row`}>
       <SkeletonCardMain /> <SkeletonCardMain /> <SkeletonCardMain />{" "}
       <SkeletonCardMain /> <SkeletonCardMain /> <SkeletonCardMain />{" "}
     </div>

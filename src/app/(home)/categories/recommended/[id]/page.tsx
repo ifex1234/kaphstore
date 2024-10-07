@@ -1,7 +1,6 @@
 "use client";
 /* eslint-disable react/no-unescaped-entities */
 import { FaTruck, FaUndo } from "react-icons/fa";
-import { Products } from "@/lib/assets/allProducts";
 import {
   BsCartPlus,
   BsStarFill,
@@ -20,27 +19,35 @@ import { useState } from "react";
 import FormatCurrency from "@/lib/services/FormatCurrency";
 import { toast, Toaster } from "sonner";
 import useStore from "@/lib/services/zustStore";
+import { fetchProduct } from "@/lib/api";
+import { useQuery } from "@tanstack/react-query";
+import Loader from "@/components/core/loader";
 
 function Page({ params }: { params: { id: string } }) {
+  const { data, isError, isLoading } = useQuery({
+    queryKey: ["sales", params.id],
+    queryFn: () => fetchProduct(params.id),
+    enabled: !!params.id,
+  });
   const [favourite, setfavourite] = useState(false);
   const delFee = Math.round(Math.random() * 1000);
-  const flahSales = Products.slice(235, 255);
   const makeFavourite = () => {
     setfavourite((previous) => (previous = true));
   };
-  const selectedID = flahSales.find((label) => label.id === params.id);
   const add_to_cart = useStore((state) => state.addTCart);
+  if (isLoading)
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
+  if (isError) return <div>error...</div>;
+
   return (
     <div className={`${style.container}`}>
       <div className={`${style.main}`}>
         <div className={`${style.image}`}>
-          <Image
-            width={311}
-            height={311}
-            src={selectedID?.image!}
-            alt=""
-            priority
-          />
+          <Image width={311} height={311} src={data.imageUrl} alt="" priority />
           <span className="flex flex-col my-5 px-5">
             <p>Share this product on:</p>
             <span className="flex flex-row gap-x-2">
@@ -52,11 +59,11 @@ function Page({ params }: { params: { id: string } }) {
 
         <div className={`${style.specs}`}>
           <span>
-            <h2>{selectedID?.title}</h2>
+            <h2>{data.title}</h2>
           </span>
           <Separator className="bg-slate-400 my-2" />
           <div className={`${style.price}`}>
-            <p>{FormatCurrency(selectedID?.price!)}</p>
+            <p>{FormatCurrency(data.currentPrice)}</p>
             <p>Few units left</p>
             <p>shipping from {delFee} to Lagos</p>
             <p>Product rating</p>
